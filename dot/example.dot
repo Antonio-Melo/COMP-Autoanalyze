@@ -1,0 +1,18 @@
+digraph G1 
+{
+    start -> test;
+    test -> start;
+    test -> finish;
+}
+
+digraph G2
+{
+    a -> b [label="hello"];
+    a -> c [label="world"];
+    c -> d; 
+    b -> c; 
+    d -> a;
+    b [label="this is b"];
+    c [peripheries=2];
+    d [style=bold];
+}
