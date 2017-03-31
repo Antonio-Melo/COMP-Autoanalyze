@@ -1,0 +1,66 @@
+options
+{
+    LOOKAHEAD=1;
+}
+PARSER_BEGIN(ValidateFile)
+public class ValidateFile{
+    public static void main(String args[]) throws ParseException{
+
+        ValidateFile validateFile= new ValidateFile(System.in);
+         validateFile.Start();
+
+
+    }
+}
+
+PARSER_END(ValidateFile)
+/*
+digraph G1 
+{
+    start -> test;
+    test -> start;
+    test -> finish;
+}*/
+
+SKIP:{
+    " "| "\t"| "\r"
+}
+
+TOKEN:{
+  <DIGRAPH : "digraph">|
+  <NAME: (["a"-"z","A"-"Z"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
+  <OPEN: "{">|
+  <CLOSE:"}">|
+  <LF:"\n">
+
+}
+void Start():{Token name;}{
+  <DIGRAPH> name=<NAME>{
+    System.out.println(name.image);
+  }
+    <LF>
+
+}
+
+void Expression():{}{
+
+    <OPEN>
+}
+/*
+jjtree ValidateFile.jjt
+javacc ValidateFile.jj
+javac *.java
+java ValidateFile
+*/
+
+/*
+void Start(ArrayList tokens):{}
+{
+  Expression(tokens) Start(tokens) | <LF>
+}
+
+void Expression(ArrayList tokens): {Token ident, op;}
+{
+  ident = <IDENTIFIER> op = <OPERATOR> {tokens.add(new Expr(ident.image,op.image));}
+}
+*/
