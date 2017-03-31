@@ -3,11 +3,16 @@ options
     LOOKAHEAD=1;
 }
 PARSER_BEGIN(ValidateFile)
+
+import java.util.*;
+
 public class ValidateFile{
     public static void main(String args[]) throws ParseException{
 
+
         ValidateFile validateFile= new ValidateFile(System.in);
-         validateFile.Start();
+        ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
+         validateFile.Start(tokens);
 
 
     }
@@ -20,7 +25,9 @@ digraph G1
     start -> test;
     test -> start;
     test -> finish;
-}*/
+}
+
+*/
 
 SKIP:{
     " "| "\t"| "\r"
@@ -29,22 +36,60 @@ SKIP:{
 TOKEN:{
   <DIGRAPH : "digraph">|
   <NAME: (["a"-"z","A"-"Z"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
+  <INTEGER :["0"-"9"]>|
+  <OPENFIELD: "[">|
+  <CLOSEFIELD: "]">|
   <OPEN: "{">|
   <CLOSE:"}">|
-  <LF:"\n">
+  <EQUALS:"=">|
+  <QUOTATION:"1">|          
+  <ARROW : "->">|
+  <SEMICOLON: ";">|
+  <LF:"\n">|
 
 }
-void Start():{Token name;}{
+void Start(ArrayList tokens):{Token name;}{
   <DIGRAPH> name=<NAME>{
     System.out.println(name.image);
+    tokens.add(new ElementGraph(name.image));
   }
-    <LF>
+  <OPEN>
+NodeGraph(tokens)
 
+}/*
+digraph G2
+{
+    a [label= hello]-> b [label= hello ];
+    a -> c [label="world"];
+    c -> d; 
+    b -> c; 
+    d -> a;
+    b [label="this is b"];
+    c [peripheries=2];
 }
 
-void Expression():{}{
+digraph G3{a [label= hello]-> b [label= hello ];  a [label= hello]-> b [label= hello ];}
 
-    <OPEN>
+digraph G4{a -> b [label= hello ];  a [label= hello]-> b [label= hello ];}
+
+*/
+
+void NodeGraph(ArrayList tokens):{Token name1, field1, charat1, name2, field2, charat2;}{
+     
+    name1=<NAME>(<OPENFIELD> field1=<NAME> <EQUALS> (charat1=<NAME>|charat1=<INTEGER>) <CLOSEFIELD>) 
+    <ARROW> 
+    name2=<NAME>(<OPENFIELD> field2=<NAME> <EQUALS> (charat2=<NAME>|charat2=<INTEGER>) <CLOSEFIELD>) <SEMICOLON>
+
+         {  
+            tokens.add(new ElementGraph(name1.image, field1.image, charat1.image, name2.image, field2.image, charat2.image));
+         }
+
+   (end()|NodeGraph(tokens))
+}
+
+
+void end():{}{
+    <CLOSE><LF>
 }
 /*
 jjtree ValidateFile.jjt
@@ -53,14 +98,3 @@ javac *.java
 java ValidateFile
 */
 
-/*
-void Start(ArrayList tokens):{}
-{
-  Expression(tokens) Start(tokens) | <LF>
-}
-
-void Expression(ArrayList tokens): {Token ident, op;}
-{
-  ident = <IDENTIFIER> op = <OPERATOR> {tokens.add(new Expr(ident.image,op.image));}
-}
-*/

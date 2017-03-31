@@ -1,4 +1,4 @@
-// GraphViz.java - a simple API to call dot from Java programs
+package Gui;// GraphViz.java - a simple API to call dot from Java programs
 
 /*$Id$*/
 /*
@@ -73,7 +73,7 @@ import java.util.Properties;
  * @author Laszlo Szathmary (
  *         <a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  */
-public class GraphViz {
+class GraphViz {
 	/**
 	 * Detects the client's operating system.
 	 */
