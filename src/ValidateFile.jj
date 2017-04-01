@@ -1,0 +1,135 @@
+options
+{
+    LOOKAHEAD=1;
+}
+PARSER_BEGIN(ValidateFile)
+
+import java.util.*;
+
+public class ValidateFile{
+   
+   public static void main(String args[]) throws ParseException{
+
+        ValidateFile validateFile= new ValidateFile(System.in);
+        ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
+         validateFile.Start(tokens);
+    }
+}
+
+PARSER_END(ValidateFile)
+/*
+digraph G1 
+{
+    start -> test;
+    test -> start;
+    test -> finish;
+}
+
+*/
+
+SKIP:{
+    " "| "\t"| "\r"
+}
+
+TOKEN:{
+  <DIGRAPH : "digraph">|
+  <LABEL :"label">|
+  <PERIPHE :"peripheries">|
+  <NAME: (["a"-"z","A"-"Z"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
+  <FINAL_STATE :"2">|
+  <INTEGER :["0"-"9"]>|
+  <OPENFIELD: "[">|
+  <CLOSEFIELD: "]">|
+  <OPEN: "{">|
+  <CLOSE:"}">|
+  <EQUALS:"=">|        
+  <ARROW : "->">|
+  <SEMICOLON: ";">|
+  <LF:"\n">
+
+}
+void Start(ArrayList tokens):{Token name;}{
+  <DIGRAPH> name=<NAME>{
+    System.out.println(name.image);
+    //tokens.add(new ElementGraph(name.image));
+  }
+  <OPEN>
+NodeGraph(tokens)
+
+}/*
+digraph G2
+{
+    a > b [label= hello ];
+    a -> c [label="world"];
+    c -> d; 
+    b -> c; 
+    d -> a;
+    b [label="this"];
+    c [peripheries=2];
+}
+
+digraph G3{a -> b [label = hello ];  a -> b [label= hello ];}
+
+digraph G4{
+a -> b [label = hello ];
+ a [label= he];
+ }
+digraph G5{a [label= he];}
+
+*/
+
+void NodeGraph(ArrayList tokens):{Token name1, field1, charat1, name2, field2, charat2;}{
+     {
+         field1=null;
+         charat1=null;
+
+         name2=null;
+         field2=null; 
+         charat2=null;
+
+     }
+    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)
+                                   |(field1=<LABEL>   <EQUALS> charat1=<NAME>)    )
+                     <CLOSEFIELD>)
+         
+
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> field2=<LABEL> <EQUALS> charat2=<NAME> <CLOSEFIELD>) ))
+               < SEMICOLON>
+
+
+
+         {
+                    if(name2!=null){
+                        if(field2!=null){
+                         tokens.add(new ElementGraph(name1.image,null, null, name2.image, field2.image, charat2.image));
+                        }else
+                             tokens.add(new ElementGraph(name1.image,null, null, name2.image, null,null));
+                     }
+                    else
+                         tokens.add(new ElementGraph(name1.image, field1.image, charat1.image, null, null, null));
+
+             System.out.println(name1);
+         }
+  ( end()| NodeGraph(tokens))
+}
+
+void end():{}{
+
+    <CLOSE><LF>
+}
+
+/* #### NAO APAGAR  ###################################
+
+DEL Parse*
+DEL Node*
+DEL *ValidateFile*.java
+DEL Simple*
+DEL *Token*
+DEL *.class
+
+
+javacc ValidateFile.jj
+javac *.java
+java ValidateFile
+*/
+
