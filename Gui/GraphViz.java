@@ -73,7 +73,7 @@ import java.io.InputStreamReader;
  * @version v0.1, 2003/12/04 (December) -- first release
  * @author  Laszlo Szathmary (<a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  */
-class GraphViz
+public class GraphViz
 {
     /**
      * Detects the client's operating system.
