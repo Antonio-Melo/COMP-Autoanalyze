@@ -73,7 +73,7 @@ import java.io.InputStreamReader;
  * @version v0.1, 2003/12/04 (December) -- first release
  * @author  Laszlo Szathmary (<a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  */
-class GraphViz
+public class GraphViz
 {
     /**
      * Detects the client's operating system.
@@ -139,8 +139,10 @@ class GraphViz
      */
     public GraphViz() {
         if (GraphViz.osName.contains("Windows")) {
-            this.tempDir = "c:/Users/Maria/Documents/temp";
-            this.executable = "c:/Users/Maria/Documents/graphviz-2.38/release/bin/dot.exe";
+           // this.tempDir = "c:/Users/Maria/Documents/temp";
+            this.tempDir = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot";
+           // this.executable = "c:/Users/Maria/Documents/graphviz-2.38/release/bin/dot.exe";
+            this.executable = "C:/Program Files (x86)/Graphviz2.38/bin";
         } else if (GraphViz.osName.equals("MacOSX")) {
             this.tempDir = "/tmp";
             this.executable = "/usr/local/bin/dot";
@@ -207,7 +209,7 @@ class GraphViz
      * 	<li>twopi</li>
      * 	<li>circo</li>
      * </ul>
-     * @see http://www.graphviz.org under the Roadmap title
+     //* @see http://www.graphviz.org under the Roadmap title
      * @return A byte array containing the image of the graph.
      */
     public byte[] getGraph(String dot_source, String type, String representationType)

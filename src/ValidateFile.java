@@ -6,6 +6,7 @@ public class ValidateFile implements ValidateFileConstants {
 
    public static void main(String args[]) throws ParseException{
 
+
         ValidateFile validateFile= new ValidateFile(System.in);
         ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
          validateFile.Start(tokens);
@@ -14,8 +15,6 @@ public class ValidateFile implements ValidateFileConstants {
   static final public void Start(ArrayList tokens) throws ParseException {Token name;
     jj_consume_token(DIGRAPH);
     name = jj_consume_token(NAME);
-System.out.println(name.image);
-    //tokens.add(new ElementGraph(name.image));
 
     jj_consume_token(OPEN);
     NodeGraph(tokens);
@@ -24,7 +23,7 @@ System.out.println(name.image);
 /*
 digraph G2
 {
-    a > b [label= hello ];
+    a -> b [label= hello ];
     a -> c [label="world"];
     c -> d; 
     b -> c; 
@@ -35,7 +34,10 @@ digraph G2
 
 digraph G3{a -> b [label = hello ];  a -> b [label= hello ];}
 
-digraph G4{a -> b [label = hello ];  a [label= he];}
+digraph G4{
+a -> b [label = hello ];
+ a [label= he];
+ }
 digraph G5{a [label= he];}
 
 */
@@ -116,7 +118,15 @@ if(name2!=null){
 
   static final public void end() throws ParseException {
     jj_consume_token(CLOSE);
-    jj_consume_token(LF);
+    switch ((jj_ntk==-1)?jj_ntk_f():jj_ntk) {
+    case LF:{
+      jj_consume_token(LF);
+      break;
+      }
+    default:
+      jj_la1[3] = jj_gen;
+      ;
+    }
   }
 
   static private boolean jj_initialized_once = false;
@@ -129,13 +139,13 @@ if(name2!=null){
   static public Token jj_nt;
   static private int jj_ntk;
   static private int jj_gen;
-  static final private int[] jj_la1 = new int[3];
+  static final private int[] jj_la1 = new int[4];
   static private int[] jj_la1_0;
   static {
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0x60,0x8400,0x2080,};
+      jj_la1_0 = new int[] {0x60,0x8400,0x2080,0x20000,};
    }
 
   /** Constructor with InputStream. */
@@ -156,7 +166,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -170,7 +180,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   /** Constructor. */
@@ -187,7 +197,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -197,7 +207,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   /** Constructor with generated Token Manager. */
@@ -213,7 +223,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -222,7 +232,7 @@ if(name2!=null){
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
   }
 
   static private Token jj_consume_token(int kind) throws ParseException {
@@ -278,7 +288,7 @@ if(name2!=null){
       la1tokens[jj_kind] = true;
       jj_kind = -1;
     }
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 4; i++) {
       if (jj_la1[i] == jj_gen) {
         for (int j = 0; j < 32; j++) {
           if ((jj_la1_0[i] & (1<<j)) != 0) {

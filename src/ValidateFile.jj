@@ -10,6 +10,7 @@ public class ValidateFile{
    
    public static void main(String args[]) throws ParseException{
 
+
         ValidateFile validateFile= new ValidateFile(System.in);
         ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
          validateFile.Start(tokens);
@@ -18,12 +19,12 @@ public class ValidateFile{
 
 PARSER_END(ValidateFile)
 /*
-digraph G1 
-{
-    start -> test;
-    test -> start;
-    test -> finish;
-}
+digraph G1
+ {
+     start -> test;
+     test -> start;
+     test -> finish;
+ }
 
 */
 
@@ -50,16 +51,17 @@ TOKEN:{
 }
 void Start(ArrayList tokens):{Token name;}{
   <DIGRAPH> name=<NAME>{
-    System.out.println(name.image);
-    //tokens.add(new ElementGraph(name.image));
+   // System.out.println(name.image);
+   // tokens.add(new ElementGraph(name.image));
   }
   <OPEN>
 NodeGraph(tokens)
 
-}/*
+}
+/*
 digraph G2
 {
-    a > b [label= hello ];
+    a -> b [label= hello ];
     a -> c [label="world"];
     c -> d; 
     b -> c; 
@@ -86,15 +88,14 @@ void NodeGraph(ArrayList tokens):{Token name1, field1, charat1, name2, field2, c
          name2=null;
          field2=null; 
          charat2=null;
-
      }
-    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)
-                                   |(field1=<LABEL>   <EQUALS> charat1=<NAME>)    )
+    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)//     c [peripheries=2];
+                                   |(field1=<LABEL>   <EQUALS> charat1=<NAME>)    )// a [label= he];
                      <CLOSEFIELD>)
-         
 
-                |(<ARROW>  name2=<NAME>(<OPENFIELD> field2=<LABEL> <EQUALS> charat2=<NAME> <CLOSEFIELD>) ))
-               < SEMICOLON>
+
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> field2=<LABEL> <EQUALS> charat2=<NAME> <CLOSEFIELD>) ))//-> b [label = hello ]
+               < SEMICOLON>//;
 
 
 
@@ -115,7 +116,8 @@ void NodeGraph(ArrayList tokens):{Token name1, field1, charat1, name2, field2, c
 
 void end():{}{
 
-    <CLOSE><LF>
+    <CLOSE>(<LF>)?
+
 }
 
 /* #### NAO APAGAR  ###################################

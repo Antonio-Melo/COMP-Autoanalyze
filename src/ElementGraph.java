@@ -9,7 +9,19 @@ public class ElementGraph {
     private String field2;
     private String characteristic2;
 
-    private Boolean finalState = false;
+    /*
+
+    digraph G2
+{
+    a -> b [label= hello ];
+    a -> c [label="world"];
+    c -> d;
+    b -> c;
+    d -> a;
+    b [label=this];
+    c [peripheries=2];
+}*/
+
 /*
     public ElementGraph(String nameGraph) {
         this.element1 = nameGraph;
@@ -33,28 +45,7 @@ public class ElementGraph {
         this.field2 = field2;
         this.characteristic2 = charact2;
 
-        if (field1 != null) {
-            if (field1.equals("peripheries")) {
-                this.finalState = true;
-            }
-        }
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if(obj instanceof ElementGraph)
-            if(this.getElement1().equals(((ElementGraph) obj).element1))
-                return true;
-            else
-                return  false;
-        else
-            return  false;
-    }
-
-    public void setState(boolean value) {
-        this.finalState = value;
-    }
-
 
     public String getElement1() {
         return element1;
@@ -76,19 +67,25 @@ public class ElementGraph {
         return field2;
     }
 
-    public Boolean getFinalState() {
-        return finalState;
-    }
-
     public String getCharacteristic2() {
         return characteristic2;
     }
 
+    @Override
+    public String toString() {
+        return "ele1='" + element1 + '\'' +
+                ", field1='" + field1 + '\'' +
+                ", chara1='" + characteristic1 + '\'' +
+                ", ele2='" + element2 + '\'' +
+                ", field2='" + field2 + '\'' +
+                ", chara2='" + characteristic2;
+    }
+
+
     public static void main(String args[]) {
-        System.out.println("ElementGraph");
 
     }
-/*
+    /*
 javac ElementGraph.java
 
  */

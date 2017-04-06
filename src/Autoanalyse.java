@@ -1,4 +1,3 @@
-package src;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,11 +8,12 @@ public class Autoanalyse {
     private String path;
     private String operation;
     private ArrayList<ElementGraph> tokens;
-    private HashMap<String, Boolean> stateElement;
-    private HashMap<String, Boolean> stateResult;
-
+    private ArrayList<String> nodes;
+    private ArrayList<String> stateEndNode;
 
     public Autoanalyse(String args[]) {
+
+
 
      /*   if (args.length != 2) {
             System.out.println("Requerires <path> <opeartion>");
@@ -21,12 +21,13 @@ public class Autoanalyse {
         this.path = args[0];
         this.operation = args[1];
         */
-        tokens = new ArrayList<ElementGraph>();
-        stateElement = new HashMap<>();
-        stateResult = new HashMap<>();
+
+        tokens = new ArrayList<>();
+        stateEndNode = new ArrayList<>();
+        nodes = new ArrayList<>();
 
 
-       /* try {
+        try {
             ValidateFile validateFile = new ValidateFile(System.in);
             validateFile.Start(tokens);
 
@@ -34,23 +35,9 @@ public class Autoanalyse {
             System.out.println("Invalid REGEX!\n" + e.getMessage());
             System.exit(1);
         }
-        */
-
-     /*   ElementGraph E1 = new ElementGraph("name1", null, null, "name2", "label", "bold");
-        ElementGraph E2 = new ElementGraph("name2", null, null, "name3", "label", "bold");
-        ElementGraph E3 = new ElementGraph("name3", "peripheries", "2", null, null, null);
-        ElementGraph E4 = new ElementGraph("name3", null, null, "name2", "label", "bold");
-
-
-        E1.getFinalState();
-        tokens.add(E1);
-        tokens.add(E2);
-        tokens.add(E3);
-        tokens.add(E4);*/
-
 
         this.state();
-
+        this.nodesGraph();
         this.complement();
     }
 
@@ -60,39 +47,71 @@ public class Autoanalyse {
     }
 
     public void state() {
+        // System.out.println("tokens size" + tokens.size());
 
         for (ElementGraph elem : tokens) {
-            boolean finalState = false;
-
-            for (ElementGraph elemIn : tokens) {
-
-                if (elem.equals(elemIn))
-                    finalState = finalState || elemIn.getFinalState();
-            }
-
-            elem.setState(finalState);
-             System.out.println("result" + elem.getElement1() + finalState);
-            stateElement.put(elem.getElement1(), finalState);
-
+            if (elem.getElement2() == null)
+                if (elem.getField1().equals("peripheries") && elem.getCharacteristic1().equals("2"))
+                    stateEndNode.add(elem.getElement1());
         }
-        System.out.println(stateElement.size());
 
+    /*    for (String node : stateEndNode) {
+            System.out.println(node);
+        }*/
+        this.nodesGraph();
     }
 
-    public void complement(){
+    public void nodesGraph() {
 
-        Set<String> chaves = stateElement.keySet();
-        for (String chave : chaves){
+        for (ElementGraph elem : tokens) {
 
-            Boolean result =  ! stateElement.get(chave);
-            stateResult.put(chave,result);
 
-            System.out.println("result" + chave +  result);
+            if (!nodes.contains(elem.getElement1())) {
+                nodes.add(elem.getElement1());
+            }
+            if (elem.getElement2() != null)
+                if (!nodes.contains(elem.getElement2())) {
+                    nodes.add(elem.getElement2());
+                }
         }
+       /* for (String node : nodes) {
+            System.out.println("nodes Graph-> " + node);
+        }
+        */
+    }
+
+
+    public ArrayList<ElementGraph> complement() {
+
+        ArrayList<ElementGraph> result = new ArrayList<ElementGraph>();
+
+        for (ElementGraph elem : tokens) {
+            if (elem.getElement2() != null) {
+                result.add(elem);
+
+            } else if (elem.getField1() != null)
+                if (!elem.getField1().equals("peripheries") || !elem.getCharacteristic1().equals("2")) {
+                    result.add(elem);
+                }
+        }
+
+        for (String node : nodes) {
+            if (!stateEndNode.contains(node))
+                result.add(new ElementGraph(node, "peripheries", "2", null, null, null));
+
+        }
+
+        for (ElementGraph node : result) {
+            System.out.println("nodes Graph-> " + node);
+        }
+
+        return result;
     }
 }
 
+
 /* #### NAO APAGAR  ###################################
+digraph G3{a -> b [label = hello ];  a -> c [label= hello ]; a[peripheries=2];}
 
 javac Autoanalyse.java
 java Autoanalyse
