@@ -1,7 +1,9 @@
-package src.logic;
+package logic;
 
 import java.io.File;
-import src.Gui.*;
+
+import Gui.GraphViz;
+import Gui.*;
 
 public class DotConvert 
 {

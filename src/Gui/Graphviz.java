@@ -1,4 +1,4 @@
-package src.Gui;
+package Gui;
 // GraphViz.java - a simple API to call dot from Java programs
 
 /*$Id$*/
@@ -73,7 +73,7 @@ import java.io.InputStreamReader;
  * @version v0.1, 2003/12/04 (December) -- first release
  * @author  Laszlo Szathmary (<a href="jabba.laci@gmail.com">jabba.laci@gmail.com</a>)
  */
-public class GraphViz
+class GraphViz
 {
     /**
      * Detects the client's operating system.
@@ -271,7 +271,7 @@ public class GraphViz
      * 	<li>twopi</li>
      * 	<li>circo</li>
      * </ul>
-     * @see http://www.graphviz.org under the Roadmap title
+     //* @see http://www.graphviz.org under the Roadmap title
      * @return The image of the graph in .gif format.
      */
     private byte[] get_img_stream(File dot, String type, String representationType)
