@@ -46,7 +46,8 @@ public class Autoanalyse {
 
         this.state();
         this.nodesGraph();
-        this.complement();
+
+        this.outPutResult(this.complement());
     }
 
     public static void main(String args[]) {
@@ -115,35 +116,35 @@ public class Autoanalyse {
 
         return result;
     }
-    
-    public void outPutResult(ArrayList<ElementGraph> result){
-    	Path f = Paths.get("output.dot");
-    	List<String> lines = new ArrayList<String>(); 
-    	
-    	lines.add("digraph OUT {");
-    	for(ElementGraph node: result){
-    		String line = new String(node.getElement1());
-    		if(node.getElement2() == null){
-    			if(node.getField1() != null && node.getCharacteristic1() != null){
-    				line +=" [ "+ node.getField1() + "="+ node.getCharacteristic1()+ " ];";
-    			}
-    			lines.add(line);
-    		}else{
-    			line += " -> " + node.getElement2();
-    			if(node.getField2() != null && node.getCharacteristic2() != null){
-    				line +=" [ "+ node.getField2() + "="+ node.getCharacteristic2()+ " ];";
-    			}
-    			lines.add(line);
-    		}
-    	}
-    	lines.add("}");
-    	
-    	try {
-			Files.write(f,lines,Charset.forName("UTF-8"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+
+    public void outPutResult(ArrayList<ElementGraph> result) {
+        Path f = Paths.get("output.dot");
+        List<String> lines = new ArrayList<String>();
+
+        lines.add("digraph OUT {");
+        for (ElementGraph node : result) {
+            String line = new String(node.getElement1());
+            if (node.getElement2() == null) {
+                if (node.getField1() != null && node.getCharacteristic1() != null) {
+                    line += " [" + node.getField1() + "=" + node.getCharacteristic1() + "];";
+                }
+                lines.add(line);
+            } else {
+                line += " -> " + node.getElement2();
+                if (node.getField2() != null && node.getCharacteristic2() != null) {
+                    line += " [" + node.getField2() + "=" + node.getCharacteristic2() + "];";
+                }
+                lines.add(line);
+            }
+        }
+        lines.add("}");
+
+        try {
+            Files.write(f, lines, Charset.forName("UTF-8"));
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
 
