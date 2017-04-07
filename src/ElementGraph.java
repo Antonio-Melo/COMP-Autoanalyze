@@ -1,4 +1,4 @@
-
+package src;
 public class ElementGraph {
 
     private String element1;
