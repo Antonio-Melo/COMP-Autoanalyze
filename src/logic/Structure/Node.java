@@ -4,8 +4,7 @@ import java.util.*;
 
 public class Node {
     private String name;
-    private String field;
-    private String charat;
+    private String label;
     private ArrayList<Edge> edges;
     private boolean stateEnd = false;
 
@@ -14,8 +13,8 @@ public class Node {
         edges = new ArrayList<>();
     }
 
-    public void addEdge(Node dest, String field, String charat) {
-        edges.add(new Edge(this, dest, field, charat));
+    public void addEdge(Node dest, String label) {
+        edges.add(new Edge(this, dest, label));
     }
 
     public void addEdge(Node dest) {
@@ -31,9 +30,23 @@ public class Node {
         if(field.equals("peripheries")&& charat.equals("2"))
             setStateEnd(true);
         else {
-            this.field = field;
-            this.charat = charat;
+            this.label = label;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Node node = (Node) o;
+
+        return name != null ? name.equals(node.name) : node.name == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return name != null ? name.hashCode() : 0;
     }
 
     public String getName() {
@@ -44,13 +57,10 @@ public class Node {
         return stateEnd;
     }
 
-    public String getField() {
-        return field;
+    public String getLabel() {
+        return label;
     }
 
-    public String getCharat() {
-        return charat;
-    }
 
     public ArrayList<Edge> getEdges() {
         return edges;

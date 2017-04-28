@@ -36,6 +36,22 @@ public class Graph {
         } else return null;
     }
 
+    public ArrayList<Edge> getEdges(){
+
+        ArrayList<Edge> edgesGraph = new ArrayList<>();
+
+        for (Node node : getNodes()) {
+            ArrayList<Edge> edgeNode = node.getEdges();
+
+            for (Edge edge : edgeNode) {
+                edgesGraph.add(edge);
+            }
+        }
+
+        return edgesGraph;
+
+    }
+
 
     public static void main(String args[]) {
 

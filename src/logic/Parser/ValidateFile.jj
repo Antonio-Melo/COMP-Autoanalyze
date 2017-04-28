@@ -69,7 +69,7 @@ NodeGraph(graph)
 digraph G2
 {
     a -> b [label= hello ];
-    a -> c [label="world"];
+    a -> c [label=world];
     c -> d; 
     b -> c; 
     d -> a;
@@ -87,14 +87,14 @@ digraph G5{a [label= he];}
 
 */
 
-void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, field2, charat2;}{
+void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
      {
          field1=null;
          charat1=null;
 
          name2=null;
-         field2=null; 
-         charat2=null;
+         labelEdge=null;
+
          System.out.println(graph.name);
      }
     name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)//     c [peripheries=2];
@@ -102,7 +102,7 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, field2, charat
                      <CLOSEFIELD>)
 
 
-                |(<ARROW>  name2=<NAME>(<OPENFIELD> field2=<LABEL> <EQUALS> charat2=<NAME> <CLOSEFIELD>) ))//-> b [label = hello ]
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS> labelEdge=<NAME> <CLOSEFIELD>) ))//-> b [label = hello ]
                < SEMICOLON>//;
          {
          Node nodecopi = new Node(name1.image);
@@ -119,8 +119,8 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, field2, charat
 
                    if(name2!=null){
                     Node dest = new Node(name2.image);
-                        if(field2!=null){
-                                 node.addEdge(dest,field2.image, charat2.image);
+                        if(labelEdge!=null){
+                                 node.addEdge(dest,labelEdge.image);
                         }else
                              node.addEdge(dest);
                      }

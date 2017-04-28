@@ -1,10 +1,10 @@
 digraph G2
-{
-    a -> b [label="hello"];
-    a -> c [label="world"];
-    c -> d; 
-    b -> c; 
-    d -> a;
-    b [label="this is b"];
-    c [peripheries=2];
-}
+ {
+     a -> b [label="hello"];
+     a -> c [label="world"];
+     c -> d;
+     b -> c;
+     d -> a;
+     b [label="this is b"];
+     c [peripheries=2];
+ }
