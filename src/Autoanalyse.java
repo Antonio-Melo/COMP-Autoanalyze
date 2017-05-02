@@ -3,6 +3,8 @@ import logic.Operations.Complement;
 import logic.Parser.ValidateFile;
 import logic.Structure.Graph;
 
+import java.io.*;
+
 
 public class Autoanalyse {
 
@@ -13,17 +15,19 @@ public class Autoanalyse {
     public Autoanalyse(String args[]) {
 
 
-        if (args.length != 2) {
+      /*  if (args.length != 2) {
             System.out.println("Requerires <path> <opeartion>");
         }
         this.path = args[0];
         this.operation = args[1];
+        */
+
 
         graph = new Graph();
-
+        String fileRead = readFile("../dot/example2.dot");
 
         try {
-            ValidateFile validateFile = new ValidateFile(System.in);
+            ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
             validateFile.Start(graph);
 
         } catch (Throwable e) {
@@ -33,7 +37,28 @@ public class Autoanalyse {
 
         Graph graphResult = Complement.complement(graph);
 
-       // this.outPutResult(this.complement());
+        // this.outPutResult(this.complement());
+    }
+
+    public String readFile(String path){
+
+        BufferedReader br = null;
+        String result = "";
+        try {
+            br = new BufferedReader(new FileReader(path));
+            String line = br.readLine();
+
+            while (line != null) {
+                result += line;
+                line = br.readLine();
+            }
+            br.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(result);
+        return result;
     }
 
     public static void main(String args[]) {
@@ -135,7 +160,7 @@ public class Autoanalyse {
             e.printStackTrace();
         }
             */
-   }
+}
 
 
 

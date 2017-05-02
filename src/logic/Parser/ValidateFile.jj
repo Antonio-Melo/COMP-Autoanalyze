@@ -5,22 +5,21 @@ options
 PARSER_BEGIN(ValidateFile)
 
 package logic.Parser;
-
 import java.util.*;
 import logic.Structure.Graph;
 import logic.Structure.Node;
 
-public class ValidateFile{
-   
-   public static void main(String args[]) throws ParseException{
-
-
-        ValidateFile validateFile= new ValidateFile(System.in);
-        Graph graph = new Graph();
-
-       // ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
-         validateFile.Start(graph);
-    }
+public class ValidateFile
+{
+  public static void main(String args []) throws ParseException
+  {
+    
+   ValidateFile validateFile = new ValidateFile(new java.io.StringReader(args [0]));
+   // ValidateFile validateFile = new ValidateFile(System.in);
+    Graph graph = new Graph();
+    // ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
+    validateFile.Start(graph);
+  }
 }
 
 PARSER_END(ValidateFile)
@@ -52,18 +51,16 @@ TOKEN:{
   <EQUALS:"=">|        
   <ARROW : "->">|
   <SEMICOLON: ";">|
-  <LF:"\n">
-
+  <QUOTE: "\'">
 }
 void Start(Graph graph):{Token name;}{
   <DIGRAPH> name=<NAME>{
   graph.setName(name.image);
-   // System.out.println(name.image);
+    System.out.println(name.image);
    // tokens.add(new ElementGraph(name.image));
   }
   <OPEN>
 NodeGraph(graph)
-
 }
 /*
 digraph G2
@@ -94,16 +91,14 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
 
          name2=null;
          labelEdge=null;
-
-         System.out.println(graph.name);
      }
     name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)//     c [peripheries=2];
                                    |(field1=<LABEL>   <EQUALS> charat1=<NAME>)    )// a [label= he];
                      <CLOSEFIELD>)
 
 
-                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS> labelEdge=<NAME> <CLOSEFIELD>) ))//-> b [label = hello ]
-               < SEMICOLON>//;
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS>labelEdge=<NAME> <CLOSEFIELD>)? ))//-> b [label = hello ]
+               < SEMICOLON>//;                                   label= "this is b"
          {
          Node nodecopi = new Node(name1.image);
          Node node;
@@ -134,24 +129,13 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
 
 void end():{}{
 
-    <CLOSE>(<LF>)?
+    <CLOSE>
 
 }
 
 /* #### NAO APAGAR  ###################################
 
-DEL Parse*
-DEL Node*
-DEL *ValidateFile*.java
-DEL Simple*
-DEL *Token*
-DEL *.class
-
-
-javacc ValidateFile.jj
-javac *.java
-java ValidateFile
-
+java logic.Parser.ValidateFile "digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}"
 
 */
 

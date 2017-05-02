@@ -1,0 +1,7 @@
+digraph G1 
+{
+    start -> test;
+    test -> start;
+    finish [peripheries=2];
+    test -> finish;
+}

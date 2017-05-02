@@ -37,7 +37,7 @@ public interface ValidateFileConstants {
   /** RegularExpression Id. */
   int SEMICOLON = 16;
   /** RegularExpression Id. */
-  int LF = 17;
+  int QUOTE = 17;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -61,7 +61,7 @@ public interface ValidateFileConstants {
     "\"=\"",
     "\"->\"",
     "\";\"",
-    "\"\\n\"",
+    "\"\\\'\"",
   };
 
 }
