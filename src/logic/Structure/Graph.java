@@ -71,6 +71,24 @@ public class Graph {
     }
 
     public ArrayList<Node> getNodes() {
-        return nodes;
+    	return nodes;
+    }
+
+    public ArrayList<Edge> getEdges()
+    {
+
+    	ArrayList<Edge> edgesGraph = new ArrayList<>();
+
+    	for (Node node : getNodes()) 
+    	{
+    		ArrayList<Edge> edgeNode = node.getEdges();
+
+    		for (Edge edge : edgeNode) 
+    		{
+    			edgesGraph.add(edge);
+    		}
+    	}
+
+    	return edgesGraph;
     }
 }
