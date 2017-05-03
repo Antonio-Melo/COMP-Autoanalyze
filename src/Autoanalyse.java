@@ -1,9 +1,17 @@
 
 import logic.Operations.Complement;
 import logic.Parser.ValidateFile;
+import logic.Structure.Edge;
 import logic.Structure.Graph;
+import logic.Structure.Node;
 
 import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Autoanalyse {
@@ -130,24 +138,30 @@ public class Autoanalyse {
         return result;
     }
     */
-/*
-    public void outPutResult(ArrayList<ElementGraph> result) {
+
+    public void outPutResult(ArrayList<Node> result) {
         Path f = Paths.get("output.dot");
         List<String> lines = new ArrayList<String>();
 
         lines.add("digraph OUT {");
-        for (ElementGraph node : result) {
-            String line = new String(node.getElement1());
-            if (node.getElement2() == null) {
-                if (node.getField1() != null && node.getCharacteristic1() != null) {
-                    line += " [" + node.getField1() + "=" + node.getCharacteristic1() + "];";
+        for(Node node : result){
+            ArrayList<Edge> edges =  node.getEdges();
+            String line;
+            if(!edges.isEmpty()){
+                for(Edge edge : edges){
+                    line = new String(edge.getSource()+" -> "+ edge.getDest());
+                    if(edge.getLabel() != null){
+                        line += " [label="+edge.getLabel()+"];";
+                    }
+                    lines.add(line);
                 }
+            }
+            if(node.getStateEnd()){
+                line = new String(node.getName() + " [peripheries=2];");
                 lines.add(line);
-            } else {
-                line += " -> " + node.getElement2();
-                if (node.getField2() != null && node.getCharacteristic2() != null) {
-                    line += " [" + node.getField2() + "=" + node.getCharacteristic2() + "];";
-                }
+            }
+            if(node.getLabel() != null){
+                line = new String(node.getName() + " [label=+"+ node.getLabel()+"];");
                 lines.add(line);
             }
         }
@@ -159,7 +173,7 @@ public class Autoanalyse {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-            */
+    }
 }
 
 

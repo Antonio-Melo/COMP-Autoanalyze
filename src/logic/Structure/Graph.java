@@ -73,7 +73,7 @@ public class Graph {
     public ArrayList<Node> getNodes() {
     	return nodes;
     }
-
+/*
     public ArrayList<Edge> getEdges()
     {
 
@@ -90,5 +90,5 @@ public class Graph {
     	}
 
     	return edgesGraph;
-    }
+    }*/
 }
