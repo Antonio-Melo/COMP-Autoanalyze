@@ -35,7 +35,7 @@ digraph G2
     c -> d; 
     b -> c; 
     d -> a;
-    b [label="this"];
+    b [label='this'];
     c [peripheries=2];
 }
 
@@ -63,15 +63,41 @@ digraph G5{a [label= he];}
       case PERIPHE:
         field1 = jj_consume_token(PERIPHE);
         jj_consume_token(EQUALS);
-        charat1 = jj_consume_token(FINAL_STATE);
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case QUOTE:
+          jj_consume_token(QUOTE);
+          charat1 = jj_consume_token(FINAL_STATE);
+          jj_consume_token(QUOTE);
+          break;
+        case FINAL_STATE:
+          charat1 = jj_consume_token(FINAL_STATE);
+          break;
+        default:
+          jj_la1[0] = jj_gen;
+          jj_consume_token(-1);
+          throw new ParseException();
+        }
         break;
       case LABEL:
         field1 = jj_consume_token(LABEL);
         jj_consume_token(EQUALS);
-        charat1 = jj_consume_token(NAME);
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case QUOTE:
+          jj_consume_token(QUOTE);
+          charat1 = jj_consume_token(NAME);
+          jj_consume_token(QUOTE);
+          break;
+        case NAME:
+          charat1 = jj_consume_token(NAME);
+          break;
+        default:
+          jj_la1[1] = jj_gen;
+          jj_consume_token(-1);
+          throw new ParseException();
+        }
         break;
       default:
-        jj_la1[0] = jj_gen;
+        jj_la1[2] = jj_gen;
         jj_consume_token(-1);
         throw new ParseException();
       }
@@ -85,43 +111,54 @@ digraph G5{a [label= he];}
         jj_consume_token(OPENFIELD);
         jj_consume_token(LABEL);
         jj_consume_token(EQUALS);
-        labelEdge = jj_consume_token(NAME);
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case QUOTE:
+          jj_consume_token(QUOTE);
+          labelEdge = jj_consume_token(NAME);
+          jj_consume_token(QUOTE);
+          break;
+        case NAME:
+          labelEdge = jj_consume_token(NAME);
+          break;
+        default:
+          jj_la1[3] = jj_gen;
+          jj_consume_token(-1);
+          throw new ParseException();
+        }
         jj_consume_token(CLOSEFIELD);
         break;
       default:
-        jj_la1[1] = jj_gen;
+        jj_la1[4] = jj_gen;
         ;
       }
       break;
     default:
-      jj_la1[2] = jj_gen;
+      jj_la1[5] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
     jj_consume_token(SEMICOLON);
-         Node nodecopi = new Node(name1.image);
-         Node node;
-         if( graph.existsNode(nodecopi)){
-            node= graph.getNode(name1.image);
+         Node nodecopy = new Node(name1.image);
+         Node node1;
+         if( graph.existsNode(nodecopy)){//exists nodeCopy?
+            node1= graph.getNode(name1.image);
          }else{
-             node = nodecopi;
-             graph.addNode(node);
+             node1 = nodecopy;
+             graph.addNode(node1);
          }
 
-             if(node==null)
-                graph.addNode(node);
+          if(node1==null)
+            graph.addNode(node1);
 
-                   if(name2!=null){
-                    Node dest = new Node(name2.image);
-                        if(labelEdge!=null){
-                                 node.addEdge(dest,labelEdge.image);
-                        }else
-                             node.addEdge(dest);
-                     }
-                    else
-                    node.setFieldCharate(field1.image, charat1.image);
+             if(name2!=null){//hasNode2
+               Node dest = new Node(name2.image);
+                  if(labelEdge!=null){
+                     node1.addEdge(dest,labelEdge.image);
+                  }else
+                     node1.addEdge(dest);
 
-             System.out.println(node.getName());
+             }else
+                 node1.setFieldCharate(field1.image, charat1.image);
     switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
     case CLOSE:
       end();
@@ -130,7 +167,7 @@ digraph G5{a [label= he];}
       NodeGraph(graph);
       break;
     default:
-      jj_la1[3] = jj_gen;
+      jj_la1[6] = jj_gen;
       jj_consume_token(-1);
       throw new ParseException();
     }
@@ -150,13 +187,13 @@ digraph G5{a [label= he];}
   static public Token jj_nt;
   static private int jj_ntk;
   static private int jj_gen;
-  static final private int[] jj_la1 = new int[4];
+  static final private int[] jj_la1 = new int[7];
   static private int[] jj_la1_0;
   static {
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0x60,0x400,0x8400,0x2080,};
+      jj_la1_0 = new int[] {0x20100,0x20080,0x60,0x20080,0x400,0x8400,0x2080,};
    }
 
   /** Constructor with InputStream. */
@@ -177,7 +214,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -191,7 +228,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Constructor. */
@@ -208,7 +245,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -218,7 +255,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Constructor with generated Token Manager. */
@@ -234,7 +271,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -243,7 +280,7 @@ digraph G5{a [label= he];}
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 4; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   static private Token jj_consume_token(int kind) throws ParseException {
@@ -299,7 +336,7 @@ digraph G5{a [label= he];}
       la1tokens[jj_kind] = true;
       jj_kind = -1;
     }
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 7; i++) {
       if (jj_la1[i] == jj_gen) {
         for (int j = 0; j < 32; j++) {
           if ((jj_la1_0[i] & (1<<j)) != 0) {

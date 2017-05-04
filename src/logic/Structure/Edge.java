@@ -36,6 +36,7 @@ public class Edge {
         if(!source.getName().equals(sourceName2))
             return false;
 
+
        if(!dest.getName().equals(destName2)){
            return false;
        }
@@ -65,5 +66,14 @@ public class Edge {
 
     public String getLabel() {
         return label;
+    }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "source=" + source.getName() +
+                ", dest=" + dest.getName() +
+                ", label='" + label + '\'' +
+                '}';
     }
 }

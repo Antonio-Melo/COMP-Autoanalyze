@@ -70,7 +70,7 @@ digraph G2
     c -> d; 
     b -> c; 
     d -> a;
-    b [label="this"];
+    b [label='this'];
     c [peripheries=2];
 }
 
@@ -92,45 +92,42 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
          name2=null;
          labelEdge=null;
      }
-    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> charat1=<FINAL_STATE>)//     c [peripheries=2];
-                                   |(field1=<LABEL>   <EQUALS> charat1=<NAME>)    )// a [label= he];
+    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> ((<QUOTE> charat1=<FINAL_STATE><QUOTE> )|charat1=<FINAL_STATE>))//    c [peripheries=2]; ou c [peripheries='2'];
+                                   |(field1=<LABEL>   <EQUALS> ((<QUOTE> charat1=<NAME><QUOTE>) |charat1=<NAME> ))    )// a [label= he]; ou  a [label='he'];
                      <CLOSEFIELD>)
 
-
-                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS>labelEdge=<NAME> <CLOSEFIELD>)? ))//-> b [label = hello ]
-               < SEMICOLON>//;                                   label= "this is b"
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS>  ((<QUOTE> labelEdge=<NAME><QUOTE>)|labelEdge=<NAME>) <CLOSEFIELD>)? ))//-> b [label = hello ]
+               < SEMICOLON>//;                                   label= 'b'
          {
-         Node nodecopi = new Node(name1.image);
-         Node node;
-         if( graph.existsNode(nodecopi)){
-            node= graph.getNode(name1.image);
+         Node nodecopy = new Node(name1.image);
+         Node node1;
+         if( graph.existsNode(nodecopy)){//exists nodeCopy?
+            node1= graph.getNode(name1.image);
          }else{
-             node = nodecopi;
-             graph.addNode(node);
+             node1 = nodecopy;
+             graph.addNode(node1);
          }
 
-             if(node==null)
-                graph.addNode(node);
+          if(node1==null)
+            graph.addNode(node1);
 
-                   if(name2!=null){
-                    Node dest = new Node(name2.image);
-                        if(labelEdge!=null){
-                                 node.addEdge(dest,labelEdge.image);
-                        }else
-                             node.addEdge(dest);
-                     }
-                    else
-                    node.setFieldCharate(field1.image, charat1.image);
+             if(name2!=null){//hasNode2
+               Node dest = new Node(name2.image);
+                  if(labelEdge!=null){
+                     node1.addEdge(dest,labelEdge.image);
+                  }else
+                     node1.addEdge(dest);
 
-             System.out.println(node.getName());
-         }
+             }else
+                 node1.setFieldCharate(field1.image, charat1.image);
+
+          }
   ( end()| NodeGraph(graph))
 }
 
 void end():{}{
 
     <CLOSE>
-
 }
 
 /* #### NAO APAGAR  ###################################

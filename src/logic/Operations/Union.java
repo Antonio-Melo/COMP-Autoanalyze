@@ -5,8 +5,8 @@ import logic.Structure.Node;
 
 import java.util.ArrayList;
 
-// possível melhoria: aplicar um algoritmo de minimização de estados no final,
-// já que o autómato resultante não estará optimizado 
+/* possível melhoria: aplicar um algoritmo de minimização de estados no final,
+ já que o autómato resultante não estará optimizado */
 
 public class Union 
 {
@@ -41,7 +41,7 @@ public class Union
 			else
 			{
 				if(!graphResult.getEdges().contains(nodeDst2))
-					nodeSrc.addEdge(nodeDst2);
+					nodeSrc2.addEdge(nodeDst2);
 			}
 		}
 		return graphResult;

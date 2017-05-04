@@ -27,11 +27,14 @@ public class Node {
 
     public void setFieldCharate(String field, String charat) {
 
-        if(field.equals("peripheries")&& charat.equals("2"))
+
+        if (field.equals("peripheries") && charat.equals("2"))
             setStateEnd(true);
         else {
-            this.label = label;
+            this.label = charat;
         }
+
+
     }
 
     @Override
@@ -59,6 +62,11 @@ public class Node {
 
     public String getLabel() {
         return label;
+    }
+
+    public Node clone(){
+
+        return new Node(name);
     }
 
 

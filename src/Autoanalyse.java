@@ -1,5 +1,6 @@
 
 import logic.Operations.Complement;
+import logic.Operations.Intersection;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
 import logic.Structure.Graph;
@@ -43,9 +44,9 @@ public class Autoanalyse {
             System.exit(1);
         }
 
-        Graph graphResult = Complement.complement(graph);
+        Graph graphResult = Intersection.intersection(graph, graph);
 
-        // this.outPutResult(this.complement());
+         this.outPutResult(graphResult.getNodes());
     }
 
     public String readFile(String path){
@@ -65,7 +66,7 @@ public class Autoanalyse {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(result);
+      //  System.out.println(result);
         return result;
     }
 
@@ -147,9 +148,10 @@ public class Autoanalyse {
         for(Node node : result){
             ArrayList<Edge> edges =  node.getEdges();
             String line;
+
             if(!edges.isEmpty()){
                 for(Edge edge : edges){
-                    line = new String(edge.getSource()+" -> "+ edge.getDest());
+                    line = new String(edge.getSource().getName()+" -> "+ edge.getDest().getName());
                     if(edge.getLabel() != null){
                         line += " [label="+edge.getLabel()+"];";
                     }
@@ -161,7 +163,7 @@ public class Autoanalyse {
                 lines.add(line);
             }
             if(node.getLabel() != null){
-                line = new String(node.getName() + " [label=+"+ node.getLabel()+"];");
+                line = new String(node.getName() + " [label="+ node.getLabel()+"];");
                 lines.add(line);
             }
         }

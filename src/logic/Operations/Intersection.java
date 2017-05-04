@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Intersection {
 
-    public Graph intersection(Graph graph1, Graph graph2) {
+    public static Graph intersection(Graph graph1, Graph graph2) {
 
         Graph result= new Graph();
         ArrayList<Edge> edgesGraph1 = graph1.getEdges();
@@ -16,14 +16,21 @@ public class Intersection {
 
         for(Edge edge:edgesGraph1){
 
+
             if(edgesGraph2.contains(edge)){
-                Node nodeSource= edge.getSource();
-                Node nodeDest = edge.getDest();
+
+                Node nodeSource= edge.getSource().clone();
+                Node nodeDest = edge.getDest().clone();
 
                 if(!result.getNodes().contains(nodeSource)){
+                    System.out.println(true);
                     result.addNode(nodeSource);
+                    nodeSource.addEdge(nodeDest,edge.getLabel());
+
+                }else{
+                    Node nodeSourceMain= result.getNode(edge.getSource().getName());
+                    nodeSourceMain.addEdge(nodeDest,edge.getLabel());
                 }
-                nodeSource.addEdge(nodeDest);
             }
         }
 
