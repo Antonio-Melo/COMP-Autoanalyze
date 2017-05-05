@@ -40,16 +40,23 @@ public class CartesianProduct {
 
                         if(oldnode2.haveEdge(oldnode3.getName())){
                             System.out.println("Encontei um com edge adjacentes");
-                            node.addEdge(node2);
+                            String label = oldnode2.getLabelEdge(oldnode3.getName());
+                            if(label != null){
+                                node.addEdge(node2,label);
+                            }else node.addEdge(node2);
                         }
                     }
 
                     if(node.getName().charAt(1) == node2.getName().charAt(1)){
-                        Node oldnode2 = graph1.getNode(new String(node.getName().charAt(0)+""));
-                        Node oldnode3 = graph1.getNode(new String(node2.getName().charAt(0)+""));
+                        Node oldnode2 = graph1.searchNode(new String(node.getName().charAt(0)+""));
+                        Node oldnode3 = graph1.searchNode(new String(node2.getName().charAt(0)+""));
 
-                        if(oldnode2.haveEdge(oldnode3.getName())){
-                            node.addEdge(node2);
+                        if(oldnode3.haveEdge(oldnode2.getName())){
+                            System.out.println("Encontei um com edge adjacentes");
+                            String label = oldnode3.getLabelEdge(oldnode2.getName());
+                            if(label != null){
+                                node.addEdge(node2,label);
+                            }else node.addEdge(node2);
                         }
                     }
                 }

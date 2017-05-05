@@ -1,10 +1,10 @@
 digraph OUT {
-ac -> ad
-ac -> bc
-ad -> ac
-ad -> bd
-bc -> ac
-bc -> bd
-bd -> ad
-bd -> bc
+ac -> ad [label=b];
+ac -> bc [label=a];
+ad -> ac [label=b];
+ad -> bd [label=a];
+bc -> ac [label=a];
+bc -> bd [label=b];
+bd -> ad [label=a];
+bd -> bc [label=b];
 }

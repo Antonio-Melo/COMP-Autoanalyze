@@ -119,7 +119,7 @@ public class Autoanalyse {
                     line = new String(edge.getSource().getName()+" -> "+ edge.getDest().getName());
                     if(edge.getLabel() != null){
                         line += " [label="+edge.getLabel()+"];";
-                    }
+                    }else line += ";";
                     lines.add(line);
                 }
             }else{

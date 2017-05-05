@@ -87,4 +87,11 @@ public class Node {
         }
         return false;
     }
+
+    public String getLabelEdge (String node2){
+        for(Edge edge: edges){
+            if(edge.getDest().getName().equals( node2)) return edge.getLabel();
+        }
+        return null;
+    }
 }
