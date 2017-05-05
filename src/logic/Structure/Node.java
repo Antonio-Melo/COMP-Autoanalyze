@@ -68,9 +68,19 @@ public class Node {
 
         return new Node(name);
     }
+    public void printNode (){
+        System.out.println(this.name);
+    }
 
 
     public ArrayList<Edge> getEdges() {
         return edges;
+    }
+
+    public boolean haveEdge(String node2){
+        for(Edge edge: edges){
+            if(edge.getDest().getName().equals( node2)) return true;
+        }
+        return false;
     }
 }

@@ -36,6 +36,16 @@ public class Graph {
         } else return null;
     }
 
+    public Node searchNode(String name){
+        for(Node node : nodes){
+            System.out.println(node.getName());
+            if(node.getName().equals(name)){
+                return node;
+            }
+        }
+        return null;
+    }
+
     public ArrayList<Edge> getEdges(){
 
         ArrayList<Edge> edgesGraph = new ArrayList<>();

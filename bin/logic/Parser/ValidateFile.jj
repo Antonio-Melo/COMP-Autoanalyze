@@ -1,0 +1,138 @@
+options
+{
+    LOOKAHEAD=1;
+}
+PARSER_BEGIN(ValidateFile)
+
+package logic.Parser;
+import java.util.*;
+import logic.Structure.Graph;
+import logic.Structure.Node;
+
+public class ValidateFile
+{
+  public static void main(String args []) throws ParseException
+  {
+    
+   ValidateFile validateFile = new ValidateFile(new java.io.StringReader(args [0]));
+   // ValidateFile validateFile = new ValidateFile(System.in);
+    Graph graph = new Graph();
+    // ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
+    validateFile.Start(graph);
+  }
+}
+
+PARSER_END(ValidateFile)
+/*
+digraph G1
+ {
+     start -> test;
+     test -> start;
+     test -> finish;
+ }
+
+*/
+
+SKIP:{
+    " "| "\t"| "\r"
+}
+
+TOKEN:{
+  <DIGRAPH : "digraph">|
+  <LABEL :"label">|
+  <PERIPHE :"peripheries">|
+  <NAME: (["a"-"z","A"-"Z"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
+  <FINAL_STATE :"2">|
+  <INTEGER :["0"-"9"]>|
+  <OPENFIELD: "[">|
+  <CLOSEFIELD: "]">|
+  <OPEN: "{">|
+  <CLOSE:"}">|
+  <EQUALS:"=">|        
+  <ARROW : "->">|
+  <SEMICOLON: ";">|
+  <QUOTE: "\'">
+}
+void Start(Graph graph):{Token name;}{
+  <DIGRAPH> name=<NAME>{
+  graph.setName(name.image);
+    System.out.println(name.image);
+   // tokens.add(new ElementGraph(name.image));
+  }
+  <OPEN>
+NodeGraph(graph)
+}
+/*
+digraph G2
+{
+    a -> b [label= hello ];
+    a -> c [label=world];
+    c -> d; 
+    b -> c; 
+    d -> a;
+    b [label='this'];
+    c [peripheries=2];
+}
+
+digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}
+
+digraph G4{
+a -> b [label = hello ];
+ a [label= he];
+ }
+digraph G5{a [label= he];}
+
+*/
+
+void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
+     {
+         field1=null;
+         charat1=null;
+
+         name2=null;
+         labelEdge=null;
+     }
+    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> ((<QUOTE> charat1=<FINAL_STATE><QUOTE> )|charat1=<FINAL_STATE>))//    c [peripheries=2]; ou c [peripheries='2'];
+                                   |(field1=<LABEL>   <EQUALS> ((<QUOTE> charat1=<NAME><QUOTE>) |charat1=<NAME> ))    )// a [label= he]; ou  a [label='he'];
+                     <CLOSEFIELD>)
+
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS>  ((<QUOTE> labelEdge=<NAME><QUOTE>)|labelEdge=<NAME>) <CLOSEFIELD>)? ))//-> b [label = hello ]
+               < SEMICOLON>//;                                   label= 'b'
+         {
+         Node nodecopy = new Node(name1.image);
+         Node node1;
+         if( graph.existsNode(nodecopy)){//exists nodeCopy?
+            node1= graph.getNode(name1.image);
+         }else{
+             node1 = nodecopy;
+             graph.addNode(node1);
+         }
+
+          if(node1==null)
+            graph.addNode(node1);
+
+             if(name2!=null){//hasNode2
+               Node dest = new Node(name2.image);
+                  if(labelEdge!=null){
+                     node1.addEdge(dest,labelEdge.image);
+                  }else
+                     node1.addEdge(dest);
+
+             }else
+                 node1.setFieldCharate(field1.image, charat1.image);
+
+          }
+  ( end()| NodeGraph(graph))
+}
+
+void end():{}{
+
+    <CLOSE>
+}
+
+/* #### NAO APAGAR  ###################################
+
+java logic.Parser.ValidateFile "digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}"
+
+*/
+

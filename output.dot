@@ -1,0 +1,10 @@
+digraph OUT {
+ac -> ad
+ac -> bc
+ad -> ac
+ad -> bd
+bc -> ac
+bc -> bd
+bd -> ad
+bd -> bc
+}
