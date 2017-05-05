@@ -74,71 +74,8 @@ public class Autoanalyse {
 
         Autoanalyse auto = new Autoanalyse(args);
     }
-/*
-    public void state() {
-        // System.out.println("tokens size" + tokens.size());
-
-        for (ElementGraph elem : tokens) {
-            if (elem.getElement2() == null)
-                if (elem.getField1().equals("peripheries") && elem.getCharacteristic1().equals("2"))
-                    stateEndNode.add(elem.getElement1());
-        }
-
-        //for (String node : stateEndNode) {
-            //System.out.println(node);
-        //}
-        this.nodesGraph();
-    }
-    */
-/*
-    public void nodesGraph() {
-
-        for (ElementGraph elem : tokens) {
 
 
-            if (!nodes.contains(elem.getElement1())) {
-                nodes.add(elem.getElement1());
-            }
-            if (elem.getElement2() != null)
-                if (!nodes.contains(elem.getElement2())) {
-                    nodes.add(elem.getElement2());
-                }
-        }
-       // for (String node : nodes) {
-         //   System.out.println("nodes Graph-> " + node);
-        //}
-
-    }
-    */
-
-/*
-    public ArrayList<ElementGraph> complement() {
-
-        ArrayList<ElementGraph> result = new ArrayList<ElementGraph>();
-
-        for (ElementGraph elem : tokens) {
-            if (elem.getElement2() != null) {
-                result.add(elem);
-
-            } else if (elem.getField1() != null)
-                if (!elem.getField1().equals("peripheries") || !elem.getCharacteristic1().equals("2")) {
-                    result.add(elem);
-                }
-        }
-
-        for (String node : nodes) {
-            if (!stateEndNode.contains(node))
-                result.add(new ElementGraph(node, "peripheries", "2", null, null, null));
-
-        }
-
-        for (ElementGraph node : result) {
-            System.out.println("nodes Graph-> " + node);
-        }
-
-        return result;
-    }
-    */
 
     public void outPutResult(ArrayList<Node> result) {
         Path f = Paths.get("output.dot");
