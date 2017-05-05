@@ -37,6 +37,10 @@ public class Node {
 
     }
 
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
