@@ -1,3 +1,4 @@
+import logic.DotConvert;
 import logic.Operations.CartesianProduct;
 import logic.Operations.Union;
 import logic.Parser.ValidateFile;
@@ -143,8 +144,17 @@ public class Autoanalyse {
         }
         lines.add("}");
 
+        DotConvert dc = new DotConvert();
+        //input = "C:/Users/Maria/workspace/COMP/output.dot";
+        //input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
+
+        //out = "C:/Users/Maria/Documents/temp/output."
+        //out = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2."
+        
+        dc.start("C:/Users/Maria/workspace/COMP/output.dot","C:/Users/Maria/Documents/temp/output.");
+
         try {
-            Files.write(f, lines, Charset.forName("UTF-8"));
+        	Files.write(f, lines, Charset.forName("UTF-8"));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

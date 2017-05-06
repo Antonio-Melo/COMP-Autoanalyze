@@ -6,24 +6,13 @@ import Gui.GraphViz;
 import Gui.*;
 
 public class DotConvert 
-{
-	public static void main(String[] args)
-	{
-		DotConvert dc = new DotConvert();
-		dc.start();
-	}
-	
+{	
 	/**
 	 * Read the DOT source from a file,
 	 * convert to image and store the image in the file system.
 	 */
-	private void start()
+	public void start(String input, String outp)
 	{
-		//String dir = "/home/jabba/Dropbox/git.projects/laszlo.own/graphviz-java-api";     // Linux
-		//String input = dir + "/sample/simple.dot";
-		String input = "C:/Users/Maria/workspace/COMP/output.dot";    // Windows
-		//String input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
-
 		GraphViz gv = new GraphViz();
 		gv.readSource(input);
 		System.out.println(gv.getDotSource());
@@ -45,9 +34,7 @@ public class DotConvert
 		// 		String representationType= "twopi";
 		//		String representationType= "circo";
 		
-		//File out = new File("/tmp/simple." + type);   // Linux
-		File out = new File("C:/Users/Maria/Documents/temp/output." + type);   // Windows
-		//File out = new File("C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2." + type);
+		File out = new File(outp + type);   // Windows
 		gv.writeGraphToFile( gv.getGraph(gv.getDotSource(), type, representationType), out );
 	}
 }

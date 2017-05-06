@@ -60,32 +60,3 @@ public class Union
 		return graphCP;
 	}
 }
-/*
-			Node nodeSrc= edge.getSource();
-			Node nodeDst = edge.getDest();
-			
-			if(!graphResult.getNodes().contains(nodeSrc))
-				graphResult.addNode(nodeSrc);
-			else
-			{
-				if(!graphResult.getEdges().contains(nodeDst))
-					nodeSrc.addEdge(nodeDst);
-			}
-		}
-		
-		for(Edge edge2:edgesG2)
-		{
-			Node nodeSrc2= edge2.getSource();
-			Node nodeDst2 = edge2.getDest();
-
-			if(!graphResult.getNodes().contains(nodeSrc2))
-				graphResult.addNode(nodeSrc2);
-			else
-			{
-				if(!graphResult.getEdges().contains(nodeDst2))
-					nodeSrc2.addEdge(nodeDst2);
-			}
-		}
-		return graphResult;
-	}
-}*/
