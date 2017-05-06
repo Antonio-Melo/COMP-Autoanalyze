@@ -1,24 +1,66 @@
 package logic.Operations;
-import logic.Structure.Edge;
 import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.util.ArrayList;
+import java.util.regex.*;
 
-/* possível melhoria: aplicar um algoritmo de minimização de estados no final,
- já que o autómato resultante não estará optimizado */
+
 
 public class Union 
 {
 	public static Graph union(Graph graph1, Graph graph2)
 	{
-		Graph graphResult = new Graph();
+		CartesianProduct product = new CartesianProduct(graph1, graph2);
+		Graph graphCP = product.getNewGraph();
 		
-		ArrayList<Edge> edgesG1 = graph1.getEdges();
-		ArrayList<Edge> edgesG2 = graph2.getEdges();
+		//all that needs to be done is adding the final states
 		
-		for(Edge edge:edgesG1)
+		ArrayList<Node> nodes = graphCP.getNodes();
+		
+		ArrayList<Node> nodes1 = graph1.getNodes();
+		ArrayList<String> nodesFinal1=new ArrayList<String>();
+		ArrayList<Node> nodes2 = graph2.getNodes();
+		ArrayList<String> nodesFinal2=new ArrayList<String>();
+		
+		for (Node n:nodes1)
 		{
+			if(n.getStateEnd())
+			{
+				nodesFinal1.add(n.getName());
+			}
+		}
+		
+		for (Node n:nodes2)
+		{
+			if(n.getStateEnd())
+			{
+				nodesFinal2.add(n.getName());
+			}
+		}
+		
+		for(Node node:nodes)
+		{
+			for(int i=0; i<nodesFinal1.size(); i++)
+			{
+				if(node.getName().contains(nodesFinal1.get(i)))
+				{
+					node.setStateEnd(true);
+				}
+			}
+			
+			for(int j=0; j<nodesFinal2.size(); j++)
+			{
+				if(node.getName().contains(nodesFinal2.get(j)))
+				{
+					node.setStateEnd(true);
+				}
+			}
+		}
+		return graphCP;
+	}
+}
+/*
 			Node nodeSrc= edge.getSource();
 			Node nodeDst = edge.getDest();
 			
@@ -46,4 +88,4 @@ public class Union
 		}
 		return graphResult;
 	}
-}
+}*/

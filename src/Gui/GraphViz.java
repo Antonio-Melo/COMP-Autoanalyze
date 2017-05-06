@@ -139,10 +139,10 @@ public class GraphViz
      */
     public GraphViz() {
         if (GraphViz.osName.contains("Windows")) {
-           // this.tempDir = "c:/Users/Maria/Documents/temp";
-            this.tempDir = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot";
-           // this.executable = "c:/Users/Maria/Documents/graphviz-2.38/release/bin/dot.exe";
-            this.executable = "C:/Program Files (x86)/Graphviz2.38/bin";
+        	this.tempDir = "c:/Users/Maria/Documents/temp";
+            //this.tempDir = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot";
+        	this.executable = "c:/Users/Maria/Documents/graphviz-2.38/release/bin/dot.exe";
+            //this.executable = "C:/Program Files (x86)/Graphviz2.38/bin";
         } else if (GraphViz.osName.equals("MacOSX")) {
             this.tempDir = "/tmp";
             this.executable = "/usr/local/bin/dot";

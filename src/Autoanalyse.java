@@ -1,4 +1,5 @@
 import logic.Operations.CartesianProduct;
+import logic.Operations.Union;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
 import logic.Structure.Graph;
@@ -63,6 +64,7 @@ public class Autoanalyse {
 
         CartesianProduct product = new CartesianProduct(graph2, graph3);
         Graph graphResult = product.getNewGraph();
+        
 
         for(Node node : graphResult.getNodes()){
             node.printNode();
@@ -73,7 +75,9 @@ public class Autoanalyse {
 
 
 
-        this.outPutResult(graphResult.getNodes());
+        //this.outPutResult(graphResult.getNodes());
+        Graph graphUnion = Union.union(graph3, graph2);
+        this.outPutResult(graphUnion.getNodes());
     }
 
     public String readFile(String path){
@@ -114,7 +118,7 @@ public class Autoanalyse {
             String line= new String("");
 
             if(!edges.isEmpty()){
-                System.out.println("Não tenho edges");
+                System.out.println("Nao tenho edges");
                 for(Edge edge : edges){
                     line = new String(edge.getSource().getName()+" -> "+ edge.getDest().getName());
                     if(edge.getLabel() != null){
