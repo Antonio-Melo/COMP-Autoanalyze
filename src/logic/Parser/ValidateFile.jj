@@ -15,9 +15,7 @@ public class ValidateFile
   {
     
    ValidateFile validateFile = new ValidateFile(new java.io.StringReader(args [0]));
-   // ValidateFile validateFile = new ValidateFile(System.in);
     Graph graph = new Graph();
-    // ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
     validateFile.Start(graph);
   }
 }
@@ -56,8 +54,6 @@ TOKEN:{
 void Start(Graph graph):{Token name;}{
   <DIGRAPH> name=<NAME>{
   graph.setName(name.image);
-    System.out.println(name.image);
-   // tokens.add(new ElementGraph(name.image));
   }
   <OPEN>
 NodeGraph(graph)
@@ -129,10 +125,4 @@ void end():{}{
 
     <CLOSE>
 }
-
-/* #### NAO APAGAR  ###################################
-
-java logic.Parser.ValidateFile "digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}"
-
-*/
 

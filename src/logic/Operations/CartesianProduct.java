@@ -3,60 +3,79 @@ package logic.Operations;
 import logic.Structure.Graph;
 import logic.Structure.Node;
 
+import java.util.ArrayList;
+
 public class CartesianProduct {
 
     private Graph newGraph;
 
+    private ArrayList<String> unionFinalState = new ArrayList<>();
+    private ArrayList<String> intersectionFinalState = new ArrayList<>();
 
-    public  CartesianProduct(Graph graph1, Graph graph2){
+
+    public CartesianProduct(Graph graph1, Graph graph2) {
         newGraph = new Graph();
 
         //Create Nodes
-        for(Node nodeg1 : graph1.getNodes()){
-            for(Node nodeg2 : graph2.getNodes()){
-                newGraph.addNode(new Node(new String(nodeg1.getName()+nodeg2.getName())));
+        for (Node nodeg1 : graph1.getNodes()) {
+            for (Node nodeg2 : graph2.getNodes()) {
+
+                Boolean stateNode1 = nodeg1.getStateEnd();
+                Boolean stateNode2 = nodeg2.getStateEnd();
+
+                String produtNodeName = nodeg1.getName() + nodeg2.getName();
+
+                if (stateNode1 && stateNode2) {
+                    intersectionFinalState.add(produtNodeName);
+                }
+
+                if (stateNode1 || stateNode2) {
+                    unionFinalState.add(produtNodeName);
+                }
+
+                newGraph.addNode(new Node(produtNodeName));
             }
         }
 
         //TESTES
-        for(Node node : newGraph.getNodes()){
+       /* for (Node node : newGraph.getNodes()) {
             node.printNode();
-        }
+        }*/
         //Create Edges
-        for(Node node : newGraph.getNodes()){
-            for(Node node2: newGraph.getNodes()){
-                if(node != node2){
-                    if(node.getName().charAt(0) ==  node2.getName().charAt(0)){
-                        System.out.println("Encontei um com o primeiro igual");
-                        System.out.println(new String(node.getName().charAt(1)+""));
-                        System.out.println(new String(node2.getName().charAt(1)+""));
+        for (Node node : newGraph.getNodes()) {
+            for (Node node2 : newGraph.getNodes()) {
+                if (node != node2) {
+                    if (node.getName().charAt(0) == node2.getName().charAt(0)) {
+                        //  System.out.println("Encontei um com o primeiro igual");
+                        // System.out.println(new String(node.getName().charAt(1)+""));
+                        //System.out.println(new String(node2.getName().charAt(1)+""));
 
                         //Node oldnode = graph1.getNode(new String(node.getName().charAt(0)+""));
 
-                        Node oldnode2 = graph2.searchNode(new String(node.getName().charAt(1)+""));
-                        Node oldnode3 = graph2.searchNode(new String(node2.getName().charAt(1)+""));
-                        System.out.println(oldnode2.getName());
-                        System.out.println(oldnode3.getName());
+                        Node oldnode2 = graph2.searchNode(new String(node.getName().charAt(1) + ""));
+                        Node oldnode3 = graph2.searchNode(new String(node2.getName().charAt(1) + ""));
+                        //System.out.println(oldnode2.getName());
+                        //System.out.println(oldnode3.getName());
 
-                        if(oldnode2.haveEdge(oldnode3.getName())){
-                            System.out.println("Encontei um com edge adjacentes");
+                        if (oldnode2.haveEdge(oldnode3.getName())) {
+                            //  System.out.println("Encontei um com edge adjacentes");
                             String label = oldnode2.getLabelEdge(oldnode3.getName());
-                            if(label != null){
-                                node.addEdge(node2,label);
-                            }else node.addEdge(node2);
+                            if (label != null) {
+                                node.addEdge(node2, label);
+                            } else node.addEdge(node2);
                         }
                     }
 
-                    if(node.getName().charAt(1) == node2.getName().charAt(1)){
-                        Node oldnode2 = graph1.searchNode(new String(node.getName().charAt(0)+""));
-                        Node oldnode3 = graph1.searchNode(new String(node2.getName().charAt(0)+""));
+                    if (node.getName().charAt(1) == node2.getName().charAt(1)) {
+                        Node oldnode2 = graph1.searchNode(new String(node.getName().charAt(0) + ""));
+                        Node oldnode3 = graph1.searchNode(new String(node2.getName().charAt(0) + ""));
 
-                        if(oldnode3.haveEdge(oldnode2.getName())){
-                            System.out.println("Encontei um com edge adjacentes");
+                        if (oldnode3.haveEdge(oldnode2.getName())) {
+                            //  System.out.println("Encontei um com edge adjacentes");
                             String label = oldnode3.getLabelEdge(oldnode2.getName());
-                            if(label != null){
-                                node.addEdge(node2,label);
-                            }else node.addEdge(node2);
+                            if (label != null) {
+                                node.addEdge(node2, label);
+                            } else node.addEdge(node2);
                         }
                     }
                 }
@@ -68,5 +87,13 @@ public class CartesianProduct {
 
     public Graph getNewGraph() {
         return newGraph;
+    }
+
+    public ArrayList<String> getUnionFinalState() {
+        return unionFinalState;
+    }
+
+    public ArrayList<String> getIntersectionFinalState() {
+        return intersectionFinalState;
     }
 }

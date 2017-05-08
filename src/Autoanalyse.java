@@ -1,5 +1,6 @@
 import logic.DotConvert;
 import logic.Operations.CartesianProduct;
+import logic.Operations.Intersection;
 import logic.Operations.Union;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -35,11 +36,11 @@ public class Autoanalyse {
 
 
         graph = new Graph();
-        Graph graph2 = new Graph();
-        Graph graph3 = new Graph();
+        Graph graph = new Graph();
+        Graph graph1 = new Graph();
         //String fileRead = readFile("dot/example2.dot");
-        String fileRead2 = readFile("dot/test.dot");
-        String fileRead3 = readFile("dot/test2.dot");
+        String fileRead = readFile("../dot/test.dot");//TODO: atenção ao diretorio
+        String fileRead1 = readFile("../dot/test1.dot");//TODO: atenção ao diretorio
 
 
         try {
@@ -47,13 +48,13 @@ public class Autoanalyse {
             validateFile.Start(graph);*/
 
             System.out.println("VOU LER O PRIMEIRO");
-            ValidateFile validateFile2 = new ValidateFile(new java.io.StringReader(fileRead2));
-            validateFile2.Start(graph2);
+            ValidateFile validateFile2 = new ValidateFile(new java.io.StringReader(fileRead));
+            validateFile2.Start(graph);
             System.out.println("LI BEM O PRIMEIRO");
 
             System.out.println("VOU LER O SEGUNDO");
-            validateFile2.ReInit(new java.io.StringReader(fileRead3));
-            validateFile2.Start(graph3);
+            validateFile2.ReInit(new java.io.StringReader(fileRead1));
+            validateFile2.Start(graph1);
             System.out.println("LI BEM O SEGUNDO");
 
         } catch (Throwable e) {
@@ -61,27 +62,24 @@ public class Autoanalyse {
             System.exit(1);
         }
 
-        //Graph graphResult = Intersection.intersection(graph, graph);
 
-        CartesianProduct product = new CartesianProduct(graph2, graph3);
-        Graph graphResult = product.getNewGraph();
-        
+      //  CartesianProduct product = new CartesianProduct(graph, graph1);
+        // Graph graphResult = product.getNewGraph();
 
-        for(Node node : graphResult.getNodes()){
+
+    /*    for (Node node : graphResult.getNodes()) {
             node.printNode();
-            for(Edge edge: node.getEdges()){
-                System.out.println(edge.toString());
+            for (Edge edge : node.getEdges()) {
+               // System.out.println(edge.toString());
             }
-        }
+        }*/
 
 
-
-        //this.outPutResult(graphResult.getNodes());
-        Graph graphUnion = Union.union(graph3, graph2);
-        this.outPutResult(graphUnion.getNodes());
+       Graph graphresult = Intersection.intersection(graph, graph1);
+        this.outPutResult(graphresult.getNodes());
     }
 
-    public String readFile(String path){
+    public String readFile(String path) {
 
         BufferedReader br = null;
         String result = "";
@@ -98,7 +96,7 @@ public class Autoanalyse {
         } catch (IOException e) {
             e.printStackTrace();
         }
-      //  System.out.println(result);
+        //  System.out.println(result);
         return result;
     }
 
@@ -108,65 +106,59 @@ public class Autoanalyse {
     }
 
 
-
     public void outPutResult(ArrayList<Node> result) {
         Path f = Paths.get("output.dot");
         List<String> lines = new ArrayList<String>();
 
         lines.add("digraph OUT {");
-        for(Node node : result){
-            ArrayList<Edge> edges =  node.getEdges();
-            String line= new String("");
+        for (Node node : result) {
+            ArrayList<Edge> edges = node.getEdges();
+            String line = new String("");
 
-            if(!edges.isEmpty()){
-                System.out.println("Nao tenho edges");
-                for(Edge edge : edges){
-                    line = new String(edge.getSource().getName()+" -> "+ edge.getDest().getName());
-                    if(edge.getLabel() != null){
-                        line += " [label="+edge.getLabel()+"];";
-                    }else line += ";";
+            if (!edges.isEmpty()) {
+               // System.out.println("Nao tenho edges");
+                for (Edge edge : edges) {
+                    line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
+                    if (edge.getLabel() != null) {
+                        line += " [label=" + edge.getLabel() + "];";
+                    } else line += ";";
                     lines.add(line);
                 }
-            }else{
+            } else {
                 line = new String(node.getName() + ";");
                 lines.add(line);
+
             }
 
-            if(node.getStateEnd()){
+            if (node.getStateEnd()) {
                 line = new String(node.getName() + " [peripheries=2];");
                 lines.add(line);
             }
-            if(node.getLabel() != null){
-                line = new String(node.getName() + " [label="+ node.getLabel()+"];");
+            if (node.getLabel() != null) {
+                line = new String(node.getName() + " [label=" + node.getLabel() + "];");
                 lines.add(line);
             }
-            System.out.print(line);
+           // System.out.print(line);
         }
         lines.add("}");
 
-        DotConvert dc = new DotConvert();
-        //input = "C:/Users/Maria/workspace/COMP/output.dot";
-        //input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
+      /*  DotConvert dc = new DotConvert();
 
-        //out = "C:/Users/Maria/Documents/temp/output."
-        //out = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2."
-        
-        dc.start("C:/Users/Maria/workspace/COMP/output.dot","C:/Users/Maria/Documents/temp/output.");
+        String input = "C:/Users/Maria/workspace/COMP/output.dot";
+       // String input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
+
+        String out = "C:/Users/Maria/Documents/temp/output.";
+        //String out = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2.dot"
+
+        dc.start(input, out);*/
 
         try {
-        	Files.write(f, lines, Charset.forName("UTF-8"));
+            Files.write(f, lines, Charset.forName("UTF-8"));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
     }
 }
 
-
-
-/* #### NAO APAGAR  ###################################
-digraph G3{a -> b [label = hello ];  a -> c [label= hello ]; a[peripheries=2];}
-
-javac Autoanalyse.java
-java Autoanalyse
-*/

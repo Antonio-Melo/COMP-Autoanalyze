@@ -38,7 +38,6 @@ public class Graph {
 
     public Node searchNode(String name){
         for(Node node : nodes){
-            System.out.println(node.getName());
             if(node.getName().equals(name)){
                 return node;
             }
