@@ -65,7 +65,7 @@ public class Autoanalyse {
 
 
       //  CartesianProduct product = new CartesianProduct(graph, graph1);
-        // Graph graphResult = product.getNewGraph();
+        //Graph graphResult = product.getNewGraph();
 
 
     /*    for (Node node : graphResult.getNodes()) {
