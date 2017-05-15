@@ -14,7 +14,6 @@ public class Intersection {
 
         Graph graphresult = product.getNewGraph();
 
-
         for (String nodeName : intersectionNodeEnd) {
 
             Node node = graphresult.searchNode(nodeName);

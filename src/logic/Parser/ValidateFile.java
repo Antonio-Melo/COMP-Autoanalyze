@@ -9,9 +9,7 @@ public class ValidateFile implements ValidateFileConstants {
   {
 
    ValidateFile validateFile = new ValidateFile(new java.io.StringReader(args [0]));
-   // ValidateFile validateFile = new ValidateFile(System.in);
     Graph graph = new Graph();
-    // ArrayList<ElementGraph> tokens = new ArrayList<ElementGraph>();
     validateFile.Start(graph);
   }
 
@@ -20,9 +18,6 @@ public class ValidateFile implements ValidateFileConstants {
     jj_consume_token(DIGRAPH);
     name = jj_consume_token(NAME);
   graph.setName(name.image);
-    System.out.println(name.image);
-   // tokens.add(new ElementGraph(name.image));
-
     jj_consume_token(OPEN);
     NodeGraph(graph);
   }
@@ -156,7 +151,7 @@ digraph G5{a [label= he];}
                      node1.addEdge(dest,labelEdge.image);
                   }else
                      node1.addEdge(dest);
-
+               graph.addNode(dest);
              }else
                  node1.setFieldCharate(field1.image, charat1.image);
     switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {

@@ -1,5 +1,6 @@
 import logic.DotConvert;
 import logic.Operations.CartesianProduct;
+import logic.Operations.Complement;
 import logic.Operations.Intersection;
 import logic.Operations.Union;
 import logic.Parser.ValidateFile;
@@ -75,7 +76,9 @@ public class Autoanalyse {
         }*/
 
 
-       Graph graphresult = Intersection.intersection(graph, graph1);
+      // Graph graphresult = Intersection.intersection(graph, graph1);
+       Graph graphresult = Complement.complement(graph);
+
         this.outPutResult(graphresult.getNodes());
     }
 
@@ -124,10 +127,6 @@ public class Autoanalyse {
                     } else line += ";";
                     lines.add(line);
                 }
-            } else {
-                line = new String(node.getName() + ";");
-                lines.add(line);
-
             }
 
             if (node.getStateEnd()) {
@@ -138,7 +137,6 @@ public class Autoanalyse {
                 line = new String(node.getName() + " [label=" + node.getLabel() + "];");
                 lines.add(line);
             }
-           // System.out.print(line);
         }
         lines.add("}");
 

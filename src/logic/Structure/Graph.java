@@ -4,14 +4,14 @@ package logic.Structure;
 import java.util.ArrayList;
 
 public class Graph {
-   public String name;
+    public String name;
     private ArrayList<Node> nodes;
 
-    public  Graph(){
-        this.nodes=new ArrayList<>();
+    public Graph() {
+        this.nodes = new ArrayList<>();
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -36,16 +36,39 @@ public class Graph {
         } else return null;
     }
 
-    public Node searchNode(String name){
-        for(Node node : nodes){
-            if(node.getName().equals(name)){
+    public Node searchNode(String name) {
+        for (Node node : nodes) {
+            if (node.getName().equals(name)) {
                 return node;
             }
         }
         return null;
     }
 
-    public ArrayList<Edge> getEdges(){
+    public Graph clone() {
+
+        Graph cloneGraph = new Graph();
+
+        for (Node node : nodes) {
+            Node cloneNode = node.clone();
+            cloneGraph.addNode(cloneNode);
+            System.out.println(node.getName());
+        }
+        for (Edge edge : getEdges()) {
+
+            String sourceName = edge.getSource().getName();
+            String destName = edge.getDest().getName();
+
+            Node nodeSource = cloneGraph.searchNode(sourceName);
+            Node nodeDest = cloneGraph.searchNode(destName);
+
+            nodeSource.addEdge(nodeDest, edge.getLabel());
+        }
+
+        return cloneGraph;
+    }
+
+    public ArrayList<Edge> getEdges() {
 
         ArrayList<Edge> edgesGraph = new ArrayList<>();
 
@@ -78,6 +101,6 @@ public class Graph {
     }
 
     public ArrayList<Node> getNodes() {
-    	return nodes;
+        return nodes;
     }
 }
