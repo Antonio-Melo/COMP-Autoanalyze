@@ -70,7 +70,7 @@ public class Node {
 
     public Node clone(){
 
-       Node  node= new Node(name);
+        Node  node= new Node(name);
        node.setStateEnd(getStateEnd());
        node.setLabel(getLabel());
         return node;

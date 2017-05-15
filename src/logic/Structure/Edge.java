@@ -1,7 +1,5 @@
 package logic.Structure;
 
-import java.util.Objects;
-
 public class Edge {
 
     private Node source;

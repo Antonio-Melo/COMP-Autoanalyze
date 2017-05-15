@@ -4,7 +4,7 @@ package logic.Structure;
 import java.util.ArrayList;
 
 public class Graph {
-    public String name;
+    private String name;
     private ArrayList<Node> nodes;
 
     public Graph() {
@@ -21,10 +21,7 @@ public class Graph {
 
     public Boolean existsNode(Node node) {
 
-        if (nodes.contains(node)) {
-            return true;
-        } else
-            return false;
+        return nodes.contains(node);
     }
 
     public Node getNode(String name) {
@@ -34,6 +31,10 @@ public class Graph {
         if (index != -1) {
             return nodes.get(index);
         } else return null;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Node searchNode(String name) {

@@ -4,12 +4,27 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.util.ArrayList;
-import java.util.regex.*;
-
 
 public class Union {
     public static Graph union(Graph graph1, Graph graph2) {
+
         CartesianProduct product = new CartesianProduct(graph1, graph2);
+        ArrayList<String> unionNodeEnd = product.getUnionFinalState();
+
+        Graph graphresult = product.getNewGraph();
+
+        for (String nodeName : unionNodeEnd) {
+
+            Node node = graphresult.searchNode(nodeName);
+            if (node != null) {
+                node.setStateEnd(true);
+            }
+        }
+
+        return graphresult;
+    }
+
+    /*    CartesianProduct product = new CartesianProduct(graph1, graph2);
         Graph graphCP = product.getNewGraph();
 
         //all that needs to be done is adding the final states
@@ -47,5 +62,5 @@ public class Union {
             }
         }
         return graphCP;
-    }
+    }*/
 }

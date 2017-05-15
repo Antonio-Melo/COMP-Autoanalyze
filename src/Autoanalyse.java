@@ -116,7 +116,7 @@ public class Autoanalyse {
         lines.add("digraph OUT {");
         for (Node node : result) {
             ArrayList<Edge> edges = node.getEdges();
-            String line = new String("");
+            String line = "";
 
             if (!edges.isEmpty()) {
                // System.out.println("Nao tenho edges");
