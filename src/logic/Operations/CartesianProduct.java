@@ -4,6 +4,7 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.util.ArrayList;
+import java.util.StringJoiner;
 
 public class CartesianProduct {
 
@@ -11,7 +12,7 @@ public class CartesianProduct {
 
     private ArrayList<String> unionFinalState = new ArrayList<>();
     private ArrayList<String> intersectionFinalState = new ArrayList<>();
-
+    private ArrayList<String[]> combinednodes = new ArrayList<>();
 
     public CartesianProduct(Graph graph1, Graph graph2) {
         newGraph = new Graph();
@@ -24,30 +25,37 @@ public class CartesianProduct {
                 Boolean stateNode2 = nodeg2.getStateEnd();
 
                 String produtNodeName = nodeg1.getName() + nodeg2.getName();
+                /*String[] nodes = new String[2];
+                nodes*/
+
+                combinednodes.add(new String[2]{(String)nodeg1.getName(),nodeg2.getName()});
+                Node newNode = new Node(produtNodeName);
 
                 if (stateNode1 && stateNode2) {
                     intersectionFinalState.add(produtNodeName);
+                    newNode.setStateEnd(true);
                 }
 
                 if (stateNode1 || stateNode2) {
                     unionFinalState.add(produtNodeName);
                 }
 
-                newGraph.addNode(new Node(produtNodeName));
+                newGraph.addNode(newNode);
             }
         }
 
         //TESTES
-       /* for (Node node : newGraph.getNodes()) {
+        /* for (Node node : newGraph.getNodes()) {
             node.printNode();
         }*/
+
         //Create Edges
         for (Node node : newGraph.getNodes()) {
             for (Node node2 : newGraph.getNodes()) {
                 if (node != node2) {
-                    if (node.getName().charAt(0) == node2.getName().charAt(0)) {
-                        //  System.out.println("Encontei um com o primeiro igual");
-                        // System.out.println(new String(node.getName().charAt(1)+""));
+                    if (node.getName().charAt(0) == node2.getName().charAt(0)) { //Tem que ser mudado
+                        //System.out.println("Encontei um com o primeiro igual");
+                        //System.out.println(new String(node.getName().charAt(1)+""));
                         //System.out.println(new String(node2.getName().charAt(1)+""));
 
                         //Node oldnode = graph1.getNode(new String(node.getName().charAt(0)+""));

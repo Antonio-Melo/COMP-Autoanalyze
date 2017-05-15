@@ -39,8 +39,8 @@ public class Autoanalyse {
         Graph graph = new Graph();
         Graph graph1 = new Graph();
         //String fileRead = readFile("dot/example2.dot");
-        String fileRead = readFile("../dot/test.dot");//TODO: atenção ao diretorio
-        String fileRead1 = readFile("../dot/test1.dot");//TODO: atenção ao diretorio
+        String fileRead = readFile("dot/test.dot");//TODO: atenção ao diretorio
+        String fileRead1 = readFile("dot/test2.dot");//TODO: atenção ao diretorio
 
 
         try {
@@ -63,11 +63,11 @@ public class Autoanalyse {
         }
 
 
-      //  CartesianProduct product = new CartesianProduct(graph, graph1);
-        // Graph graphResult = product.getNewGraph();
+        CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphResult = product.getNewGraph();
 
 
-    /*    for (Node node : graphResult.getNodes()) {
+        /*for (Node node : graphResult.getNodes()) {
             node.printNode();
             for (Edge edge : node.getEdges()) {
                // System.out.println(edge.toString());
@@ -75,8 +75,8 @@ public class Autoanalyse {
         }*/
 
 
-       Graph graphresult = Intersection.intersection(graph, graph1);
-        this.outPutResult(graphresult.getNodes());
+        //Graph graphresult = Intersection.intersection(graph, graph1);
+        this.outPutResult(graphResult.getNodes());
     }
 
     public String readFile(String path) {
