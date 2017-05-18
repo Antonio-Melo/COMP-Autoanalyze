@@ -1,7 +1,5 @@
 digraph G2
  {
-     a -> b [label=b];
-     a -> c [label=b];
-     a -> a [label=b];
+     a -> b [label=AB];
      a [peripheries=2];
  }
