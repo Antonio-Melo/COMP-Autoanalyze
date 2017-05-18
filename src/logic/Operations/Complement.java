@@ -8,7 +8,6 @@ public class Complement {
     public static Graph complement(Graph graph) {
 
         Graph graphResult = graph.clone();
-
         for (Node node : graphResult.getNodes()) {
 
             Boolean state = node.getStateEnd();

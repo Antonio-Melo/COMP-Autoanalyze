@@ -113,7 +113,10 @@ void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
                      node1.addEdge(dest,labelEdge.image);
                   }else
                      node1.addEdge(dest);
-               graph.addNode(dest);
+
+                   if(!graph.existsNode(dest))
+                   graph.addNode(dest);
+
              }else
                  node1.setFieldCharate(field1.image, charat1.image);
 

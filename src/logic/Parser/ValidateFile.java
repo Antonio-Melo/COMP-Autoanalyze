@@ -151,7 +151,10 @@ digraph G5{a [label= he];}
                      node1.addEdge(dest,labelEdge.image);
                   }else
                      node1.addEdge(dest);
-               graph.addNode(dest);
+
+                   if(!graph.existsNode(dest))
+                   graph.addNode(dest);
+
              }else
                  node1.setFieldCharate(field1.image, charat1.image);
     switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
