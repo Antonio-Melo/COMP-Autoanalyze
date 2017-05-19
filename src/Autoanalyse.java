@@ -2,6 +2,7 @@ import logic.DotConvert;
 import logic.Operations.CartesianProduct;
 import logic.Operations.Complement;
 import logic.Operations.Intersection;
+import logic.Operations.Reversal;
 import logic.Operations.Union;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -42,8 +43,8 @@ public class Autoanalyse {
         Graph graph = new Graph();
         Graph graph1 = new Graph();
         //String fileRead = readFile("dot/example2.dot");
-        String fileRead = readFile("../dot/test.dot");//TODO: atenÃ§Ã£o ao diretorio
-        String fileRead1 = readFile("../dot/test1.dot");//TODO: atenÃ§Ã£o ao diretorio
+        String fileRead = readFile("dot/example.dot");//TODO: atenção ao diretorio
+        String fileRead1 = readFile("dot/test1.dot");//TODO: atenção ao diretorio
 
 
         try {
@@ -70,7 +71,7 @@ public class Autoanalyse {
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
-        Graph graphresult = Complement.complement(graph);
+        Graph graphresult = Reversal.reversal(graph);
 
         this.outPutResult(graphresult.getNodes());
        // this.outPutResult(graphresult.getNodes());

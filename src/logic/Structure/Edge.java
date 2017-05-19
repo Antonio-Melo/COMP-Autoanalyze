@@ -61,6 +61,14 @@ public class Edge {
     public Node getDest() {
         return dest;
     }
+    
+    public void setSource(Node src) {
+        source = src;
+    }
+
+    public void setDest(Node dst) {
+        dest = dst;
+    }
 
     public String getLabel() {
         return label;

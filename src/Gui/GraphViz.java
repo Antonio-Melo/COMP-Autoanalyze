@@ -133,6 +133,7 @@ public class GraphViz {
               String AbsolutePath = file.getAbsolutePath();
             String[] pathParent = AbsolutePath.split("COMP-Autoanalyze");
 
+            
             this.tempDir = pathParent[0] + "COMP-Autoanalyze/out";
             this.executable = pathParent[0] + "COMP-Autoanalyze/Graphviz2.38/bin/dot.exe";
 

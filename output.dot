@@ -1,0 +1,7 @@
+digraph OUT {
+test -> start;
+start [peripheries=2];
+start -> test;
+finish -> test;
+newStart -> finish [label=ε];
+}
