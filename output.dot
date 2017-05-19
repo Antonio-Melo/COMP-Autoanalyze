@@ -1,6 +1,7 @@
 digraph OUT {
-q1 -> q0 [label=a];
-q2 -> q1 [label=b];
-q3 -> q2 [label=c];
-start -> q3 [label=ε];
+test -> start;
+start [peripheries=2];
+start -> test;
+finish -> test;
+newStart -> finish [label=ε];
 }

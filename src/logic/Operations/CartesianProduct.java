@@ -28,6 +28,7 @@ public class CartesianProduct {
                 String[] nodes = new String[]{nodeg1.getName(),nodeg2.getName()};
                 combinednodes.add(nodes);
 
+                //  combinednodes.add(new String[2](String)nodeg1.getName(),nodeg2.getName());
                 Node newNode = new Node(produtNodeName);
 
                 if (stateNode1 && stateNode2) {

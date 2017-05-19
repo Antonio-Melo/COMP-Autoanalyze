@@ -10,6 +10,7 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -30,24 +31,23 @@ public class Autoanalyse {
 
 
       /*  if (args.length != 2) {
-            System.out.println("Requerires <path> <opeartion>");
+            System.out.println("Requerires <path> <operation>");
         }
         this.path = args[0];
         this.operation = args[1];
         */
+        if (args.length > 0)
+            System.out.println(args[0]);
 
 
-        graph = new Graph();
         Graph graph = new Graph();
         Graph graph1 = new Graph();
         //String fileRead = readFile("dot/example2.dot");
-        String fileRead = readFile("dot/test3.dot");//TODO: atenÃ§Ã£o ao diretorio
-        String fileRead1 = readFile("dot/test1.dot");//TODO: atenÃ§Ã£o ao diretorio
+        String fileRead = readFile("dot/example.dot");//TODO: atenção ao diretorio
+        String fileRead1 = readFile("dot/test1.dot");//TODO: atenção ao diretorio
 
 
         try {
-            /*ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
-            validateFile.Start(graph);*/
 
             System.out.println("VOU LER O PRIMEIRO");
             ValidateFile validateFile2 = new ValidateFile(new java.io.StringReader(fileRead));
@@ -65,22 +65,18 @@ public class Autoanalyse {
         }
 
 
-      //  CartesianProduct product = new CartesianProduct(graph, graph1);
+        //  CartesianProduct product = new CartesianProduct(graph, graph1);
         //Graph graphResult = product.getNewGraph();
 
 
-    /*    for (Node node : graphResult.getNodes()) {
-            node.printNode();
-            for (Edge edge : node.getEdges()) {
-               // System.out.println(edge.toString());
-            }
-        }*/
-
-
-      // Graph graphresult = Intersection.intersection(graph, graph1);
-       Graph graphresult = Reversal.reversal(graph);
+        //Graph graphresult = Union.union(graph, graph1);
+        // Graph graphresult = Intersection.intersection(graph, graph1);
+        Graph graphresult = Reversal.reversal(graph);
 
         this.outPutResult(graphresult.getNodes());
+       // this.outPutResult(graphresult.getNodes());
+
+
     }
 
     public String readFile(String path) {
@@ -100,7 +96,6 @@ public class Autoanalyse {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //  System.out.println(result);
         return result;
     }
 
@@ -120,7 +115,7 @@ public class Autoanalyse {
             String line = "";
 
             if (!edges.isEmpty()) {
-               // System.out.println("Nao tenho edges");
+                // System.out.println("Nao tenho edges");
                 for (Edge edge : edges) {
                     line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
                     if (edge.getLabel() != null) {
@@ -141,15 +136,6 @@ public class Autoanalyse {
         }
         lines.add("}");
 
-        DotConvert dc = new DotConvert();
-
-        String input = "C:/Users/Maria/workspace/COMP/output.dot";
-       // String input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
-
-        String out = "C:/Users/Maria/Documents/temp/output.";
-        //String out = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2.dot"
-
-        dc.start(input, out);
 
         try {
             Files.write(f, lines, Charset.forName("UTF-8"));
@@ -157,6 +143,10 @@ public class Autoanalyse {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+        DotConvert dc = new DotConvert();
+
+        dc.start("output.dot", "graphOutput.");
 
     }
 }

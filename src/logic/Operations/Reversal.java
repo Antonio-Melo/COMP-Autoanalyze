@@ -21,19 +21,19 @@ public class Reversal
 			edge.setSource(dest);
 		}
 		
-		Node startStateOld = graph.getNodes().get(0);
+		Node startStateOld = graphResult.getNodes().get(0);
 		//assuming start state is the first state
 		startStateOld.setStateEnd(true); //The accepting state for the LR automaton
 		//is the start state for the main automaton.
 
-		Node newStartState = new Node("start");
+		Node newStartState = new Node("newStart");
 		//get all the accepting states from the old automata 
 		ArrayList<Node> nodes1 = graphResult.getNodes();
 		ArrayList<String> nodesAccepting = new ArrayList<String>();
 
 		for (Node n : nodes1) 
 		{
-			if (n.getStateEnd()) 
+			if (n.getStateEnd() && !(n.equals(startStateOld))) 
 			{
 				n.setStateEnd(false);
 				nodesAccepting.add(n.getName());
