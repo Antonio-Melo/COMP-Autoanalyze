@@ -2,6 +2,7 @@ import logic.DotConvert;
 import logic.Operations.CartesianProduct;
 import logic.Operations.Complement;
 import logic.Operations.Intersection;
+import logic.Operations.Reversal;
 import logic.Operations.Union;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -40,8 +41,8 @@ public class Autoanalyse {
         Graph graph = new Graph();
         Graph graph1 = new Graph();
         //String fileRead = readFile("dot/example2.dot");
-        String fileRead = readFile("../dot/test.dot");//TODO: atenção ao diretorio
-        String fileRead1 = readFile("../dot/test1.dot");//TODO: atenção ao diretorio
+        String fileRead = readFile("dot/test3.dot");//TODO: atenção ao diretorio
+        String fileRead1 = readFile("dot/test1.dot");//TODO: atenção ao diretorio
 
 
         try {
@@ -77,7 +78,7 @@ public class Autoanalyse {
 
 
       // Graph graphresult = Intersection.intersection(graph, graph1);
-       Graph graphresult = Complement.complement(graph);
+       Graph graphresult = Reversal.reversal(graph);
 
         this.outPutResult(graphresult.getNodes());
     }
@@ -140,7 +141,7 @@ public class Autoanalyse {
         }
         lines.add("}");
 
-      /*  DotConvert dc = new DotConvert();
+        DotConvert dc = new DotConvert();
 
         String input = "C:/Users/Maria/workspace/COMP/output.dot";
        // String input = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/example2.dot";
@@ -148,7 +149,7 @@ public class Autoanalyse {
         String out = "C:/Users/Maria/Documents/temp/output.";
         //String out = "C:/Users/Acer-PC/workspace/GitHub/COMP-Autoanalyze/dot/graph2.dot"
 
-        dc.start(input, out);*/
+        dc.start(input, out);
 
         try {
             Files.write(f, lines, Charset.forName("UTF-8"));
