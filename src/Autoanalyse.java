@@ -139,7 +139,6 @@ public class Autoanalyse {
             String line = "";
 
             if (!edges.isEmpty()) {
-                // System.out.println("Nao tenho edges");
                 for (Edge edge : edges) {
                     line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
                     if (edge.getLabel() != null) {

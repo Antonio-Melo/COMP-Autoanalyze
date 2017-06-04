@@ -53,7 +53,6 @@ public class Graph {
         for (Node node : nodes) {
             Node cloneNode = node.clone();
             cloneGraph.addNode(cloneNode);
-            System.out.println(node.getName());
         }
         for (Edge edge : getEdges()) {
 
@@ -86,19 +85,6 @@ public class Graph {
 
     public static void main(String args[]) {
 
-        Graph auto = new Graph();
-        Node node = new Node("node");
-        //  auto.addNode(node);
-
-        Node node2 = new Node("node");
-        if (auto.existsNode(node)) {
-            System.out.println("tem");
-        }
-        if (auto.getNode("asas") == null) {
-
-            System.out.println("null");
-        } else
-            System.out.println("nao null");
     }
 
     public ArrayList<Node> getNodes() {
