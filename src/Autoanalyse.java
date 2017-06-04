@@ -4,6 +4,7 @@ import logic.Operations.Complement;
 import logic.Operations.Intersection;
 import logic.Operations.Reversal;
 import logic.Operations.Union;
+import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
 import logic.Structure.Graph;
@@ -23,40 +24,34 @@ import java.util.List;
 
 public class Autoanalyse {
 
+
     private String path;
+
     private String operation;
     private Graph graph;
 
+    /**
+     * @param args
+     */
     public Autoanalyse(String args[]) {
-
-
-      /*  if (args.length != 2) {
-            System.out.println("Requerires <path> <operation>");
-        }
-        this.path = args[0];
-        this.operation = args[1];
-        */
-        if (args.length > 0)
-            System.out.println(args[0]);
 
 
         Graph graph = new Graph();
         Graph graph1 = new Graph();
-        //String fileRead = readFile("dot/example2.dot");
-        String fileRead = readFile("dot/example.dot");//TODO: atenção ao diretorio
-        String fileRead1 = readFile("dot/test1.dot");//TODO: atenção ao diretorio
+        String fileRead = readFile("dot/example3.dot");//TODO: atenÃ§ao ao diretorio
+        String fileRead1 = readFile("dot/test1.dot");//TODO: atenÃ§ao ao diretorio
 
 
         try {
 
             System.out.println("VOU LER O PRIMEIRO");
-            ValidateFile validateFile2 = new ValidateFile(new java.io.StringReader(fileRead));
-            validateFile2.Start(graph);
+            ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
+            validateFile.Start(graph);
             System.out.println("LI BEM O PRIMEIRO");
 
             System.out.println("VOU LER O SEGUNDO");
-            validateFile2.ReInit(new java.io.StringReader(fileRead1));
-            validateFile2.Start(graph1);
+            validateFile.ReInit(new java.io.StringReader(fileRead1));
+            validateFile.Start(graph1);
             System.out.println("LI BEM O SEGUNDO");
 
         } catch (Throwable e) {
@@ -74,11 +69,15 @@ public class Autoanalyse {
         Graph graphresult = Reversal.reversal(graph);
 
         this.outPutResult(graphresult.getNodes());
-       // this.outPutResult(graphresult.getNodes());
+        // this.outPutResult(graphresult.getNodes());
 
 
     }
 
+    /**
+     * @param path Path the read file
+     * @return String with content of file
+     */
     public String readFile(String path) {
 
         BufferedReader br = null;
@@ -99,12 +98,37 @@ public class Autoanalyse {
         return result;
     }
 
+    /**
+     * @param args
+     */
     public static void main(String args[]) {
 
         Autoanalyse auto = new Autoanalyse(args);
     }
 
+    /**
+     * @param fileRead File path to validate grammar
+     * @return Return whether the file respects grammar or not
+     */
+    public boolean validateFile(String fileRead) {
 
+        ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
+
+        Graph graph = new Graph();
+        try {
+            validateFile.Start(graph);
+        } catch (ParseException e) {
+            System.out.println("This file does not respect the grammar");
+            return false;
+        }
+        return true;
+
+
+    }
+
+    /**
+     * @param result Write in the file of the graph result in the language dot
+     */
     public void outPutResult(ArrayList<Node> result) {
         Path f = Paths.get("output.dot");
         List<String> lines = new ArrayList<String>();
@@ -115,7 +139,6 @@ public class Autoanalyse {
             String line = "";
 
             if (!edges.isEmpty()) {
-                // System.out.println("Nao tenho edges");
                 for (Edge edge : edges) {
                     line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
                     if (edge.getLabel() != null) {

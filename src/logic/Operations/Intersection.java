@@ -7,6 +7,14 @@ import java.util.ArrayList;
 
 public class Intersection {
 
+
+    /**
+     * Returns the graph of the intersection of the two input graphs
+     *
+     * @param graph1 Input graph
+     * @param graph2 Input graph
+     * @return The graph of the intersection of the two input graphs
+     */
     public static Graph intersection(Graph graph1, Graph graph2) {
 
         CartesianProduct product = new CartesianProduct(graph1, graph2);
@@ -23,6 +31,5 @@ public class Intersection {
         }
 
         return graphresult;
-
     }
 }

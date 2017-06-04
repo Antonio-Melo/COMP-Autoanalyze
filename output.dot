@@ -1,7 +1,10 @@
 digraph OUT {
-test -> start;
-start [peripheries=2];
-start -> test;
-finish -> test;
-newStart -> finish [label=ε];
+b -> a [label=hello1];
+c -> a [label=world2];
+a [peripheries=2];
+c -> b [label=world4];
+b [label=a];
+d -> c [label=world3];
+a -> d [label=world5];
+newStart -> c [label=ε];
 }

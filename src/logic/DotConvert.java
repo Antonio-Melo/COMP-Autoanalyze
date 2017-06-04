@@ -30,12 +30,10 @@ public class DotConvert {
         // 		String representationType= "twopi";
         //		String representationType= "circo";
 
-        System.out.println("inicio dotcnvert");
 
         File out = new File(output + type);   // Windows
 
         gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type, representationType), out);
 
-        System.out.println("terminou dotcnvert");
     }
 }
