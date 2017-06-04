@@ -11,8 +11,8 @@ class App extends JFrame {
 	private JTextField textField;
   public App() {
 	setTitle("Autoanalyze");
-	setSize(500,500); // default size is 0,0
-	setLocation(10,200); // default is 0,0 (top left corner)
+	setSize(500,650); // default size is 0,0
+	setLocation(300,0); // default is 0,0 (top left corner)
 	getContentPane().setLayout(null);
 	
 	JDesktopPane desktopPane = new JDesktopPane();
@@ -32,7 +32,7 @@ class App extends JFrame {
 	getContentPane().add(Graph1_upload_btn);
 	
 	JLabel Graph2_label = new JLabel("Graph 2");
-	Graph2_label.setBounds(367, 15, 70, 32);
+	Graph2_label.setBounds(369, 15, 70, 32);
 	getContentPane().add(Graph2_label);
 	
 	
@@ -79,7 +79,7 @@ class App extends JFrame {
 	
 	Panel panel = new Panel();
 	panel.setBackground(Color.WHITE);
-	panel.setBounds(36, 184, 437, 269);
+	panel.setBounds(36, 184, 437, 407);
 	getContentPane().add(panel);
   }
 
