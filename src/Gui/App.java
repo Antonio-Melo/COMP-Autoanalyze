@@ -6,6 +6,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Panel;
 import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.Console;
+import java.io.File;
 
 class App extends JFrame {
 	private JTextField textField;
@@ -24,6 +28,13 @@ class App extends JFrame {
 	getContentPane().add(Graph1_label);
 	
 	JButton Graph1_upload_btn = new JButton("Upload");
+	Graph1_upload_btn.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			Filechooser Graph1_filechooser = new Filechooser();
+			Graph1_filechooser.setVisible(true);
+		}
+	});
 	Graph1_upload_btn.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 		}
@@ -37,6 +48,13 @@ class App extends JFrame {
 	
 	
 	JButton Graph2_upload_btn = new JButton("Upload");
+	Graph2_upload_btn.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			Filechooser Graph2_filechooser = new Filechooser();
+			Graph2_filechooser.setVisible(true);
+		}
+	});
 	Graph2_upload_btn.setBounds(339, 47, 117, 25);
 	getContentPane().add(Graph2_upload_btn);
 	
