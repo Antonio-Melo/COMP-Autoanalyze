@@ -21,15 +21,6 @@ public class ValidateFile
 }
 
 PARSER_END(ValidateFile)
-/*
-digraph G1
- {
-     start -> test;
-     test -> start;
-     test -> finish;
- }
-
-*/
 
 SKIP:{
     " "| "\t"| "\r"
@@ -58,27 +49,6 @@ void Start(Graph graph):{Token name;}{
   <OPEN>
 NodeGraph(graph)
 }
-/*
-digraph G2
-{
-    a -> b [label= hello ];
-    a -> c [label=world];
-    c -> d; 
-    b -> c; 
-    d -> a;
-    b [label='this'];
-    c [peripheries=2];
-}
-
-digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}
-
-digraph G4{
-a -> b [label = hello ];
- a [label= he];
- }
-digraph G5{a [label= he];}
-
-*/
 
 void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
      {
