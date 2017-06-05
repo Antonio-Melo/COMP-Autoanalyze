@@ -32,7 +32,7 @@ A linguagem de ficheiro dotyfiles utilizam palavras reservadas para alterar a es
  Para além disso, são criadas mais uma ou duas variavéis relativamente ao nó que estamos a tratar, podendo ser dois no caso de se tratar de uma operaçao com arestas ou simplesmente um nos outros caso.
  O principal problema na nossa quantidade de variaveis utilizadas na nossa analise semantica é à chamas recursivamente à nossa função NodeGraph,
  pois em cada nova iteração tratada aumenta o número de variaveis utilizadas, mas quanto a isso não existe forma de controlar a situação pois a unica maneira de guardar a informaçao toda que queremos para a possivel analise
-é apenas utilizando esta forma. 
+é apenas possivel utilizando esta forma. 
  
  
 **OVERVIEW: (refer the approach used in your tool, the main algorithms, the third-party tools and/or packages, etc.)
