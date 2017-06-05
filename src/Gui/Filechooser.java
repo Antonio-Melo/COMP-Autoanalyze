@@ -52,4 +52,8 @@ public class Filechooser  extends JFrame{
 		return fc;
 	}
 	
+	public String getFileName(){
+		return fileName;
+	}
+	
 }

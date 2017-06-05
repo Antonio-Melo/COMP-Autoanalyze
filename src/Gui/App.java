@@ -1,6 +1,12 @@
 package Gui;
 
 import javax.swing.*;
+
+import logic.Autoanalyse;
+import logic.Operations.Complement;
+import logic.Operations.Reversal;
+import logic.Structure.Graph;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -13,6 +19,8 @@ import java.io.File;
 
 class App extends JFrame {
 	private JTextField textField;
+	private Filechooser Graph1_filechooser;
+	private Filechooser Graph2_filechooser;
   public App() {
 	setTitle("Autoanalyze");
 	setSize(500,650); // default size is 0,0
@@ -31,7 +39,7 @@ class App extends JFrame {
 	Graph1_upload_btn.addMouseListener(new MouseAdapter() {
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			Filechooser Graph1_filechooser = new Filechooser();
+			Graph1_filechooser = new Filechooser();
 			Graph1_filechooser.setVisible(true);
 		}
 	});
@@ -51,7 +59,7 @@ class App extends JFrame {
 	Graph2_upload_btn.addMouseListener(new MouseAdapter() {
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			Filechooser Graph2_filechooser = new Filechooser();
+			Graph2_filechooser = new Filechooser();
 			Graph2_filechooser.setVisible(true);
 		}
 	});
@@ -63,6 +71,20 @@ class App extends JFrame {
 	getContentPane().add(lblOperations);
 	
 	JButton btnComplement = new JButton("Complement");
+	btnComplement.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Complement.complement(Analyse.getGraph());
+			}else if(Graph2_filechooser.getFileName() != null){
+				
+			}else{
+				
+			}
+		}
+	});
 	btnComplement.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 		}
