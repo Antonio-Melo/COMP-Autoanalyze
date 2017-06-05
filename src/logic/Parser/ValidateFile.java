@@ -113,11 +113,14 @@ public class ValidateFile implements ValidateFileConstants {
       throw new ParseException();
     }
     jj_consume_token(SEMICOLON);
-         Node node1 = new Node(name1.image);
-         if(!graph.existsNode(node1)){//exists node1
+         Node nodecopy = new Node(name1.image);
+         Node node1;
+         if( graph.existsNode(nodecopy)){//exists nodeCopy?
+            node1= graph.getNode(name1.image);
+         }else{
+             node1 = nodecopy;
              graph.addNode(node1);
          }
-
           if(node1==null)
             graph.addNode(node1);
 
