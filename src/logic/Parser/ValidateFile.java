@@ -22,27 +22,6 @@ public class ValidateFile implements ValidateFileConstants {
     NodeGraph(graph);
   }
 
-/*
-digraph G2
-{
-    a -> b [label= hello ];
-    a -> c [label=world];
-    c -> d; 
-    b -> c; 
-    d -> a;
-    b [label='this'];
-    c [peripheries=2];
-}
-
-digraph G3{a -> b [label = hello ];  a -> b [label= hello ];    a [peripheries=2];}
-
-digraph G4{
-a -> b [label = hello ];
- a [label= he];
- }
-digraph G5{a [label= he];}
-
-*/
   static final public void NodeGraph(Graph graph) throws ParseException {
                              Token name1, field1, charat1, name2, labelEdge;
          field1=null;
@@ -191,7 +170,7 @@ digraph G5{a [label= he];}
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0x20100,0x20080,0x60,0x20080,0x400,0x8400,0x2080,};
+      jj_la1_0 = new int[] {0x10080,0x10100,0x60,0x10100,0x200,0x4200,0x1100,};
    }
 
   /** Constructor with InputStream. */
@@ -329,7 +308,7 @@ digraph G5{a [label= he];}
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[18];
+    boolean[] la1tokens = new boolean[17];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -343,7 +322,7 @@ digraph G5{a [label= he];}
         }
       }
     }
-    for (int i = 0; i < 18; i++) {
+    for (int i = 0; i < 17; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;

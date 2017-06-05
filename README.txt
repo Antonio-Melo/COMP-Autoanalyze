@@ -1,8 +1,8 @@
 **PROJECT TITLE: Autoanalyze
 
 **GROUP: G19
-//TODO NAME1: António Melo, NR1: 201403053, GRADE1: <0 to 20 value>, CONTRIBUTION1: <0 to 100 %>;
-//TODO NAME2: Lázaro Costa, NR2: 201405342, GRADE2: <0 to 20 value>, CONTRIBUTION2: <0 to 100 %>;
+//TODO NAME1: Antï¿½nio Melo, NR1: 201403053, GRADE1: <0 to 20 value>, CONTRIBUTION1: <0 to 100 %>;
+//TODO NAME2: Lï¿½zaro Costa, NR2: 201405342, GRADE2: <0 to 20 value>, CONTRIBUTION2: <0 to 100 %>;
 //TODO NAME3: Maria de Abreu, NR3: 201306229, GRADE3: <0 to 20 value>, CONTRIBUTION3: <0 to 100 %>;
 
  
@@ -32,15 +32,15 @@ in order to integrate it with our Java program we decided to use a simple API by
 **TESTSUITE AND TEST INFRASTRUCTURE: (Describe the content of your testsuite regarding the number of examples, the approach to automate the test, etc.)
  
 //TO BE COMPLETED **TASK DISTRIBUTION:
-António Melo, 201403053
--
--
+AntÃ³nio Melo, 201403053
+- Cartesian Product operation
+- Interface in swing
 -
 
-Lázaro Costa, 201405342
--
--
--
+LÃ¡zaro Costa, 201405342
+- Intersection operation
+- Complement  operation
+- parser in javacc
 
 Maria de Abreu, 201306229
 - integration with GraphViz API;

@@ -38,8 +38,8 @@ public class Autoanalyse {
 
         Graph graph = new Graph();
         Graph graph1 = new Graph();
-        String fileRead = readFile("dot/example3.dot");//TODO: atençao ao diretorio
-        String fileRead1 = readFile("dot/test1.dot");//TODO: atençao ao diretorio
+        String fileRead = readFile("dot/inputGraph1.dot");//TODO: atençao ao diretorio
+        String fileRead1 = readFile("dot/inputGraph2.dot");//TODO: atençao ao diretorio
 
 
         try {
@@ -49,7 +49,7 @@ public class Autoanalyse {
             validateFile.Start(graph);
             System.out.println("LI BEM O PRIMEIRO");
 
-            System.out.println("VOU LER O SEGUNDO");
+           System.out.println("VOU LER O SEGUNDO");
             validateFile.ReInit(new java.io.StringReader(fileRead1));
             validateFile.Start(graph1);
             System.out.println("LI BEM O SEGUNDO");
@@ -60,13 +60,14 @@ public class Autoanalyse {
         }
 
 
-        //  CartesianProduct product = new CartesianProduct(graph, graph1);
-        //Graph graphResult = product.getNewGraph();
+          CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
-        Graph graphresult = Reversal.reversal(graph);
+       // Graph graphresult = Reversal.reversal(graph);
+        //Graph graphresult = Reversal.reversal(graph);
 
         this.outPutResult(graphresult.getNodes());
         // this.outPutResult(graphresult.getNodes());
@@ -130,7 +131,7 @@ public class Autoanalyse {
      * @param result Write in the file of the graph result in the language dot
      */
     public void outPutResult(ArrayList<Node> result) {
-        Path f = Paths.get("output.dot");
+       Path f = Paths.get("outputGraph.dot");
         List<String> lines = new ArrayList<String>();
 
         lines.add("digraph OUT {");
@@ -169,7 +170,7 @@ public class Autoanalyse {
 
         DotConvert dc = new DotConvert();
 
-        dc.start("output.dot", "graphOutput.");
+        dc.start("outputGraph.dot", "outputGraph.");
 
     }
 }

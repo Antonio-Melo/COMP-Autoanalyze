@@ -30,9 +30,8 @@ TOKEN:{
   <DIGRAPH : "digraph">|
   <LABEL :"label">|
   <PERIPHE :"peripheries">|
-  <NAME: (["a"-"z","A"-"Z"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
   <FINAL_STATE :"2">|
-  <INTEGER :["0"-"9"]>|
+  <NAME: (["a"-"z","A"-"Z", "0"-"9"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
   <OPENFIELD: "[">|
   <CLOSEFIELD: "]">|
   <OPEN: "{">|
