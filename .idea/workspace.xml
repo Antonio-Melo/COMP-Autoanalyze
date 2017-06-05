@@ -4,12 +4,704 @@
     <bookmark url="file://$PROJECT_DIR$/src/Gui/GraphViz.java" line="281" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d797a4-d9f0-4c7e-a424-9b6f4f740cc8" name="Default" comment="bug fixed">
+    <list default="true" id="26d797a4-d9f0-4c7e-a424-9b6f4f740cc8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/Pathplan.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/QtCore4.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/QtGui4.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/acyclic.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/ann.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/bcomps.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/ccomps.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/cdt.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/cgraph.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/circo.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/dijkstra.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/dot.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/dotty.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fc-cache.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fc-cat.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fc-list.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fc-match.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fdp.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fontconfig.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/fontconfig_fix.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/freetype6.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gc.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/glut32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gml2gv.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/graphml2gv.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gv2gml.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvcolor.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvedit.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvgen.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvmap.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvpack.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_core.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_dot_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_gd.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_gdiplus.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_neato_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvplugin_pango.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gvpr.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/gxl2gv.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/iconv.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/intl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/jpeg62.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/lefty.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libatk-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libcairo-2.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libexpat-1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libexpat.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libfontconfig-1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libfreetype-6.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgdk-win32-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgdk_pixbuf-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgdkglext-win32-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgio-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libglade-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libglib-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgmodule-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgobject-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgthread-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgtk-win32-2.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libgtkglext-win32-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libltdl-3.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpango-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpangocairo-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpangoft2-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpangowin32-1.0-0.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpng12.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libpng14-14.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/libxml2.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/lneato.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/ltdl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/mingle.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/mm2gv.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/neato.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/nop.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/osage.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/patchwork.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/prune.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/sccmap.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/sfdp.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/smyrna.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/tred.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/twopi.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/unflatten.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/vmalloc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/zlib1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/Pathplan.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/ann.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/cdt.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/cgraph.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_core.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_dot_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_gd.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_gdiplus.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_neato_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/gvplugin_pango.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/vmalloc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/Pathplan.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/ast.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/cdt.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/cgraph.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/circogen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/dot.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/dotgen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/expr.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/fdpgen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gd.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/graph.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gts.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvortho.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvpack.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_core.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_dot_layout.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_gd.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_gdiplus.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_neato_layout.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvplugin_pango.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/gvprlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/ingraphs.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/minglelib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/neatogen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/osage.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/patchwork.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/rbtree.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/sfdp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/sfio.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/sparse.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/topfish.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/twopigen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/vmalloc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/vpsc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/xdot.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-arabic-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-arabic-lang.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-basic-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-basic-win32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-hangul-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-hebrew-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-indic-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-indic-lang.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-khmer-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-syriac-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-thai-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pango/1.6.0/modules/pango-tibetan-fc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/Pathplan.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/ann.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/cdt.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/cgraph.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_core.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_dot_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_gd.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_gdiplus.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_neato_layout.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/gvplugin_pango.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/vmalloc.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/Pathplan.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/ast.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/cdt.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/cgraph.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/circogen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/dot.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/dotgen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/expr.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/fdpgen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gd.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/graph.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gts.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvortho.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvpack.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_core.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_dot_layout.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_gd.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_gdiplus.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_neato_layout.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvplugin_pango.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/gvprlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/ingraphs.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/minglelib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/neatogen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/osage.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/patchwork.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/rbtree.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/sfdp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/sfio.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/sparse.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/topfish.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/twopigen.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/vmalloc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/vpsc.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/xdot.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/fonts/FreeSans.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/Gdtclft2.2.5.example.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/Mcircle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/Mdiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/Msquare.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_box.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_crow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_diamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_dot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_ediamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_empty.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_forward.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_halfopen.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_inv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_invdot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_invempty.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_invodot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_lteeoldiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_nohead.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_none.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_normal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_obox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_odiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_odot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/a_tee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_box.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_crow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_diamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_dot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_inv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_lbox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_lcrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_ldiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_linv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_lnormal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_ltee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_lvee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_none.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_normal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_obox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_odiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_odot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_oinv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_olbox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_oldiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_olinv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_olnormal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_onormal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_orbox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_ordiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_orinv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_ornormal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rbox.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rcrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rdiamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rinv.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rnormal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rtee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_rvee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_tee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/aa_vee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/back.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/both.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/box.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/box3d.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/circle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/colorlist.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/component.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/constraint.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/diamond.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/doublecircle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/doubleoctagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/egg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/ellipse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/fill.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/forward.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/hexagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/house.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/invhouse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/invtrapezium.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/invtriangle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/mrecord.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/nohead.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/none.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/note.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/octagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/parallelogram.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/pentagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/plaintext.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/plugins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/point.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/polygon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/record.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/record2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/rect.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/rectangle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/round.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/sdlshapes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/septagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/trapezium.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/triangle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/tripleoctagon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/pspdf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/acyclic.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/bcomps.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/ccomps.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/cdt.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/cgraph.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/circo.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/dijkstra.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/dot.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/dotguide.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/dotty.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/dottyguide.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/fdp.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gc.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/graph.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gv2gxl.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gvc.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gvcolor.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gvgen.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gvpack.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gvpr.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/gxl2gv.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/lefty.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/leftyguide.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/libguide.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/lneato.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/mm2gv.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/neato.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/neatoguide.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/nop.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/osage.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/pathplan.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/prune.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/sccmap.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/tred.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/twopi.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/unflatten.1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/pdf/xdot.3.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/Latin1.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/awilliams.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/jcctree.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/jsort.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/oldarrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/polypoly.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/records.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/records.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/russian.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/triedds.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/viewfile.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/world.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/2D.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/3D.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/center.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/details.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/edge.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/fish.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/fisheye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/fit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/magnifier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/mod_3D.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/mod_fisheye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/no_fisheye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/node.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/pan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/preview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/rect_select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/rect_select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/rotate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/zoomin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/zoomout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/setuplogo.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/cartesian product/graphOutput.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/complement/outputGraph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/intersection/graphOutput.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/reversal/outputGraph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/union/graphOutput.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/GVedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/Graphviz.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/New Text Document.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/Settings.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/config6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/exparse.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/getopt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/bin/props.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-autohint.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-no-sub-pixel.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-sub-pixel-bgr.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-sub-pixel-rgb.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/10-unhinted.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/20-fix-globaladvance.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/20-lohit-gujarati.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/20-unhint-small-vera.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/30-amt-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/30-urw-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/40-generic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/49-sansserif.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/50-user.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/51-local.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/60-latin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/65-fonts-persian.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/65-nonlatin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/69-unifont.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/70-no-bitmaps.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/70-yes-bitmaps.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/80-delicious.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/90-synthetic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.avail/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/20-fix-globaladvance.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/20-lohit-gujarati.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/20-unhint-small-vera.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/30-amt-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/30-urw-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/40-generic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/49-sansserif.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/50-user.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/51-local.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/60-latin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/65-fonts-persian.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/65-nonlatin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/69-unifont.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/80-delicious.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/conf.d/90-synthetic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/fonts.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/fonts/fonts.dtd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/gtk-2.0/gdk-pixbuf.loaders" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/gtk-2.0/gtk.immodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/etc/gtk-2.0/gtkrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-autohint.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-no-sub-pixel.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-sub-pixel-bgr.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-sub-pixel-rgb.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-sub-pixel-vbgr.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-sub-pixel-vrgb.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/10-unhinted.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/20-fix-globaladvance.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/20-lohit-gujarati.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/20-unhint-small-vera.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/30-amt-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/30-urw-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/40-generic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/49-sansserif.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/50-user.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/51-local.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/60-latin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/65-fonts-persian.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/65-nonlatin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/69-unifont.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/70-no-bitmaps.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/70-yes-bitmaps.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/80-delicious.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/90-synthetic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.avail/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/20-fix-globaladvance.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/20-lohit-gujarati.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/20-unhint-small-vera.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/30-amt-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/30-urw-aliases.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/40-generic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/49-sansserif.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/50-user.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/51-local.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/60-latin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/65-fonts-persian.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/65-nonlatin.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/69-unifont.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/80-delicious.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/conf.d/90-synthetic.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/fonts.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/fonts/fonts.dtd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/gtk-2.0/gdk-pixbuf.loaders" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/gtk-2.0/gtk.immodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/gtk-2.0/gtkrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/arith.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/cdt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/cgraph.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/color.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/geom.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/graph.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvc.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvcext.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvcjob.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvcommon.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvconfig.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin_device.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin_layout.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin_loadimage.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin_render.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvplugin_textlayout.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/gvpr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/pack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/pathgeom.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/pathplan.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/textpara.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/textspan.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/types.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/usershape.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/include/graphviz/xdot.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/dll/dummyfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/debug/lib/dummyfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/box.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/def.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/dotty.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/dotty_draw.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/dotty_edit.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/dotty_layout.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/dotty_ui.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/fractal.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/fractal2.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/lefty.psp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/slides.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/lefty/tree.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pkgconfig/libcdt.pc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pkgconfig/libcgraph.pc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pkgconfig/libgraph.pc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pkgconfig/libgvc.pc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/pkgconfig/libpathplan.pc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/dll/dummyfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/lib/release/lib/dummyfile.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/pango/pango.aliases" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/pango/pango.modules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/AUTHORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/COPYING" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/Dot.ref" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/NEWS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/addingLayout.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/cpl1.0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/fontfaq.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/FAQ.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/GVedit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/build.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/char.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/gd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/arrows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/attrs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/colors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/command.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/grammar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html3.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/html4.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/lang.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/output.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/info/shapes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/schema/arguments.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/schema/attributes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/schema/attributes.xslt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/todo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/html/winbuild.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/doc/latex_suggestions.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/examples/4elt.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/examples/world.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/KW91.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/NaN.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/abstract.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/alf.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/arrows.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/awilliams.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust1.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust2.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust3.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust4.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/clust5.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/crazy.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/ctext.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/dfa.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/fig6.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/fsm.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/grammar.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/hashtable.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/honda-tokoro.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/jcctree.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/jsort.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/ldbxtried.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/longflat.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/mike.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/nhg.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/oldarrows.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/pgram.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/pm2way.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/pmpipe.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/polypoly.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/proc3d.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/psfonttest.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/record2.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/records.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/rowe.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/russian.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/sdh.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/shells.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/states.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/structs.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/switch.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/table.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/train11.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/trapeziumlr.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/tree.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/triedds.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/try.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/unix.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/unix2.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/viewfile.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/directed/world.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/smyrna/4elt.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/smyrna/world.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/undirected/ER.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/undirected/Heawood.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/undirected/Petersen.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/undirected/ngk10_4.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/graphs/undirected/process.gv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/gvedit/attributes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/box.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/def.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/dotty.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/dotty_draw.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/dotty_edit.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/dotty_layout.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/dotty_ui.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/fractal.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/fractal2.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/lefty.psp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/slides.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/lefty/tree.lefty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/attr_widgets.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/attrs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/mouse_actions.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/smyrna.glade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/graphviz/smyrna/template.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/license.rtf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/acyclic.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/bcomps.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/ccomps.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/circo.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/dijkstra.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/dot.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/dotty.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/fdp.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gc.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gv2gxl.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gvcolor.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gvgen.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gvpack.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gvpr.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/gxl2gv.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/lefty.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/lneato.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/mm2gv.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/neato.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/nop.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/osage.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/prune.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/sccmap.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/tred.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/twopi.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man1/unflatten.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/cdt.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/cgraph.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/graph.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/gvc.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/pathplan.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man3/xdot.3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/Graphviz2.38/share/man/man7/graphviz.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/cartesian product/graphOutput.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/cartesian product/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/cartesian product/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/cartesian product/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/complement/inputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/complement/outputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/complement/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/intersection/graphOutput.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/intersection/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/intersection/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/intersection/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/reversal/inputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/reversal/outputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/reversal/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/union/graphOutput.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/union/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/union/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/examples/union/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testsuite/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Gui/Autoanalyse.java" afterPath="$PROJECT_DIR$/src/Gui/Autoanalyse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Gui/DotConvert.java" afterPath="$PROJECT_DIR$/src/Gui/DotConvert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic/Operations/LanguageAnalysis.java" afterPath="$PROJECT_DIR$/src/logic/Operations/LanguageAnalysis.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,34 +720,21 @@
       <file leaf-file-name="CartesianProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/Operations/CartesianProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
+            <state relative-caret-position="1122">
               <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
                 <element signature="docComment;field#newGraph#0;class#CartesianProduct#0" expanded="false" />
                 <element signature="docComment;field#unionFinalState#0;class#CartesianProduct#0" expanded="false" />
                 <element signature="docComment;field#intersectionFinalState#0;class#CartesianProduct#0" expanded="false" />
                 <element signature="docComment;field#combinednodes#0;class#CartesianProduct#0" expanded="false" />
                 <element signature="docComment;method#CartesianProduct#0;class#CartesianProduct#0" expanded="false" />
-                <element signature="e#3760#3761#0" expanded="true" />
-                <element signature="e#3791#3792#0" expanded="true" />
-                <element signature="e#3926#3927#0" expanded="true" />
-                <element signature="e#3964#3965#0" expanded="true" />
-                <element signature="e#4113#4114#0" expanded="true" />
-                <element signature="e#4158#4159#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/Structure/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-              <folding>
-                <element signature="method#clone#0;class#Node#0" expanded="false" />
-                <element signature="method#haveEdge#0;class#Node#0" expanded="false" />
+                <element signature="e#3760#3761#0" expanded="false" />
+                <element signature="e#3791#3792#0" expanded="false" />
+                <element signature="e#3926#3927#0" expanded="false" />
+                <element signature="e#3964#3965#0" expanded="false" />
+                <element signature="e#4113#4114#0" expanded="false" />
+                <element signature="e#4158#4159#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,7 +745,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,30 +765,118 @@
       <file leaf-file-name="Autoanalyse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gui/Autoanalyse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="424">
+              <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1079#1098#0" expanded="true" />
+                <element signature="e#1091#1098#0" expanded="true" />
+                <element signature="e#1079#1098#0" expanded="true" />
+                <element signature="e#1164#1171#0" expanded="true" />
+                <element signature="e#1310#1391#1" expanded="true" />
+                <element signature="e#1628#1663#0" expanded="true" />
+                <element signature="e#1649#1663#0" expanded="true" />
+                <element signature="e#1628#1663#0" expanded="true" />
+                <element signature="e#1761#1768#0" expanded="true" />
+                <element signature="e#1806#1887#1" expanded="true" />
+                <element signature="e#2002#2037#0" expanded="true" />
+                <element signature="e#2023#2037#0" expanded="true" />
+                <element signature="e#2002#2037#0" expanded="true" />
+                <element signature="e#2123#2159#0" expanded="true" />
+                <element signature="e#2135#2152#0" expanded="true" />
+                <element signature="e#2123#2159#0" expanded="true" />
+                <element signature="e#2173#2236#1" expanded="true" />
+                <element signature="e#2245#2287#1" expanded="true" />
+                <element signature="e#2265#2286#0" expanded="true" />
+                <element signature="e#2567#2608#0" expanded="true" />
+                <element signature="e#2579#2601#0" expanded="true" />
+                <element signature="e#2567#2608#0" expanded="true" />
+                <element signature="e#2637#2659#0" expanded="true" />
+                <element signature="method#readFile#0;class#Autoanalyse#0" expanded="false" />
+                <element signature="e#2882#2907#1" expanded="true" />
+                <element signature="e#2916#2935#1" expanded="true" />
+                <element signature="e#3021#3049#1" expanded="true" />
+                <element signature="method#main#0;class#Autoanalyse#0" expanded="false" />
+                <element signature="e#3390#3419#1" expanded="true" />
+                <element signature="e#3456#3497#1" expanded="true" />
+                <element signature="method#validateFile#0;class#Autoanalyse#0" expanded="false" />
+                <element signature="e#3697#3778#1" expanded="true" />
+                <element signature="e#3788#3814#1" expanded="true" />
+                <element signature="method#outPutResult#0;class#Autoanalyse#0" expanded="false" />
+                <element signature="e#4332#4374#1" expanded="true" />
+                <element signature="e#4350#4373#0" expanded="true" />
+                <element signature="e#4350#4373#0" expanded="true" />
+                <element signature="e#4383#4414#1" expanded="true" />
+                <element signature="e#4423#4452#1" expanded="true" />
+                <element signature="e#4461#4506#1" expanded="true" />
+                <element signature="e#4482#4505#0" expanded="true" />
+                <element signature="e#4495#4503#0" expanded="true" />
+                <element signature="e#4537#4562#0" expanded="true" />
+                <element signature="e#4537#4562#0" expanded="true" />
+                <element signature="e#4573#4599#0" expanded="true" />
+                <element signature="e#4573#4599#0" expanded="true" />
+                <element signature="e#4614#4623#0" expanded="true" />
+                <element signature="e#4648#4688#1" expanded="true" />
+                <element signature="e#4672#4687#0" expanded="true" />
+                <element signature="e#4701#4718#1" expanded="true" />
+                <element signature="e#4737#4752#0" expanded="true" />
+                <element signature="e#4777#4786#0" expanded="true" />
+                <element signature="e#4836#4898#0" expanded="true" />
+                <element signature="e#4836#4852#0" expanded="true" />
+                <element signature="e#4836#4862#0" expanded="true" />
+                <element signature="e#4836#4898#0" expanded="true" />
+                <element signature="e#4836#4898#0" expanded="true" />
+                <element signature="e#4874#4888#0" expanded="true" />
+                <element signature="e#4874#4898#0" expanded="true" />
+                <element signature="e#4836#4898#0" expanded="true" />
+                <element signature="e#4925#4940#0" expanded="true" />
+                <element signature="e#4984#5019#0" expanded="true" />
+                <element signature="e#4997#5012#0" expanded="true" />
+                <element signature="e#4984#5019#0" expanded="true" />
+                <element signature="e#5081#5096#0" expanded="true" />
+                <element signature="e#5081#5096#0" expanded="true" />
+                <element signature="e#5147#5165#0" expanded="true" />
+                <element signature="e#5203#5239#0" expanded="true" />
+                <element signature="e#5203#5217#0" expanded="true" />
+                <element signature="e#5203#5239#0" expanded="true" />
+                <element signature="e#5258#5273#0" expanded="true" />
+                <element signature="e#5258#5273#0" expanded="true" />
+                <element signature="e#5305#5320#0" expanded="true" />
+                <element signature="e#5366#5418#0" expanded="true" />
+                <element signature="e#5366#5380#0" expanded="true" />
+                <element signature="e#5366#5418#0" expanded="true" />
+                <element signature="e#5366#5418#0" expanded="true" />
+                <element signature="e#5396#5411#0" expanded="true" />
+                <element signature="e#5366#5418#0" expanded="true" />
+                <element signature="e#5437#5452#0" expanded="true" />
+                <element signature="e#5437#5452#0" expanded="true" />
+                <element signature="e#5486#5500#0" expanded="true" />
+                <element signature="e#5486#5500#0" expanded="true" />
+                <element signature="e#5807#5840#1" expanded="true" />
+                <marker date="1496703028905" expanded="false" signature="5925:5936" ph=" { " />
+                <marker date="1496703028905" expanded="false" signature="5949:5955" ph=" }" />
+                <marker date="1496703028905" expanded="false" signature="5985:5996" ph=" { " />
+                <marker date="1496703028905" expanded="false" signature="6010:6016" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.txt">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Gui/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Union.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/Operations/Union.java">
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -116,8 +885,8 @@
       <file leaf-file-name="DotConvert.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gui/DotConvert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="289">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
                 <marker date="1496684807159" expanded="true" signature="66:173" ph="/**...*/" />
                 <marker date="1496684807159" expanded="true" signature="1156:1255" ph="{...}" />
@@ -126,12 +895,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Filechooser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gui/Filechooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1469#1470#0" expanded="false" />
+                <element signature="e#1485#1486#0" expanded="false" />
+                <element signature="e#1517#1518#0" expanded="false" />
+                <element signature="e#1539#1540#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LanguageAnalysis.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/logic/Operations/LanguageAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="204">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,6 +929,27 @@
             <state relative-caret-position="1394">
               <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3635#3636#0" expanded="false" />
+                <element signature="e#3691#3692#0" expanded="false" />
+                <element signature="e#5499#5500#0" expanded="false" />
+                <element signature="e#5543#5544#0" expanded="false" />
+                <element signature="e#5657#5658#0" expanded="false" />
+                <element signature="e#5696#5697#0" expanded="false" />
+                <element signature="e#5809#5810#0" expanded="false" />
+                <element signature="e#5855#5856#0" expanded="false" />
+                <element signature="e#5943#5944#0" expanded="false" />
+                <element signature="e#5982#5983#0" expanded="false" />
+                <element signature="e#6014#6015#0" expanded="false" />
+                <element signature="e#6062#6063#0" expanded="false" />
+                <element signature="e#11828#11829#0" expanded="false" />
+                <element signature="e#11864#11865#0" expanded="false" />
+                <element signature="e#12015#12016#0" expanded="false" />
+                <element signature="e#12041#12042#0" expanded="false" />
+                <element signature="e#12280#12281#0" expanded="false" />
+                <element signature="e#12341#12342#0" expanded="false" />
+                <element signature="e#12495#12496#0" expanded="false" />
+                <element signature="e#12521#12522#0" expanded="false" />
                 <marker date="1496683882346" expanded="false" signature="11392:11402" ph="val" />
                 <marker date="1496683882346" expanded="false" signature="12315:12319" ph="$" />
                 <marker date="1496683882346" expanded="false" signature="12328:12332" ph="" />
@@ -263,6 +1071,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,6 +1082,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="COMP-Autoanalyze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COMP-Autoanalyze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="COMP-Autoanalyze" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsuite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +1133,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -347,7 +1169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.teste">
+  <component name="RunManager" selected="Application.App">
     <configuration default="false" name="teste" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -359,6 +1181,26 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="dot/inputGraph1.dot dot/inputGraph2.dot" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="COMP" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Gui.App" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -755,12 +1597,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.teste" />
+      <item index="1" class="java.lang.String" itemvalue="Application.App" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.teste" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.App" />
+        <item index="1" class="java.lang.String" itemvalue="Application.teste" />
       </list>
     </recent_temporary>
   </component>
@@ -779,6 +1623,7 @@
       <workItem from="1496672092018" duration="4403000" />
       <workItem from="1496677305694" duration="8941000" />
       <workItem from="1496687050329" duration="788000" />
+      <workItem from="1496701994039" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="intersection done">
       <created>1494252482710</created>
@@ -889,7 +1734,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29875000" />
+    <option name="totallyTimeSpent" value="32763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -907,18 +1752,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33551556" sideWeight="0.39984825" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05237316" sideWeight="0.33383915" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33551556" sideWeight="0.6001517" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05237316" sideWeight="0.6661608" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05237316" sideWeight="0.6623672" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38297874" sideWeight="0.430956" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19312602" sideWeight="0.42336875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23975721" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24355084" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -934,7 +1780,6 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33551556" sideWeight="0.40667677" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -958,7 +1803,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="remove out" />
     <MESSAGE value="bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
+    <MESSAGE value="testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1128,13 +1974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/Filechooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Operations/Intersection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1162,6 +2001,94 @@
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1079#1098#0" expanded="true" />
+            <element signature="e#1091#1098#0" expanded="true" />
+            <element signature="e#1079#1098#0" expanded="true" />
+            <element signature="e#1164#1171#0" expanded="true" />
+            <element signature="e#1310#1391#1" expanded="true" />
+            <element signature="e#1628#1663#0" expanded="true" />
+            <element signature="e#1649#1663#0" expanded="true" />
+            <element signature="e#1628#1663#0" expanded="true" />
+            <element signature="e#1761#1768#0" expanded="true" />
+            <element signature="e#1806#1887#1" expanded="true" />
+            <element signature="e#2002#2037#0" expanded="true" />
+            <element signature="e#2023#2037#0" expanded="true" />
+            <element signature="e#2002#2037#0" expanded="true" />
+            <element signature="e#2123#2159#0" expanded="true" />
+            <element signature="e#2135#2152#0" expanded="true" />
+            <element signature="e#2123#2159#0" expanded="true" />
+            <element signature="e#2173#2236#1" expanded="true" />
+            <element signature="e#2245#2287#1" expanded="true" />
+            <element signature="e#2265#2286#0" expanded="true" />
+            <element signature="e#2567#2608#0" expanded="true" />
+            <element signature="e#2579#2601#0" expanded="true" />
+            <element signature="e#2567#2608#0" expanded="true" />
+            <element signature="e#2637#2659#0" expanded="true" />
+            <element signature="method#readFile#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#2882#2907#1" expanded="true" />
+            <element signature="e#2916#2935#1" expanded="true" />
+            <element signature="e#3021#3049#1" expanded="true" />
+            <element signature="method#main#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#3390#3419#1" expanded="true" />
+            <element signature="e#3456#3497#1" expanded="true" />
+            <element signature="method#validateFile#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#3697#3778#1" expanded="true" />
+            <element signature="e#3788#3814#1" expanded="true" />
+            <element signature="method#outPutResult#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#4332#4374#1" expanded="true" />
+            <element signature="e#4350#4373#0" expanded="true" />
+            <element signature="e#4350#4373#0" expanded="true" />
+            <element signature="e#4383#4414#1" expanded="true" />
+            <element signature="e#4423#4452#1" expanded="true" />
+            <element signature="e#4461#4506#1" expanded="true" />
+            <element signature="e#4482#4505#0" expanded="true" />
+            <element signature="e#4495#4503#0" expanded="true" />
+            <element signature="e#4537#4562#0" expanded="true" />
+            <element signature="e#4537#4562#0" expanded="true" />
+            <element signature="e#4573#4599#0" expanded="true" />
+            <element signature="e#4573#4599#0" expanded="true" />
+            <element signature="e#4614#4623#0" expanded="true" />
+            <element signature="e#4648#4688#1" expanded="true" />
+            <element signature="e#4672#4687#0" expanded="true" />
+            <element signature="e#4701#4718#1" expanded="true" />
+            <element signature="e#4737#4752#0" expanded="true" />
+            <element signature="e#4777#4786#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4836#4852#0" expanded="true" />
+            <element signature="e#4836#4862#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4874#4888#0" expanded="true" />
+            <element signature="e#4874#4898#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4925#4940#0" expanded="true" />
+            <element signature="e#4984#5019#0" expanded="true" />
+            <element signature="e#4997#5012#0" expanded="true" />
+            <element signature="e#4984#5019#0" expanded="true" />
+            <element signature="e#5081#5096#0" expanded="true" />
+            <element signature="e#5081#5096#0" expanded="true" />
+            <element signature="e#5147#5165#0" expanded="true" />
+            <element signature="e#5203#5239#0" expanded="true" />
+            <element signature="e#5203#5217#0" expanded="true" />
+            <element signature="e#5203#5239#0" expanded="true" />
+            <element signature="e#5258#5273#0" expanded="true" />
+            <element signature="e#5258#5273#0" expanded="true" />
+            <element signature="e#5305#5320#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5366#5380#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5396#5411#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5437#5452#0" expanded="true" />
+            <element signature="e#5437#5452#0" expanded="true" />
+            <element signature="e#5486#5500#0" expanded="true" />
+            <element signature="e#5486#5500#0" expanded="true" />
+            <element signature="e#5807#5840#1" expanded="true" />
+            <marker date="1496703028905" expanded="false" signature="5925:5936" ph=" { " />
+            <marker date="1496703028905" expanded="false" signature="5949:5955" ph=" }" />
+            <marker date="1496703028905" expanded="false" signature="5985:5996" ph=" { " />
+            <marker date="1496703028905" expanded="false" signature="6010:6016" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1180,24 +2107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="100" column="46" lean-forward="false" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1496683882324" expanded="true" signature="6108:6144" ph="{...}" />
-            <marker date="1496683882324" expanded="false" signature="6112:6128" ph="contentPane" />
-            <marker date="1496683882324" expanded="false" signature="6193:6199" ph="val" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Operations/Union.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,19 +2127,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Operations/LanguageAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="204">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/DotConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding>
-            <marker date="1496684807159" expanded="true" signature="66:173" ph="/**...*/" />
-            <marker date="1496684807159" expanded="true" signature="1156:1255" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1236,6 +2140,27 @@
         <state relative-caret-position="1394">
           <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3635#3636#0" expanded="false" />
+            <element signature="e#3691#3692#0" expanded="false" />
+            <element signature="e#5499#5500#0" expanded="false" />
+            <element signature="e#5543#5544#0" expanded="false" />
+            <element signature="e#5657#5658#0" expanded="false" />
+            <element signature="e#5696#5697#0" expanded="false" />
+            <element signature="e#5809#5810#0" expanded="false" />
+            <element signature="e#5855#5856#0" expanded="false" />
+            <element signature="e#5943#5944#0" expanded="false" />
+            <element signature="e#5982#5983#0" expanded="false" />
+            <element signature="e#6014#6015#0" expanded="false" />
+            <element signature="e#6062#6063#0" expanded="false" />
+            <element signature="e#11828#11829#0" expanded="false" />
+            <element signature="e#11864#11865#0" expanded="false" />
+            <element signature="e#12015#12016#0" expanded="false" />
+            <element signature="e#12041#12042#0" expanded="false" />
+            <element signature="e#12280#12281#0" expanded="false" />
+            <element signature="e#12341#12342#0" expanded="false" />
+            <element signature="e#12495#12496#0" expanded="false" />
+            <element signature="e#12521#12522#0" expanded="false" />
             <marker date="1496683882346" expanded="false" signature="11392:11402" ph="val" />
             <marker date="1496683882346" expanded="false" signature="12315:12319" ph="$" />
             <marker date="1496683882346" expanded="false" signature="12328:12332" ph="" />
@@ -1253,27 +2178,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/Operations/CartesianProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
+        <state relative-caret-position="1122">
           <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="docComment;field#newGraph#0;class#CartesianProduct#0" expanded="false" />
             <element signature="docComment;field#unionFinalState#0;class#CartesianProduct#0" expanded="false" />
             <element signature="docComment;field#intersectionFinalState#0;class#CartesianProduct#0" expanded="false" />
             <element signature="docComment;field#combinednodes#0;class#CartesianProduct#0" expanded="false" />
             <element signature="docComment;method#CartesianProduct#0;class#CartesianProduct#0" expanded="false" />
-            <element signature="e#3760#3761#0" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3926#3927#0" expanded="true" />
-            <element signature="e#3964#3965#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
-            <element signature="e#4158#4159#0" expanded="true" />
+            <element signature="e#3760#3761#0" expanded="false" />
+            <element signature="e#3791#3792#0" expanded="false" />
+            <element signature="e#3926#3927#0" expanded="false" />
+            <element signature="e#3964#3965#0" expanded="false" />
+            <element signature="e#4113#4114#0" expanded="false" />
+            <element signature="e#4158#4159#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1286,20 +2213,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui/Autoanalyse.java">
+    <entry file="file://$PROJECT_DIR$/src/Gui/DotConvert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1496684807159" expanded="true" signature="66:173" ph="/**...*/" />
+            <marker date="1496684807159" expanded="true" signature="1156:1255" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui/Filechooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1469#1470#0" expanded="false" />
+            <element signature="e#1485#1486#0" expanded="false" />
+            <element signature="e#1517#1518#0" expanded="false" />
+            <element signature="e#1539#1540#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui/Autoanalyse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1079#1098#0" expanded="true" />
+            <element signature="e#1091#1098#0" expanded="true" />
+            <element signature="e#1079#1098#0" expanded="true" />
+            <element signature="e#1164#1171#0" expanded="true" />
+            <element signature="e#1310#1391#1" expanded="true" />
+            <element signature="e#1628#1663#0" expanded="true" />
+            <element signature="e#1649#1663#0" expanded="true" />
+            <element signature="e#1628#1663#0" expanded="true" />
+            <element signature="e#1761#1768#0" expanded="true" />
+            <element signature="e#1806#1887#1" expanded="true" />
+            <element signature="e#2002#2037#0" expanded="true" />
+            <element signature="e#2023#2037#0" expanded="true" />
+            <element signature="e#2002#2037#0" expanded="true" />
+            <element signature="e#2123#2159#0" expanded="true" />
+            <element signature="e#2135#2152#0" expanded="true" />
+            <element signature="e#2123#2159#0" expanded="true" />
+            <element signature="e#2173#2236#1" expanded="true" />
+            <element signature="e#2245#2287#1" expanded="true" />
+            <element signature="e#2265#2286#0" expanded="true" />
+            <element signature="e#2567#2608#0" expanded="true" />
+            <element signature="e#2579#2601#0" expanded="true" />
+            <element signature="e#2567#2608#0" expanded="true" />
+            <element signature="e#2637#2659#0" expanded="true" />
+            <element signature="method#readFile#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#2882#2907#1" expanded="true" />
+            <element signature="e#2916#2935#1" expanded="true" />
+            <element signature="e#3021#3049#1" expanded="true" />
+            <element signature="method#main#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#3390#3419#1" expanded="true" />
+            <element signature="e#3456#3497#1" expanded="true" />
+            <element signature="method#validateFile#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#3697#3778#1" expanded="true" />
+            <element signature="e#3788#3814#1" expanded="true" />
+            <element signature="method#outPutResult#0;class#Autoanalyse#0" expanded="false" />
+            <element signature="e#4332#4374#1" expanded="true" />
+            <element signature="e#4350#4373#0" expanded="true" />
+            <element signature="e#4350#4373#0" expanded="true" />
+            <element signature="e#4383#4414#1" expanded="true" />
+            <element signature="e#4423#4452#1" expanded="true" />
+            <element signature="e#4461#4506#1" expanded="true" />
+            <element signature="e#4482#4505#0" expanded="true" />
+            <element signature="e#4495#4503#0" expanded="true" />
+            <element signature="e#4537#4562#0" expanded="true" />
+            <element signature="e#4537#4562#0" expanded="true" />
+            <element signature="e#4573#4599#0" expanded="true" />
+            <element signature="e#4573#4599#0" expanded="true" />
+            <element signature="e#4614#4623#0" expanded="true" />
+            <element signature="e#4648#4688#1" expanded="true" />
+            <element signature="e#4672#4687#0" expanded="true" />
+            <element signature="e#4701#4718#1" expanded="true" />
+            <element signature="e#4737#4752#0" expanded="true" />
+            <element signature="e#4777#4786#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4836#4852#0" expanded="true" />
+            <element signature="e#4836#4862#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4874#4888#0" expanded="true" />
+            <element signature="e#4874#4898#0" expanded="true" />
+            <element signature="e#4836#4898#0" expanded="true" />
+            <element signature="e#4925#4940#0" expanded="true" />
+            <element signature="e#4984#5019#0" expanded="true" />
+            <element signature="e#4997#5012#0" expanded="true" />
+            <element signature="e#4984#5019#0" expanded="true" />
+            <element signature="e#5081#5096#0" expanded="true" />
+            <element signature="e#5081#5096#0" expanded="true" />
+            <element signature="e#5147#5165#0" expanded="true" />
+            <element signature="e#5203#5239#0" expanded="true" />
+            <element signature="e#5203#5217#0" expanded="true" />
+            <element signature="e#5203#5239#0" expanded="true" />
+            <element signature="e#5258#5273#0" expanded="true" />
+            <element signature="e#5258#5273#0" expanded="true" />
+            <element signature="e#5305#5320#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5366#5380#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5396#5411#0" expanded="true" />
+            <element signature="e#5366#5418#0" expanded="true" />
+            <element signature="e#5437#5452#0" expanded="true" />
+            <element signature="e#5437#5452#0" expanded="true" />
+            <element signature="e#5486#5500#0" expanded="true" />
+            <element signature="e#5486#5500#0" expanded="true" />
+            <element signature="e#5807#5840#1" expanded="true" />
+            <marker date="1496703028905" expanded="false" signature="5925:5936" ph=" { " />
+            <marker date="1496703028905" expanded="false" signature="5949:5955" ph=" }" />
+            <marker date="1496703028905" expanded="false" signature="5985:5996" ph=" { " />
+            <marker date="1496703028905" expanded="false" signature="6010:6016" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gui/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding />
         </state>
       </provider>
