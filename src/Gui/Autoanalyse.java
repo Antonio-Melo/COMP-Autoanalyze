@@ -1,5 +1,7 @@
 package Gui;
 
+import logic.Operations.CartesianProduct;
+import logic.Operations.Complement;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -74,15 +76,16 @@ public class Autoanalyse {
         }
 
 
-        //  CartesianProduct product = new CartesianProduct(graph, graph1);
-        //Graph graphResult = product.getNewGraph();
+          CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
+       // Graph graphresult = Complement.complement(graph1);
 
-        //this.outPutResult(graphresult.getNodes(),"output");
+        this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -199,4 +202,5 @@ public class Autoanalyse {
         return graph1;
     }
 }
+
 

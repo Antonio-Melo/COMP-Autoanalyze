@@ -18,22 +18,17 @@ As it finishes all commands, it writes the output automata (after operations) to
  
 //TODO **DEALING WITH SYNTACTIC ERRORS: (Describe how the syntactic error recovery of your tool does work. Does it exit after the first error?)
  
-//TODO **SEMANTIC ANALYSIS: (Refer the possible semantic rules implemented by your tool.)
-A nossa ferramenta respeita as regras de um ficheiro tipo dotyfile, 
-como no achamos relevante a utilização de todas as palavras reservadas da gramatica utilizamos apenas as mais importantes.
-Tais como, a palavra label para caracterizar uma aresta e um nó, a palavra periferies para representar o estado final de um nó.
-A linguagem de ficheiro dotyfiles utilizam palavras reservadas para alterar a espessura a  cor e a forma dos nó mas para a ferramenta que utilizamos não é necessário.
+**SEMANTIC ANALYSIS: (Refer the possible semantic rules implemented by your tool.)
+Our tool obeys the semantic rules of a .dot file. 
+We didn't find all the reserved grammar words relevant to our project, so we used a few selected ones which we consider the most important, such as "label" in order to identificate an edge and node, "periferies" in order to represent the final/accepting state of an automata by adding an extra circle to the node.
+In addition to the words we used, it's possible to modify the thickness, color and shape of nodes for an example but we didn't think these were necessary to our project.
  
 //TODO **INTERMEDIATE REPRESENTATIONS (IRs): (for example, when applicable, briefly describe the HLIR (high-level IR) and the LLIR (low-level IR) used, if your tool includes an LLIR with structure different from the HLIR)
  
-//TODO **CODE GENERATION: (when applicable, describe how the code generation of your tool works and identify the possible problems your tool has regarding code generation.)
- A nossa ferramenta por cada construção de aresta, alteração do estado final de um nó e por cada alteração de um nome do nó gera uma chamada à função NodeGraph do ficheiro ValidateFile.
- Em cada iteração são utilizadas obrigatóriamente 5 variavéis,podendo algumas destas não serem utilizadas durante a execução da função, dependendo da operação a realizar no nó
- Para além disso, são criadas mais uma ou duas variavéis relativamente ao nó que estamos a tratar, podendo ser dois no caso de se tratar de uma operaçao com arestas ou simplesmente um nos outros caso.
- O principal problema na nossa quantidade de variaveis utilizadas na nossa analise semantica é à chamas recursivamente à nossa função NodeGraph,
- pois em cada nova iteração tratada aumenta o número de variaveis utilizadas, mas quanto a isso não existe forma de controlar a situação pois a unica maneira de guardar a informaçao toda que queremos para a possivel analise
-é apenas possivel utilizando esta forma. 
- 
+**CODE GENERATION: (when applicable, describe how the code generation of your tool works and identify the possible problems your tool has regarding code generation.)
+ Our tool generates a call to the NodeGraph method of the ValidateFile file per each edge that is constructed, per each final state toggling and per node's name alteration.
+ In each iteration five variables are mandatorily used, but some of these might not be used during the method's execution, depending on the operation to be performed. In addition to these, more variables will be created related to the current node, two in the case of the operation dealing with edges or simply one new variable for other cases.
+ Our main problem regarding the amount of variables used in semantic analysis is related to the recursive calls to the NodeGraph method, since with each iteration the number of variables increases, but it's a necessary evil because it's the only way of saving all the information for the possible analysis.
  
 **OVERVIEW: (refer the approach used in your tool, the main algorithms, the third-party tools and/or packages, etc.)
 As a way of representing .dot files in images in order to facilitate the testing process, we decided to use GraphViz, an open source graph visualization
@@ -45,18 +40,18 @@ in order to integrate it with our Java program we decided to use a simple API by
 //TO BE COMPLETED **TASK DISTRIBUTION:
 António Melo, 201403053
 - Cartesian Product operation
-- Interface in swing
+- Interface in Swing
 -
 
 Lázaro Costa, 201405342
 - Intersection operation
 - Complement  operation
-- parser in javacc
+- Parser in javacc
 
 Maria de Abreu, 201306229
-- integration with GraphViz API;
-- union operation;
-- reversal operation
+- Integration with GraphViz API;
+- Union operation;
+- Reversal operation
  
 **PROS: (Identify the most positive aspects of your tool)
  
