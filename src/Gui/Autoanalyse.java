@@ -1,7 +1,6 @@
 package Gui;
 
-import logic.Operations.CartesianProduct;
-import logic.Operations.Complement;
+import logic.Operations.*;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -75,16 +74,16 @@ public class Autoanalyse {
         }
 
 
-          CartesianProduct product = new CartesianProduct(graph, graph1);
-        Graph graphresult = product.getNewGraph();
+       // CartesianProduct product = new CartesianProduct(graph, graph1);
+        //Graph graphresult = product.getNewGraph();
 
 
-        //Graph graphresult = Union.union(graph, graph1);
-        // Graph graphresult = Intersection.intersection(graph, graph1);
+       // Graph graphresult = Union.union(graph, graph1);
+         Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
-       // Graph graphresult = Complement.complement(graph1);
+        //Graph graphresult = Complement.complement(graph1);
 
-        this.outPutResult(graphresult.getNodes(),"output");
+        this.outPutResult(graphresult.getNodes(), "graphOutput");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -92,7 +91,7 @@ public class Autoanalyse {
 
     /**
      * @param path Path the read file
-     * @return String with content of file
+     * @return String with content of fileK
      */
     public String readFile(String path) {
 
@@ -157,6 +156,7 @@ public class Autoanalyse {
             ArrayList<Edge> edges = node.getEdges();
             String line = "";
 
+            //     System.out.println(node.getName());
             if (!edges.isEmpty()) {
                 for (Edge edge : edges) {
                     line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
