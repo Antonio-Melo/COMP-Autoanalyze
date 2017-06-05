@@ -1,9 +1,9 @@
 **PROJECT TITLE: Autoanalyze
 
 **GROUP: G19
-//TODO NAME1: Antonio Melo, NR1: 201403053, GRADE1: <0 to 20 value>, CONTRIBUTION1: <0 to 100 %>;
-//TODO NAME2: Lazaro Costa, NR2: 201405342, GRADE2: <0 to 20 value>, CONTRIBUTION2: <0 to 100 %>;
-//TODO NAME3: Maria de Abreu, NR3: 201306229, GRADE3: <0 to 20 value>, CONTRIBUTION3: <0 to 100 %>;
+NAME1: Antonio Melo, NR1: 201403053, GRADE1: 18, CONTRIBUTION1: 33%;
+NAME2: Lazaro Costa, NR2: 201405342, GRADE2: 18, CONTRIBUTION2: 33%;
+NAME3: Maria de Abreu, NR3: 201306229, GRADE3: 18, CONTRIBUTION3: 33%;
 
  
 ** SUMMARY: 
@@ -14,7 +14,8 @@ Moreover, our tool also supports operations on automata such as reversal, cartes
 but also intersection, union and complement (these last ones require the input of two automata). 
 As it finishes all commands, it writes the output automata (after operations) to another .dot file and displays the automata in an image, in .png format.
  
-//TODO ** EXECUTE:
+** EXECUTE:
+In order to execute this tool all that's needed is running the .jar file named COMP-Autoanalyze.
 
  
 **DEALING WITH SYNTACTIC ERRORS: (Describe how the syntactic error recovery of your tool does work. Does it exit after the first error?)
