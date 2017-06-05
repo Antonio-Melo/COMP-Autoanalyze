@@ -1,5 +1,7 @@
 package Gui;
 
+import logic.Operations.CartesianProduct;
+import logic.Operations.Complement;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -7,6 +9,7 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -73,15 +76,16 @@ public class Autoanalyse {
         }
 
 
-        //  CartesianProduct product = new CartesianProduct(graph, graph1);
-        //Graph graphResult = product.getNewGraph();
+          CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
+       // Graph graphresult = Complement.complement(graph1);
 
-        //this.outPutResult(graphresult.getNodes(),"output");
+        this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -115,8 +119,9 @@ public class Autoanalyse {
      * @param args
      */
     public static void main(String args[]) {
-
-        Autoanalyse auto = new Autoanalyse(args);
+    	String[] var = new String[1];
+    	var[0] = "dot/test1.dot";
+    	Autoanalyse auto = new Autoanalyse(var);
     }
 
     /**
@@ -185,7 +190,7 @@ public class Autoanalyse {
         System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start(filePath, "graphOutput.");
+        dc.start(file.getPath(), "graphOutput.");
 
     }
 
@@ -197,4 +202,5 @@ public class Autoanalyse {
         return graph1;
     }
 }
+
 
