@@ -3,8 +3,11 @@ package Gui;
 import javax.swing.*;
 
 import logic.Autoanalyse;
+import logic.Operations.CartesianProduct;
 import logic.Operations.Complement;
+import logic.Operations.Intersection;
 import logic.Operations.Reversal;
+import logic.Operations.Union;
 import logic.Structure.Graph;
 
 import java.awt.BorderLayout;
@@ -76,12 +79,14 @@ class App extends JFrame {
 		public void mouseClicked(MouseEvent e) {
 			if(Graph1_filechooser.getFileName() != null){
 				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
 				Autoanalyse Analyse = new Autoanalyse(args);
 				Graph graphresult = Complement.complement(Analyse.getGraph());
-			}else if(Graph2_filechooser.getFileName() != null){
-				
-			}else{
-				
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
 			}
 		}
 	});
@@ -93,18 +98,86 @@ class App extends JFrame {
 	getContentPane().add(btnComplement);
 	
 	JButton btnNewButton = new JButton("Intersection");
+	btnNewButton.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				args[1] = Graph2_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Intersection.intersection(Analyse.getGraph(),Analyse.getGraph1());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnNewButton.setBounds(188, 108, 138, 25);
 	getContentPane().add(btnNewButton);
 	
 	JButton btnReversal = new JButton("Reversal");
+	btnReversal.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Reversal.reversal(Analyse.getGraph());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnReversal.setBounds(80, 144, 136, 25);
 	getContentPane().add(btnReversal);
 	
 	JButton btnUnion = new JButton("Union");
+	btnUnion.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				args[1] = Graph2_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Union.union(Analyse.getGraph(),Analyse.getGraph1());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnUnion.setBounds(356, 107, 117, 25);
 	getContentPane().add(btnUnion);
 	
 	JButton btnCartesianProduct = new JButton("Cartesian Product");
+	btnCartesianProduct.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				args[1] = Graph2_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				CartesianProduct product = new CartesianProduct(Analyse.getGraph(),Analyse.getGraph1());
+				Graph graphresult = product.getNewGraph();
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnCartesianProduct.setBounds(244, 144, 170, 25);
 	getContentPane().add(btnCartesianProduct);
 	
