@@ -33,7 +33,7 @@ public class Filechooser  extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				    int returnVal = fc.showOpenDialog(fc);
 				    if(returnVal == JFileChooser.APPROVE_OPTION) {
-				       fileName = fc.getSelectedFile().getName();
+				       fileName = fc.getSelectedFile().getPath();
 				       System.out.println("You chose to open this file: " +
 				            fc.getSelectedFile().getName());
 				    }

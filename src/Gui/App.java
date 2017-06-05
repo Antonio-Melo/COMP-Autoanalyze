@@ -102,7 +102,7 @@ class App extends JFrame {
 		@Override
 		public void mouseClicked(MouseEvent e) {
 			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
-				String[] args = new String[1];
+				String[] args = new String[2];
 				args[0] = Graph1_filechooser.getFileName();
 				args[1] = Graph2_filechooser.getFileName();
 				Autoanalyse Analyse = new Autoanalyse(args);
@@ -143,7 +143,7 @@ class App extends JFrame {
 		@Override
 		public void mouseClicked(MouseEvent e) {
 			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
-				String[] args = new String[1];
+				String[] args = new String[2];
 				args[0] = Graph1_filechooser.getFileName();
 				args[1] = Graph2_filechooser.getFileName();
 				Autoanalyse Analyse = new Autoanalyse(args);
@@ -164,7 +164,7 @@ class App extends JFrame {
 		@Override
 		public void mouseClicked(MouseEvent e) {
 			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
-				String[] args = new String[1];
+				String[] args = new String[2];
 				args[0] = Graph1_filechooser.getFileName();
 				args[1] = Graph2_filechooser.getFileName();
 				Autoanalyse Analyse = new Autoanalyse(args);
