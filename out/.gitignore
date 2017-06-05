@@ -5,4 +5,7 @@
 /ValidateFile.java
 /ValidateFileConstants.java
 /ValidateFileTokenManager.java
+/.gitignore
+/Gui/
+/README.md
 /logic/
