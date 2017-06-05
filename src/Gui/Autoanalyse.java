@@ -1,6 +1,5 @@
 package Gui;
 
-import logic.Operations.CartesianProduct;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -25,6 +24,7 @@ public class Autoanalyse {
 
     private String operation;
     private Graph graph;
+    private Graph graph1;
 
     /**
      * @param args
@@ -32,40 +32,56 @@ public class Autoanalyse {
     public Autoanalyse(String args[]) {
 
 
-        Graph graph = new Graph();
-        Graph graph1 = new Graph();
-        String fileRead = readFile("dot/inputGraph1.dot");//TODO: atençao ao diretorio
-        String fileRead1 = readFile("dot/inputGraph2.dot");//TODO: atençao ao diretorio
+        graph = new Graph();
+        graph1 = new Graph();
+        //String fileRead = readFile("dot/example3.dot");//TODO: atençao ao diretorio
+        //String fileRead1 = readFile("dot/test1.dot");//TODO: atençao ao diretorio
+        String fileRead;
+        String fileRead1;
+        if (args.length > 1) {
+            fileRead = readFile(args[0]);//TODO: atençao ao diretorio
+            fileRead1 = readFile(args[1]);//TODO: atençao ao diretorio
 
+            try {
 
-        try {
+                System.out.println("VOU LER O PRIMEIRO");
+                ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
+                validateFile.Start(graph);
+                System.out.println("LI BEM O PRIMEIRO");
 
-            System.out.println("VOU LER O PRIMEIRO");
-            ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
-            validateFile.Start(graph);
-            System.out.println("LI BEM O PRIMEIRO");
+                System.out.println("VOU LER O SEGUNDO");
+                validateFile.ReInit(new java.io.StringReader(fileRead1));
+                validateFile.Start(graph1);
+                System.out.println("LI BEM O SEGUNDO");
 
-            System.out.println("VOU LER O SEGUNDO");
-            validateFile.ReInit(new java.io.StringReader(fileRead1));
-            validateFile.Start(graph1);
-            System.out.println("LI BEM O SEGUNDO");
+            } catch (Throwable e) {
+                System.out.println("Invalid REGEX!\n" + e.getMessage());
+                System.exit(1);
+            }
+        } else {
+            fileRead = readFile(args[0]);
+            try {
 
-        } catch (Throwable e) {
-            System.out.println("Invalid REGEX!\n" + e.getMessage());
-            System.exit(1);
+                System.out.println("VOU LER O PRIMEIRO");
+                ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
+                validateFile.Start(graph);
+                System.out.println("LI BEM O PRIMEIRO");
+            } catch (Throwable e) {
+                System.out.println("Invalid REGEX!\n" + e.getMessage());
+                System.exit(1);
+            }
         }
 
 
-        CartesianProduct product = new CartesianProduct(graph, graph1);
-        Graph graphresult = product.getNewGraph();
+        //  CartesianProduct product = new CartesianProduct(graph, graph1);
+        //Graph graphResult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
-        // Graph graphresult = Reversal.reversal(graph);
         //Graph graphresult = Reversal.reversal(graph);
 
-        this.outPutResult(graphresult.getNodes());
+        //this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -126,8 +142,11 @@ public class Autoanalyse {
     /**
      * @param result Write in the file of the graph result in the language dot
      */
-    public void outPutResult(ArrayList<Node> result) {
-        Path f = Paths.get("outputGraph.dot");
+    public void outPutResult(ArrayList<Node> result, String outputFileName) {
+        System.out.println("VOU FAZER OUT PUT DO RESULTADO");
+        System.out.println(outputFileName);
+        String filePath = outputFileName + ".dot";
+        Path f = Paths.get(filePath);
         List<String> lines = new ArrayList<String>();
 
         lines.add("digraph OUT {");
@@ -155,7 +174,7 @@ public class Autoanalyse {
             }
         }
         lines.add("}");
-
+        System.out.println("JÀ PUS A LINHA");
 
         try {
             Files.write(f, lines, Charset.forName("UTF-8"));
@@ -163,11 +182,19 @@ public class Autoanalyse {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
+        System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start("outputGraph.dot", "outputGraph.");
+        dc.start(filePath, "graphOutput.");
 
+    }
+
+    public Graph getGraph() {
+        return graph;
+    }
+
+    public Graph getGraph1() {
+        return graph1;
     }
 }
 

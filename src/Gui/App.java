@@ -2,23 +2,18 @@ package Gui;
 
 import javax.swing.*;
 
-import logic.Autoanalyse;
 import logic.Operations.CartesianProduct;
 import logic.Operations.Complement;
 import logic.Operations.Intersection;
 import logic.Operations.Reversal;
-import logic.Operations.Union;
 import logic.Structure.Graph;
 
-import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Panel;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.Console;
-import java.io.File;
 
 class App extends JFrame {
 	private JTextField textField;
