@@ -32,7 +32,7 @@ class App extends JFrame {
 	getContentPane().add(desktopPane);
 	
 	JLabel Graph1_label = new JLabel("Graph 1");
-	Graph1_label.setBounds(80, 15, 70, 32);
+	Graph1_label.setBounds(96, 12, 70, 32);
 	getContentPane().add(Graph1_label);
 	
 	JButton Graph1_upload_btn = new JButton("Upload");
@@ -51,7 +51,7 @@ class App extends JFrame {
 	getContentPane().add(Graph1_upload_btn);
 	
 	JLabel Graph2_label = new JLabel("Graph 2");
-	Graph2_label.setBounds(369, 15, 70, 32);
+	Graph2_label.setBounds(384, 12, 70, 32);
 	getContentPane().add(Graph2_label);
 	
 	
@@ -63,7 +63,7 @@ class App extends JFrame {
 			Graph2_filechooser.setVisible(true);
 		}
 	});
-	Graph2_upload_btn.setBounds(339, 47, 117, 25);
+	Graph2_upload_btn.setBounds(349, 47, 117, 25);
 	getContentPane().add(Graph2_upload_btn);
 	
 	JLabel lblOperations = new JLabel("Operations");
@@ -98,7 +98,7 @@ class App extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 		}
 	});
-	btnComplement.setBounds(12, 107, 138, 25);
+	btnComplement.setBounds(28, 107, 138, 25);
 	getContentPane().add(btnComplement);
 	
 	JButton btnNewButton = new JButton("Intersection");
@@ -116,10 +116,21 @@ class App extends JFrame {
 				}else{
 					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
 				}
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+				ImageIcon image = new ImageIcon("graphOutput.png");
+				System.out.println(image.getIconWidth());
+				JLabel label = new JLabel("", image, JLabel.CENTER);
+				panel.add(label,BorderLayout.CENTER);
+				panel.repaint();
+				panel.revalidate();
 			}
 		}
 	});
-	btnNewButton.setBounds(188, 108, 138, 25);
+	btnNewButton.setBounds(201, 107, 138, 25);
 	getContentPane().add(btnNewButton);
 	
 	JButton btnReversal = new JButton("Reversal");
@@ -136,17 +147,32 @@ class App extends JFrame {
 				}else{
 					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
 				}
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+				ImageIcon image = new ImageIcon("graphOutput.png");
+				System.out.println(image.getIconWidth());
+				JLabel label = new JLabel("", image, JLabel.CENTER);
+				panel.add(label,BorderLayout.CENTER);
+				panel.repaint();
+				panel.revalidate();
 			}
 		}
 	});
-	btnReversal.setBounds(80, 144, 136, 25);
+	btnReversal.setBounds(89, 144, 136, 25);
 	getContentPane().add(btnReversal);
 	
 	JButton btnUnion = new JButton("Union");
-	btnUnion.setBounds(356, 107, 117, 25);
+	btnUnion.setBounds(367, 107, 117, 25);
 	getContentPane().add(btnUnion);
 	
 	JButton btnCartesianProduct = new JButton("Cartesian Product");
+	btnCartesianProduct.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent arg0) {
+		}
+	});
 	btnCartesianProduct.addMouseListener(new MouseAdapter() {
 		@Override
 		public void mouseClicked(MouseEvent e) {
@@ -162,14 +188,25 @@ class App extends JFrame {
 				}else{
 					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
 				}
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+				ImageIcon image = new ImageIcon("graphOutput.png");
+				System.out.println(image.getIconWidth());
+				JLabel label = new JLabel("", image, JLabel.CENTER);
+				panel.add(label,BorderLayout.CENTER);
+				panel.repaint();
+				panel.revalidate();
 			}
 		}
 	});
-	btnCartesianProduct.setBounds(244, 144, 170, 25);
+	btnCartesianProduct.setBounds(269, 144, 170, 25);
 	getContentPane().add(btnCartesianProduct);
 	
 	JLabel lblOutPut = new JLabel("Output File Name");
-	lblOutPut.setBounds(188, 24, 151, 15);
+	lblOutPut.setBounds(223, 24, 151, 15);
 	getContentPane().add(lblOutPut);
 	
 	textField = new JTextField();
@@ -179,7 +216,7 @@ class App extends JFrame {
 	
 	panel = new JPanel(new BorderLayout());
 	panel.setBackground(Color.WHITE);
-	panel.setBounds(36, 184, 464, 422);
+	panel.setBounds(12, 184, 488, 422);
 	getContentPane().add(panel);
   }
 
