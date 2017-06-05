@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class LanguageAnalysis 
 {
-	public static Graph getRegularExpression(Graph graph) {
+	public static String getRegularExpression(Graph graph) {
         String regExp = "";
 
         for (Edge edge : graph.getEdges()) {
@@ -18,4 +18,6 @@ public class LanguageAnalysis
             edge.setDest(src);
             edge.setSource(dest);
         }
+        return regExp;
+	}
 }

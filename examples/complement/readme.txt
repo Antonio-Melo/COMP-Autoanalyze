@@ -1,9 +1,10 @@
-Operação de complemento
+**Operation: 
+Complement of an automata
 
-Neste exemplo temos o ficheiro de entrada inputgraph, 
-estando este ficheiro escrito em linguagem dot, 
-a nossa ferramenta realiza a operação do complemento, 
-que consiste em trocar os valores dos estados finais do grafo de entrada,
-é esperado retornar o resultado para o ficheiro outputGraph, 
-contendo o resultado da operação escrito em linguagem dot, 
-para além disso gera a imagem outputGraph referente ao grafo do ficheiro de saída  
+**Description:
+In this example we have as input file the file inputGraph.dot, 
+a dot language file representing an automata.
+Our tool outputs the result of the complement operation to a file 
+denominated outputGraph.dot. This operation consists on toggling all
+the accepting states. It also represents this outputGraph in image format,
+outputGraph.png.

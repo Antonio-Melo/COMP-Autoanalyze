@@ -1,11 +1,2 @@
-/ParseException.java
-/SimpleCharStream.java
-/Token.java
-/TokenMgrError.java
-/ValidateFile.java
-/ValidateFileConstants.java
-/ValidateFileTokenManager.java
-/.gitignore
 /Gui/
-/README.md
 /logic/
