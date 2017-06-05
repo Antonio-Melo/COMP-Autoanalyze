@@ -2,7 +2,6 @@ package Gui;
 
 import javax.swing.*;
 
-import logic.Autoanalyse;
 import logic.Operations.Complement;
 import logic.Operations.Reversal;
 import logic.Structure.Graph;
@@ -77,7 +76,7 @@ class App extends JFrame {
 			if(Graph1_filechooser.getFileName() != null){
 				String[] args = new String[1];
 				Autoanalyse Analyse = new Autoanalyse(args);
-				Graph graphresult = Complement.complement(Analyse.getGraph());
+				Graph graphresult = Complement.complement(new Graph());//TODO:alterar
 			}else if(Graph2_filechooser.getFileName() != null){
 				
 			}else{

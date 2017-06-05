@@ -1,10 +1,9 @@
 digraph G2
  {
-     a -> b [label=hello1];
-     a -> c [label=world2];
-     c -> d [label=world3];
-     b -> c [label=world4];
-     d -> a [label=world5];
-     b [label= a];
+     a -> b [label=AB];
+     a -> c [label=AC];
+     c -> d [label=3];
+     b -> c [label=5];
+     d -> a [label=da];
      c [peripheries=2];
  }
