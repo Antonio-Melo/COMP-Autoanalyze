@@ -50,15 +50,12 @@ public class Autoanalyse {
 
             try {
 
-                System.out.println("VOU LER O PRIMEIRO");
                 ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
                 validateFile.Start(graph);
-                System.out.println("LI BEM O PRIMEIRO");
+ 
 
-                System.out.println("VOU LER O SEGUNDO");
                 validateFile.ReInit(new java.io.StringReader(fileRead1));
                 validateFile.Start(graph1);
-                System.out.println("LI BEM O SEGUNDO");
 
             } catch (Throwable e) {
                 System.out.println("Invalid REGEX!\n" + e.getMessage());
@@ -68,10 +65,8 @@ public class Autoanalyse {
             fileRead = readFile(args[0]);
             try {
 
-                System.out.println("VOU LER O PRIMEIRO");
                 ValidateFile validateFile = new ValidateFile(new java.io.StringReader(fileRead));
                 validateFile.Start(graph);
-                System.out.println("LI BEM O PRIMEIRO");
             } catch (Throwable e) {
                 System.out.println("Invalid REGEX!\n" + e.getMessage());
                 System.exit(1);
