@@ -1,4 +1,4 @@
-package logic.Operations;
+/*package logic.Operations;
 
 import logic.Structure.Graph;
 import logic.Structure.Node;
@@ -18,4 +18,4 @@ public class LanguageAnalysis
             edge.setDest(src);
             edge.setSource(dest);
         }
-}
+}*/

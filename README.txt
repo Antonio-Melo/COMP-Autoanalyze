@@ -14,9 +14,12 @@ Moreover, our tool also supports operations on automata such as reversal, cartes
 but also intersection, union and complement (these last ones require the input of two automata). 
 As it finishes all commands, it writes the output automata (after operations) to another .dot file and displays the automata in an image, in .png format.
  
-//TODO ** EXECUTE: 
+//TODO ** EXECUTE:
+
  
-//TODO **DEALING WITH SYNTACTIC ERRORS: (Describe how the syntactic error recovery of your tool does work. Does it exit after the first error?)
+**DEALING WITH SYNTACTIC ERRORS: (Describe how the syntactic error recovery of your tool does work. Does it exit after the first error?)
+A nossa ferramenta utiliza linguagem expecifica da linguagem do tipo dotyfile, na analise sintatica são esperados certos tokens em especifico, quando tal não acontece
+o parser na analise sintatica lança uma exceção onde ocorreu o erro, sendo esta exceção tratado na aplicação e mostrada ao utilizador o erro sintatico resultante.
  
 **SEMANTIC ANALYSIS: (Refer the possible semantic rules implemented by your tool.)
 Our tool obeys the semantic rules of a .dot file. 
@@ -24,7 +27,8 @@ We didn't find all the reserved grammar words relevant to our project, so we use
 In addition to the words we used, it's possible to modify the thickness, color and shape of nodes for an example but we didn't think these were necessary to our project.
  
 //TODO **INTERMEDIATE REPRESENTATIONS (IRs): (for example, when applicable, briefly describe the HLIR (high-level IR) and the LLIR (low-level IR) used, if your tool includes an LLIR with structure different from the HLIR)
- 
+
+
 **CODE GENERATION: (when applicable, describe how the code generation of your tool works and identify the possible problems your tool has regarding code generation.)
  Our tool generates a call to the NodeGraph method of the ValidateFile file per each edge that is constructed, per each final state toggling and per node's name alteration.
  In each iteration five variables are mandatorily used, but some of these might not be used during the method's execution, depending on the operation to be performed. In addition to these, more variables will be created related to the current node, two in the case of the operation dealing with edges or simply one new variable for other cases.
@@ -54,5 +58,15 @@ Maria de Abreu, 201306229
 - Reversal operation
  
 **PROS: (Identify the most positive aspects of your tool)
- 
+A linguagem utilizada para representar os grafos é de facil utilização.
+Devido à integraçao da interface swing, consegue-se de uma forma interativa realizar as operaçoes pretendidas pelos utilizadores e mostrar
+ o resultado em imagem recorrendo à integração da API Graphviz.
+
+
+
 **CONS: (Identify the most negative aspects of your tool)
+Como a nossa ferramente é de validaçao de ficheiros em linguagem dotyfiles e operaçoes entre grafos, nao achamos relevante
+intoduzir cores nos grafos e arestas ou alteraçao da espessura das linhas, mas quando os grafos são de grandes dimensões
+por vezes as imagens geradas tornam-se um pouco eligiveis.
+
+
