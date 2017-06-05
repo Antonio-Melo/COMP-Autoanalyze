@@ -75,6 +75,7 @@ class App extends JFrame {
 			if(Graph1_filechooser.getFileName() != null){
 				String[] args = new String[1];
 				args[0] = Graph1_filechooser.getFileName();
+				System.out.println("Recibi este path do ficheiro do graph1 "+args[0]);
 				Autoanalyse Analyse = new Autoanalyse(args);
 				Graph graphresult = Complement.complement(Analyse.getGraph());
 				if(textField.getText() != null){

@@ -18,4 +18,6 @@ public class LanguageAnalysis
             edge.setDest(src);
             edge.setSource(dest);
         }
+        return null;
+	}
 }

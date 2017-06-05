@@ -7,6 +7,7 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -146,7 +147,8 @@ public class Autoanalyse {
         System.out.println("VOU FAZER OUT PUT DO RESULTADO");
         System.out.println(outputFileName);
         String filePath = outputFileName + ".dot";
-        Path f = Paths.get(filePath);
+        File file = new File(filePath);
+        Path f = file.toPath();
         List<String> lines = new ArrayList<String>();
 
         lines.add("digraph OUT {");
@@ -185,7 +187,7 @@ public class Autoanalyse {
         System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start(filePath, "graphOutput.");
+        dc.start(f.toString(), "graphOutput.");
 
     }
 

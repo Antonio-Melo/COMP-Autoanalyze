@@ -32,9 +32,8 @@ public class DotConvert {
         //		String representationType= "circo";
 
 
-        //File out = new File(output + type);   // Windows
-        String teste = output+type;
-        File out = new File(teste);
+        File out = new File(output + type);   // Windows
+        
         gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type, representationType), out);
 
     }
