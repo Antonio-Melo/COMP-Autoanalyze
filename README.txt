@@ -48,11 +48,10 @@ in order to integrate it with our Java program we decided to use a simple API by
  
 **TESTSUITE AND TEST INFRASTRUCTURE: (Describe the content of your testsuite regarding the number of examples, the approach to automate the test, etc.)
  
-//TO BE COMPLETED **TASK DISTRIBUTION:
+**TASK DISTRIBUTION:
 Antonio Melo, 201403053
 - Cartesian product operation
 - Interface in Swing
--
 
 Lazaro Costa, 201405342
 - Intersection operation
