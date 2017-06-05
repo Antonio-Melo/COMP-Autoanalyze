@@ -2,6 +2,7 @@ package Gui;
 
 import logic.Operations.CartesianProduct;
 import logic.Operations.Complement;
+import logic.Operations.Union;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -41,9 +42,11 @@ public class Autoanalyse {
         //String fileRead1 = readFile("dot/test1.dot");//TODO: atençao ao diretorio
         String fileRead;
         String fileRead1;
+        System.out.println("_________"+args[0]);
         if (args.length > 1) {
             fileRead = readFile(args[0]);//TODO: atençao ao diretorio
             fileRead1 = readFile(args[1]);//TODO: atençao ao diretorio
+
 
             try {
 
@@ -74,18 +77,20 @@ public class Autoanalyse {
                 System.exit(1);
             }
         }
+        System.out.println("aaaaaaaaa"+graph1.getNodes().size());
 
-
-          //CartesianProduct product = new CartesianProduct(graph, graph1);
-        //Graph graphresult = product.getNewGraph();
+          CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
-        //Graph graphresult = Complement.complement(graph1);
+       // Graph graphresult = Complement.complement(graph1);
 
-        //this.outPutResult(graphresult.getNodes(),"output");
+
+        System.out.println("aaaaaaaaa"+graphresult.getNodes().size());
+        this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -119,9 +124,9 @@ public class Autoanalyse {
      * @param args
      */
     public static void main(String args[]) {
-    	String[] var = new String[1];
+        String[] var = new String[1];
     	var[0] = "dot/test1.dot";
-    	Autoanalyse auto = new Autoanalyse(var);
+    	Autoanalyse auto = new Autoanalyse(args);
     }
 
     /**
@@ -152,9 +157,10 @@ public class Autoanalyse {
         System.out.println(outputFileName);
         String filePath = outputFileName + ".dot";
         File file = new File(filePath);
-        Path f = file.toPath();
+        Path f = Paths.get(filePath);
         List<String> lines = new ArrayList<String>();
 
+        System.out.println(  "aaaaaaaaa"+result.size());
         lines.add("digraph OUT {");
         for (Node node : result) {
             ArrayList<Edge> edges = node.getEdges();
@@ -191,7 +197,7 @@ public class Autoanalyse {
         System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start(file.getPath(), "graphOutput.");
+        dc.start(f.toString(), "graphOutput.");
 
     }
 

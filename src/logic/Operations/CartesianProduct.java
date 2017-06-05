@@ -58,7 +58,6 @@ public class CartesianProduct {
                 if (stateNode1 || stateNode2) {
                     unionFinalState.add(produtNodeName);
                 }
-
                 newGraph.addNode(newNode);
             }
         }
@@ -66,16 +65,17 @@ public class CartesianProduct {
         //Create Edges teste
         for (String[] node1 : combinednodes) {
             for (String[] node2 : combinednodes) {
-                if (!(node1[0] == node2[0] && node1[1] == node2[1])) {
-                    if (node1[0].equals(node2[0])) {
+               if(!(node1[0]== node2[0] && node1[1] == node2[1])) {
+                     if (node1[0].equals(node2[0])) {
                         Node oldnode1 = graph2.searchNode(node1[1]);
                         Node oldnode2 = graph2.searchNode(node2[1]);
 
                         if (oldnode1.haveEdge(oldnode2.getName())) {
+
                             String label = oldnode1.getLabelEdge(oldnode2.getName());
 
                             Node nodeg1 = newGraph.searchNode(node1[0] + node1[1]);
-                            Node nodeg2 = newGraph.searchNode(node1[0] + node1[1]);
+                            Node nodeg2 = newGraph.searchNode(node1[0] + node2[1]);
                             if (label != null) {
                                 nodeg1.addEdge(nodeg2, label);
                             } else nodeg1.addEdge(nodeg2);
@@ -89,7 +89,7 @@ public class CartesianProduct {
                             String label = oldnode2.getLabelEdge(oldnode1.getName());
 
                             Node nodeg1 = newGraph.searchNode(node1[0] + node1[1]);
-                            Node nodeg2 = newGraph.searchNode(node1[0] + node1[1]);
+                            Node nodeg2 = newGraph.searchNode(node2[0] + node1[1]);
 
                             if (label != null) {
                                 nodeg2.addEdge(nodeg1, label);
