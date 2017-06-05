@@ -4,30 +4,25 @@
     <bookmark url="file://$PROJECT_DIR$/src/Gui/GraphViz.java" line="281" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d797a4-d9f0-4c7e-a424-9b6f4f740cc8" name="Default" comment="update readme">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/Autoanalyse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/logic/DotConvert.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/logic/Structure/Parser.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/logic/Autoanalyse.java" afterPath="$PROJECT_DIR$/src/Gui/Autoanalyse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/Gui/GraphViz.class" afterPath="$PROJECT_DIR$/out/Gui/GraphViz.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Operations/CartesianProduct.class" afterPath="$PROJECT_DIR$/out/logic/Operations/CartesianProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Operations/Complement.class" afterPath="$PROJECT_DIR$/out/logic/Operations/Complement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Operations/Intersection.class" afterPath="$PROJECT_DIR$/out/logic/Operations/Intersection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Operations/Union.class" afterPath="$PROJECT_DIR$/out/logic/Operations/Union.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/ParseException.class" afterPath="$PROJECT_DIR$/out/logic/Parser/ParseException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/SimpleCharStream.class" afterPath="$PROJECT_DIR$/out/logic/Parser/SimpleCharStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/Token.class" afterPath="$PROJECT_DIR$/out/logic/Parser/Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/TokenMgrError.class" afterPath="$PROJECT_DIR$/out/logic/Parser/TokenMgrError.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/ValidateFile.class" afterPath="$PROJECT_DIR$/out/logic/Parser/ValidateFile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/ValidateFileConstants.class" afterPath="$PROJECT_DIR$/out/logic/Parser/ValidateFileConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Parser/ValidateFileTokenManager.class" afterPath="$PROJECT_DIR$/out/logic/Parser/ValidateFileTokenManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Structure/Edge.class" afterPath="$PROJECT_DIR$/out/logic/Structure/Edge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Structure/Graph.class" afterPath="$PROJECT_DIR$/out/logic/Structure/Graph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/logic/Structure/Node.class" afterPath="$PROJECT_DIR$/out/logic/Structure/Node.class" />
+    <list default="true" id="26d797a4-d9f0-4c7e-a424-9b6f4f740cc8" name="Default" comment="update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complement/outputGraph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/reversal/outputGraph.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/cartesian product/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/cartesian product/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/cartesian product/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complement/inputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complement/outputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complement/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/intersection/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/intersection/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/intersection/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/reversal/inputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/reversal/outputGraph.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/reversal/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/union/inputGraph1.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/union/inputGraph2.dot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/union/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/.gitignore" afterPath="$PROJECT_DIR$/out/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Gui/App.java" afterPath="$PROJECT_DIR$/src/Gui/App.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,8 +198,8 @@
       <file leaf-file-name="Autoanalyse.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gui/Autoanalyse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
               <folding>
                 <element signature="method#validateFile#0;class#Autoanalyse#0" expanded="false" />
                 <element signature="method#outPutResult#0;class#Autoanalyse#0" expanded="false" />
@@ -354,28 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP-Autoanalyze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP-Autoanalyze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -912,7 +885,7 @@
       <option name="presentableId" value="Default" />
       <updated>1493979140543</updated>
       <workItem from="1496621035999" duration="6781000" />
-      <workItem from="1496655089361" duration="2905000" />
+      <workItem from="1496655089361" duration="3030000" />
     </task>
     <task id="LOCAL-00001" summary="intersection done">
       <created>1494252482710</created>
@@ -977,15 +950,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496657693310</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1496658089154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1496658089154</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14966000" />
+    <option name="totallyTimeSpent" value="15091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -994,15 +973,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25040916" sideWeight="0.52118003" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17839608" sideWeight="0.5574887" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25040916" sideWeight="0.47881997" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.49394855" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25040916" sideWeight="0.47881997" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60556465" sideWeight="0.44553706" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17839608" sideWeight="0.44251135" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1036,10 +1015,10 @@
     <MESSAGE value="make image" />
     <MESSAGE value="add library to project" />
     <MESSAGE value="comment code" />
-    <MESSAGE value="update" />
     <MESSAGE value="examples" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1558,8 +1537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gui/Autoanalyse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
           <folding>
             <element signature="method#validateFile#0;class#Autoanalyse#0" expanded="false" />
             <element signature="method#outPutResult#0;class#Autoanalyse#0" expanded="false" />
