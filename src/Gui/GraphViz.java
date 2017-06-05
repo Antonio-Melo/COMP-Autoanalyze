@@ -323,6 +323,7 @@ public class GraphViz {
         File temp;
 
         try {
+        	System.out.println(this.tempDir);
             temp = File.createTempFile("graph_", ".dot.tmp", new File(this.tempDir));
             FileWriter fout = new FileWriter(temp);
             fout.write(str);

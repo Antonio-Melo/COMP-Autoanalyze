@@ -33,7 +33,8 @@ public class DotConvert {
 
 
         File out = new File(output + type);   // Windows
-        
+        System.out.println(gv.getDotSource());
+        System.out.println(gv.getGraph(gv.getDotSource(), type, representationType));
         gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type, representationType), out);
 
     }

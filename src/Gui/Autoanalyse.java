@@ -76,16 +76,16 @@ public class Autoanalyse {
         }
 
 
-          CartesianProduct product = new CartesianProduct(graph, graph1);
-        Graph graphresult = product.getNewGraph();
+          //CartesianProduct product = new CartesianProduct(graph, graph1);
+        //Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
         // Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
-       // Graph graphresult = Complement.complement(graph1);
+        //Graph graphresult = Complement.complement(graph1);
 
-        this.outPutResult(graphresult.getNodes(),"output");
+        //this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -119,8 +119,9 @@ public class Autoanalyse {
      * @param args
      */
     public static void main(String args[]) {
-
-        Autoanalyse auto = new Autoanalyse(args);
+    	String[] var = new String[1];
+    	var[0] = "dot/test1.dot";
+    	Autoanalyse auto = new Autoanalyse(var);
     }
 
     /**
@@ -190,7 +191,7 @@ public class Autoanalyse {
         System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start(f.toString(), "graphOutput.");
+        dc.start(file.getPath(), "graphOutput.");
 
     }
 
