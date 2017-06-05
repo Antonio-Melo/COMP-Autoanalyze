@@ -1,0 +1,9 @@
+digraph OUT {
+	b -> a [label=AB];
+	c -> a [label=AC];
+	a [peripheries=2];
+	c -> b [label=5];
+	d -> c [label=3];
+	a -> d [label=da];
+	newStart -> c [label=ε];
+}

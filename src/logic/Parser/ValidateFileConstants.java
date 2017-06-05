@@ -17,27 +17,25 @@ public interface ValidateFileConstants {
   /** RegularExpression Id. */
   int PERIPHE = 6;
   /** RegularExpression Id. */
-  int NAME = 7;
+  int FINAL_STATE = 7;
   /** RegularExpression Id. */
-  int FINAL_STATE = 8;
+  int NAME = 8;
   /** RegularExpression Id. */
-  int INTEGER = 9;
+  int OPENFIELD = 9;
   /** RegularExpression Id. */
-  int OPENFIELD = 10;
+  int CLOSEFIELD = 10;
   /** RegularExpression Id. */
-  int CLOSEFIELD = 11;
+  int OPEN = 11;
   /** RegularExpression Id. */
-  int OPEN = 12;
+  int CLOSE = 12;
   /** RegularExpression Id. */
-  int CLOSE = 13;
+  int EQUALS = 13;
   /** RegularExpression Id. */
-  int EQUALS = 14;
+  int ARROW = 14;
   /** RegularExpression Id. */
-  int ARROW = 15;
+  int SEMICOLON = 15;
   /** RegularExpression Id. */
-  int SEMICOLON = 16;
-  /** RegularExpression Id. */
-  int QUOTE = 17;
+  int QUOTE = 16;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -51,9 +49,8 @@ public interface ValidateFileConstants {
     "\"digraph\"",
     "\"label\"",
     "\"peripheries\"",
-    "<NAME>",
     "\"2\"",
-    "<INTEGER>",
+    "<NAME>",
     "\"[\"",
     "\"]\"",
     "\"{\"",

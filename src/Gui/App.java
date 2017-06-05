@@ -1,14 +1,24 @@
 package Gui;
 
 import javax.swing.*;
-import java.awt.BorderLayout;
+
+import logic.Operations.CartesianProduct;
+import logic.Operations.Complement;
+import logic.Operations.Intersection;
+import logic.Operations.Reversal;
+import logic.Structure.Graph;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Panel;
 import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 class App extends JFrame {
 	private JTextField textField;
+	private Filechooser Graph1_filechooser;
+	private Filechooser Graph2_filechooser;
   public App() {
 	setTitle("Autoanalyze");
 	setSize(500,650); // default size is 0,0
@@ -24,6 +34,13 @@ class App extends JFrame {
 	getContentPane().add(Graph1_label);
 	
 	JButton Graph1_upload_btn = new JButton("Upload");
+	Graph1_upload_btn.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			Graph1_filechooser = new Filechooser();
+			Graph1_filechooser.setVisible(true);
+		}
+	});
 	Graph1_upload_btn.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 		}
@@ -37,6 +54,13 @@ class App extends JFrame {
 	
 	
 	JButton Graph2_upload_btn = new JButton("Upload");
+	Graph2_upload_btn.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			Graph2_filechooser = new Filechooser();
+			Graph2_filechooser.setVisible(true);
+		}
+	});
 	Graph2_upload_btn.setBounds(339, 47, 117, 25);
 	getContentPane().add(Graph2_upload_btn);
 	
@@ -45,6 +69,22 @@ class App extends JFrame {
 	getContentPane().add(lblOperations);
 	
 	JButton btnComplement = new JButton("Complement");
+	btnComplement.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Complement.complement(Analyse.getGraph());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnComplement.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 		}
@@ -53,10 +93,43 @@ class App extends JFrame {
 	getContentPane().add(btnComplement);
 	
 	JButton btnNewButton = new JButton("Intersection");
+	btnNewButton.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
+				String[] args = new String[2];
+				args[0] = Graph1_filechooser.getFileName();
+				args[1] = Graph2_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Intersection.intersection(Analyse.getGraph(),Analyse.getGraph1());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnNewButton.setBounds(188, 108, 138, 25);
 	getContentPane().add(btnNewButton);
 	
 	JButton btnReversal = new JButton("Reversal");
+	btnReversal.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null){
+				String[] args = new String[1];
+				args[0] = Graph1_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				Graph graphresult = Reversal.reversal(Analyse.getGraph());
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnReversal.setBounds(80, 144, 136, 25);
 	getContentPane().add(btnReversal);
 	
@@ -65,6 +138,24 @@ class App extends JFrame {
 	getContentPane().add(btnUnion);
 	
 	JButton btnCartesianProduct = new JButton("Cartesian Product");
+	btnCartesianProduct.addMouseListener(new MouseAdapter() {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(Graph1_filechooser.getFileName() != null && Graph2_filechooser.getFileName() != null){
+				String[] args = new String[2];
+				args[0] = Graph1_filechooser.getFileName();
+				args[1] = Graph2_filechooser.getFileName();
+				Autoanalyse Analyse = new Autoanalyse(args);
+				CartesianProduct product = new CartesianProduct(Analyse.getGraph(),Analyse.getGraph1());
+				Graph graphresult = product.getNewGraph();
+				if(textField.getText() != null){
+					Analyse.outPutResult(graphresult.getNodes(),textField.getText());
+				}else{
+					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
+				}
+			}
+		}
+	});
 	btnCartesianProduct.setBounds(244, 144, 170, 25);
 	getContentPane().add(btnCartesianProduct);
 	
