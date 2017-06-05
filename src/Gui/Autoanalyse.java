@@ -1,6 +1,7 @@
 package Gui;
 
-import logic.Operations.*;
+import logic.Operations.CartesianProduct;
+import logic.Operations.Complement;
 import logic.Parser.ParseException;
 import logic.Parser.ValidateFile;
 import logic.Structure.Edge;
@@ -8,6 +9,7 @@ import logic.Structure.Graph;
 import logic.Structure.Node;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -74,16 +76,16 @@ public class Autoanalyse {
         }
 
 
-       // CartesianProduct product = new CartesianProduct(graph, graph1);
-        //Graph graphresult = product.getNewGraph();
+          CartesianProduct product = new CartesianProduct(graph, graph1);
+        Graph graphresult = product.getNewGraph();
 
 
-       // Graph graphresult = Union.union(graph, graph1);
-         Graph graphresult = Intersection.intersection(graph, graph1);
+        //Graph graphresult = Union.union(graph, graph1);
+        // Graph graphresult = Intersection.intersection(graph, graph1);
         //Graph graphresult = Reversal.reversal(graph);
-        //Graph graphresult = Complement.complement(graph1);
+       // Graph graphresult = Complement.complement(graph1);
 
-        this.outPutResult(graphresult.getNodes(), "graphOutput");
+        this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
@@ -91,7 +93,7 @@ public class Autoanalyse {
 
     /**
      * @param path Path the read file
-     * @return String with content of fileK
+     * @return String with content of file
      */
     public String readFile(String path) {
 
@@ -117,8 +119,9 @@ public class Autoanalyse {
      * @param args
      */
     public static void main(String args[]) {
-
-        Autoanalyse auto = new Autoanalyse(args);
+    	String[] var = new String[1];
+    	var[0] = "dot/test1.dot";
+    	Autoanalyse auto = new Autoanalyse(var);
     }
 
     /**
@@ -156,7 +159,6 @@ public class Autoanalyse {
             ArrayList<Edge> edges = node.getEdges();
             String line = "";
 
-            //     System.out.println(node.getName());
             if (!edges.isEmpty()) {
                 for (Edge edge : edges) {
                     line = new String(edge.getSource().getName() + " -> " + edge.getDest().getName());
@@ -188,7 +190,7 @@ public class Autoanalyse {
         System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
-        dc.start(filePath, "graphOutput.");
+        dc.start(file.getPath(), "graphOutput.");
 
     }
 

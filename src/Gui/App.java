@@ -11,17 +11,19 @@ import logic.Structure.Graph;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Panel;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class App extends JFrame {
 	private JTextField textField;
+	private JPanel panel;
 	private Filechooser Graph1_filechooser;
 	private Filechooser Graph2_filechooser;
   public App() {
 	setTitle("Autoanalyze");
-	setSize(500,650); // default size is 0,0
+	setSize(541,656); // default size is 0,0
 	setLocation(300,0); // default is 0,0 (top left corner)
 	getContentPane().setLayout(null);
 	
@@ -75,6 +77,7 @@ class App extends JFrame {
 			if(Graph1_filechooser.getFileName() != null){
 				String[] args = new String[1];
 				args[0] = Graph1_filechooser.getFileName();
+				System.out.println("Recibi este path do ficheiro do graph1 "+args[0]);
 				Autoanalyse Analyse = new Autoanalyse(args);
 				Graph graphresult = Complement.complement(Analyse.getGraph());
 				if(textField.getText() != null){
@@ -82,6 +85,12 @@ class App extends JFrame {
 				}else{
 					Analyse.outPutResult(graphresult.getNodes(),"defaultname");
 				}
+				ImageIcon image = new ImageIcon("graphOutput.png");
+				System.out.println(image.getIconWidth());
+				JLabel label = new JLabel("", image, JLabel.CENTER);
+				panel.add(label,BorderLayout.CENTER);
+				panel.repaint();
+				panel.revalidate();
 			}
 		}
 	});
@@ -168,9 +177,9 @@ class App extends JFrame {
 	getContentPane().add(textField);
 	textField.setColumns(10);
 	
-	Panel panel = new Panel();
+	panel = new JPanel(new BorderLayout());
 	panel.setBackground(Color.WHITE);
-	panel.setBounds(36, 184, 437, 407);
+	panel.setBounds(36, 184, 464, 422);
 	getContentPane().add(panel);
   }
 
