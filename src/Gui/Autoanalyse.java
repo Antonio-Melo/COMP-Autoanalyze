@@ -38,11 +38,8 @@ public class Autoanalyse {
 
         graph = new Graph();
         graph1 = new Graph();
-        //String fileRead = readFile("dot/example3.dot");//TODO: atençao ao diretorio
-        //String fileRead1 = readFile("dot/test1.dot");//TODO: atençao ao diretorio
         String fileRead;
         String fileRead1;
-        System.out.println("_________"+args[0]);
         if (args.length > 1) {
             fileRead = readFile(args[0]);//TODO: atençao ao diretorio
             fileRead1 = readFile(args[1]);//TODO: atençao ao diretorio
@@ -72,6 +69,7 @@ public class Autoanalyse {
                 System.exit(1);
             }
         }
+<<<<<<< HEAD
         //ystem.out.println("aaaaaaaaa"+graph1.getNodes().size());
 
           //CartesianProduct product = new CartesianProduct(graph, graph1);
@@ -88,6 +86,8 @@ public class Autoanalyse {
         //this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
+=======
+>>>>>>> 58318abcb938be0684cd8aa49c6734ee51a45499
 
     }
 
@@ -148,14 +148,12 @@ public class Autoanalyse {
      * @param result Write in the file of the graph result in the language dot
      */
     public void outPutResult(ArrayList<Node> result, String outputFileName) {
-        System.out.println("VOU FAZER OUT PUT DO RESULTADO");
-        System.out.println(outputFileName);
+
         String filePath = outputFileName + ".dot";
         File file = new File(filePath);
         Path f = Paths.get(filePath);
         List<String> lines = new ArrayList<String>();
 
-        System.out.println(  "aaaaaaaaa"+result.size());
         lines.add("digraph OUT {");
         for (Node node : result) {
             ArrayList<Edge> edges = node.getEdges();
@@ -181,7 +179,6 @@ public class Autoanalyse {
             }
         }
         lines.add("}");
-        System.out.println("JÀ PUS A LINHA");
 
         try {
             Files.write(f, lines, Charset.forName("UTF-8"));
@@ -189,7 +186,6 @@ public class Autoanalyse {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        System.out.println("Escrevi no ficheiro");
         DotConvert dc = new DotConvert();
 
         dc.start(f.toString(), "graphOutput.");

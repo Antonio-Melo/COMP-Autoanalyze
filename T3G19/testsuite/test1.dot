@@ -1,0 +1,8 @@
+digraph G2
+ {
+     c -> a [label=CC];
+     c -> d [label=CD];
+     d -> c [label=DD];
+     d -> a [label=DC];
+     d [peripheries=2];
+ }

@@ -1,0 +1,100 @@
+options
+{
+    LOOKAHEAD=1;
+}
+PARSER_BEGIN(ValidateFile)
+
+package logic.Parser;
+
+import logic.Structure.Graph;
+import logic.Structure.Node;
+
+
+public class ValidateFile
+{
+  public static void main(String args []) throws ParseException
+  {
+    
+   ValidateFile validateFile = new ValidateFile(new java.io.StringReader(args [0]));
+    Graph graph = new Graph();
+    validateFile.Start(graph);
+  }
+}
+
+PARSER_END(ValidateFile)
+
+SKIP:{
+    " "| "\t"| "\r"
+}
+
+TOKEN:{
+  <DIGRAPH : "digraph">|
+  <LABEL :"label">|
+  <PERIPHE :"peripheries">|
+  <FINAL_STATE :"2">|
+  <NAME: (["a"-"z","A"-"Z", "0"-"9"](["a"-"z","A"-"Z","_","0"-"9"])*)>|
+  <OPENFIELD: "[">|
+  <CLOSEFIELD: "]">|
+  <OPEN: "{">|
+  <CLOSE:"}">|
+  <EQUALS:"=">|        
+  <ARROW : "->">|
+  <SEMICOLON: ";">|
+  <QUOTE: "\'">
+}
+void Start(Graph graph):{Token name;}{
+  <DIGRAPH> name=<NAME>{
+  graph.setName(name.image);
+  }
+  <OPEN>
+NodeGraph(graph)
+}
+
+void NodeGraph(Graph graph):{Token name1, field1, charat1, name2, labelEdge;}{
+     {
+         field1=null;
+         charat1=null;
+
+         name2=null;
+         labelEdge=null;
+     }
+    name1=<NAME>(   (<OPENFIELD> ((field1=<PERIPHE> <EQUALS> ((<QUOTE> charat1=<FINAL_STATE><QUOTE> )|charat1=<FINAL_STATE>))//    c [peripheries=2]; ou c [peripheries='2'];
+                                   |(field1=<LABEL>   <EQUALS> ((<QUOTE> charat1=<NAME><QUOTE>) |charat1=<NAME> ))    )// a [label= he]; ou  a [label='he'];
+                     <CLOSEFIELD>)
+
+                |(<ARROW>  name2=<NAME>(<OPENFIELD> <LABEL> <EQUALS>  ((<QUOTE> labelEdge=<NAME><QUOTE>)|labelEdge=<NAME>) <CLOSEFIELD>)? ))//-> b [label = hello ]
+               < SEMICOLON>//;                                   label= 'b'
+         {
+         Node nodecopy = new Node(name1.image);
+         Node node1;
+         if( graph.existsNode(nodecopy)){//exists nodeCopy?
+            node1= graph.getNode(name1.image);
+         }else{
+             node1 = nodecopy;
+             graph.addNode(node1);
+         }
+          if(node1==null)
+            graph.addNode(node1);
+
+             if(name2!=null){//hasNode2
+               Node dest = new Node(name2.image);
+                  if(labelEdge!=null){
+                     node1.addEdge(dest,labelEdge.image);
+                  }else
+                     node1.addEdge(dest);
+
+                   if(!graph.existsNode(dest))
+                   graph.addNode(dest);
+
+             }else
+                 node1.setFieldCharate(field1.image, charat1.image);
+
+          }
+  ( end()| NodeGraph(graph))
+}
+
+void end():{}{
+
+    <CLOSE>
+}
+
