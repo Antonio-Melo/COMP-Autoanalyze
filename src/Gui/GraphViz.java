@@ -141,8 +141,16 @@ public class GraphViz {
             this.tempDir = "/tmp";
             this.executable = "/usr/local/bin/dot";
         } else if (GraphViz.osName.equals("Linux")) {
-            this.tempDir = "/tmp";
-            this.executable = "/usr/bin/dot";
+            /*this.tempDir = "/tmp";
+            this.executable = "/usr/bin/dot";*/
+        	File file = new File("");
+
+            String AbsolutePath = file.getAbsolutePath();
+            String[] pathParent = AbsolutePath.split("COMP-Autoanalyze");
+
+
+            this.tempDir = pathParent[0] + "COMP-Autoanalyze/out";
+            this.executable = pathParent[0] + "COMP-Autoanalyze/graphviz-2.40.1/cmd/dotty/dotty.sh";
         }
     }
 
