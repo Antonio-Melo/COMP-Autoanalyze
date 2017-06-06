@@ -72,10 +72,10 @@ public class Autoanalyse {
                 System.exit(1);
             }
         }
-        System.out.println("aaaaaaaaa"+graph1.getNodes().size());
+        //ystem.out.println("aaaaaaaaa"+graph1.getNodes().size());
 
-          CartesianProduct product = new CartesianProduct(graph, graph1);
-        Graph graphresult = product.getNewGraph();
+          //CartesianProduct product = new CartesianProduct(graph, graph1);
+        //Graph graphresult = product.getNewGraph();
 
 
         //Graph graphresult = Union.union(graph, graph1);
@@ -84,8 +84,8 @@ public class Autoanalyse {
        // Graph graphresult = Complement.complement(graph1);
 
 
-        System.out.println("aaaaaaaaa"+graphresult.getNodes().size());
-        this.outPutResult(graphresult.getNodes(),"output");
+        //System.out.println("aaaaaaaaa"+graphresult.getNodes().size());
+        //this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
 
 
