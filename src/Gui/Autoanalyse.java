@@ -69,7 +69,6 @@ public class Autoanalyse {
                 System.exit(1);
             }
         }
-<<<<<<< HEAD
         //ystem.out.println("aaaaaaaaa"+graph1.getNodes().size());
 
           //CartesianProduct product = new CartesianProduct(graph, graph1);
@@ -85,9 +84,6 @@ public class Autoanalyse {
         //System.out.println("aaaaaaaaa"+graphresult.getNodes().size());
         //this.outPutResult(graphresult.getNodes(),"output");
         // this.outPutResult(graphresult.getNodes());
-
-=======
->>>>>>> 58318abcb938be0684cd8aa49c6734ee51a45499
 
     }
 

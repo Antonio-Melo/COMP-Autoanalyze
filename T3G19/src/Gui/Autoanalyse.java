@@ -69,6 +69,21 @@ public class Autoanalyse {
                 System.exit(1);
             }
         }
+        //ystem.out.println("aaaaaaaaa"+graph1.getNodes().size());
+
+          //CartesianProduct product = new CartesianProduct(graph, graph1);
+        //Graph graphresult = product.getNewGraph();
+
+
+        //Graph graphresult = Union.union(graph, graph1);
+        // Graph graphresult = Intersection.intersection(graph, graph1);
+        //Graph graphresult = Reversal.reversal(graph);
+       // Graph graphresult = Complement.complement(graph1);
+
+
+        //System.out.println("aaaaaaaaa"+graphresult.getNodes().size());
+        //this.outPutResult(graphresult.getNodes(),"output");
+        // this.outPutResult(graphresult.getNodes());
 
     }
 

@@ -15,7 +15,7 @@ but also intersection, union and complement (these last ones require the input o
 As it finishes all commands, it writes the output automata (after operations) to another .dot file and displays the automata in an image, in .png format.
  
 ** EXECUTE:
-In order to execute this tool all that's needed is running the .jar file named COMP-Autoanalyze.
+In order to execute this tool all that's needed is running the .jar file named Autoanalyze.
 
  
 **DEALING WITH SYNTACTIC ERRORS: (Describe how the syntactic error recovery of your tool does work. Does it exit after the first error?)
