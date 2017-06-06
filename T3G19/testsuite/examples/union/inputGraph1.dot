@@ -1,8 +1,0 @@
-digraph G1
- {
-     a -> b [label=A];
-     a -> a [label=B];
-     b -> a [label=A];
-     b -> b [label=B];
-    a [peripheries=2];
- }

@@ -1,0 +1,6 @@
+digraph G2
+ {
+     a -> b [label=A];
+	 b -> a [label=A];
+     a [peripheries=2];
+ }

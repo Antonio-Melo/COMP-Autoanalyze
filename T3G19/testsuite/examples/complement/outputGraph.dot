@@ -1,9 +1,0 @@
-digraph OUT {
-	a -> b [label=a];
-	a -> c [label=b];
-	a -> d [label=3];
-	a -> d [label=d];
-	a [peripheries=2];
-	b [peripheries=2];
-	c [peripheries=2];
-}
